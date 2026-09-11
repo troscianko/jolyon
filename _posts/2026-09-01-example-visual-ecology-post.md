@@ -5,8 +5,7 @@ excerpt: "A worked example of a Markdown post, showing the front matter fields t
 themes: [visual-ecology]
 ---
 
-This is an example post — delete it once you've got a feel for the format, or keep it as a
-template to copy.
+This is an example post TEstIng
 
 ## Front matter
 

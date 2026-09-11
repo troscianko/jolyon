@@ -111,7 +111,7 @@ p { margin: 0 0 1em; }
   cursor: pointer;
 }
 
-.main-nav ul {
+.main-nav > ul {
   list-style: none;
   display: flex;
   align-items: center;
@@ -171,7 +171,7 @@ p { margin: 0 0 1em; }
   }
   .site-header .wrap { flex-wrap: wrap; }
   .main-nav.open { display: block; }
-  .main-nav ul { flex-direction: column; align-items: stretch; }
+  .main-nav > ul { flex-direction: column; align-items: stretch; }
   .nav-item.has-children .dropdown {
     position: static;
     width: auto;
