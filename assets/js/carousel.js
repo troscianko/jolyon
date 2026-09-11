@@ -26,13 +26,31 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Tap-to-open dropdowns on touch/mobile (hover doesn't apply).
-  document.querySelectorAll(".nav-item.has-children > a").forEach(function (link) {
+  // Click-to-open dropdowns (works for touch/trackpad, not just mouse hover).
+  // Always prevent default so the "#" link never grabs focus permanently —
+  // that was leaving :focus-within stuck true and the dropdown stuck open.
+  var dropdownItems = document.querySelectorAll(".nav-item.has-children");
+  dropdownItems.forEach(function (item) {
+    var link = item.querySelector(":scope > a");
+    if (!link) return;
     link.addEventListener("click", function (e) {
-      if (window.matchMedia("(max-width: 780px)").matches) {
-        e.preventDefault();
-        link.parentElement.classList.toggle("open");
-      }
+      e.preventDefault();
+      var isOpen = item.classList.contains("open");
+      dropdownItems.forEach(function (other) { other.classList.remove("open"); });
+      item.classList.toggle("open", !isOpen);
+      link.blur();
     });
+  });
+
+  document.addEventListener("click", function (e) {
+    if (!e.target.closest(".nav-item.has-children")) {
+      dropdownItems.forEach(function (item) { item.classList.remove("open"); });
+    }
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      dropdownItems.forEach(function (item) { item.classList.remove("open"); });
+    }
   });
 });

@@ -157,7 +157,7 @@ p { margin: 0 0 1em; }
   display: none;
 }
 .nav-item.has-children:hover .dropdown,
-.nav-item.has-children:focus-within .dropdown {
+.nav-item.has-children.open .dropdown {
   display: block;
 }
 .dropdown a { font-weight: 500; white-space: nowrap; }
@@ -173,12 +173,15 @@ p { margin: 0 0 1em; }
   .main-nav.open { display: block; }
   .main-nav ul { flex-direction: column; align-items: stretch; }
   .nav-item.has-children .dropdown {
-    display: none;
     position: static;
+    width: auto;
     border: none;
     box-shadow: none;
     padding-left: 0.75rem;
   }
+  /* Touch "hover" can get stuck after a tap; only the JS-driven .open class
+     controls the dropdown below this width. */
+  .nav-item.has-children:hover .dropdown { display: none; }
   .nav-item.has-children.open .dropdown { display: block; }
   .nav-item.has-children > a::after { float: right; }
 }
