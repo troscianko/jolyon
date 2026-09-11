@@ -71,14 +71,23 @@ errors before deploying.
 
 ## Deploying
 
-Build, then rsync the output to your server:
+Two things happen, independently:
 
-```sh
-bundle exec jekyll build
-rsync -avz --delete _site/ user@yourserver:/path/to/webroot/
-```
+1. **GitHub Pages (live preview/mirror):** push to `main` and
+   `.github/workflows/pages.yml` builds and deploys automatically — no local steps needed.
+   One-off setup: in the GitHub repo's Settings → Pages, set "Source" to "GitHub Actions". This
+   only works because the repo is public; if you ever make it private again this stops working
+   unless you're on a paid GitHub plan.
+2. **Your own server (the "real" site, jolyon.co.uk):** build locally and rsync the output
+   over:
 
-`--delete` removes files on the server that no longer exist in `_site/` (e.g. after you delete
-a post) — drop it if you'd rather old files stuck around instead.
+   ```sh
+   bundle exec jekyll build
+   rsync -avz --delete _site/ user@yourserver:/path/to/webroot/
+   ```
 
-GitHub is still used for version control/backup (`git push`), just not for hosting.
+   `--delete` removes files on the server that no longer exist in `_site/` (e.g. after you
+   delete a post) — drop it if you'd rather old files stuck around instead.
+
+Both consume the same `_site/` build output, so there's nothing to keep in sync between them
+beyond just doing both after a change.

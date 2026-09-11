@@ -10,7 +10,7 @@ layout: default
 </section>
 
 <section class="section wrap">
-  {% assign recent_posts = site.posts | first: site.recent_posts_count %}
+  {% assign recent_posts = site.posts | slice: 0, site.recent_posts_count %}
   {% include carousel.html posts=recent_posts heading="Recent posts" %}
 </section>
 
