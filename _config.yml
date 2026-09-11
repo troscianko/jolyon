@@ -1,0 +1,61 @@
+# Site settings
+title: "Jolyon Troscianko"
+tagline: "Visual ecology, visual modelling & light pollution research"
+description: >-
+  Research group site covering visual ecology, visual modelling and light pollution,
+  plus the software tools (micaToolbox, BehaveAI and more) built to support that work.
+url: "https://www.jolyon.co.uk"
+baseurl: ""
+email: "j.troscianko@exeter.ac.uk"
+author: "Jolyon Troscianko"
+
+# Homepage carousel
+recent_posts_count: 10
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+permalink: /posts/:slug/
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# Order matters: later entries win when a file matches more than one scope,
+# so the generic (untyped) default comes first and the type-scoped ones after it.
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "theme-page"
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - node_modules
+  - "*.gemspec"
+
+# Navigation data lives in _data/navigation.yml

@@ -1,0 +1,30 @@
+{% comment %}
+  Usage: {% include carousel.html posts=filtered_posts heading="Recent posts" view_all_url="/outreach-media/" style="grid" %}
+  style: "carousel" (default, horizontal scroll+arrows) or "grid" (static wrapping grid)
+{% endcomment %}
+<div class="section-heading">
+  {% if include.heading %}<h2>{{ include.heading }}</h2>{% endif %}
+  {% if include.view_all_url %}<a href="{{ include.view_all_url | relative_url }}">View all →</a>{% endif %}
+</div>
+
+{% if include.posts.size == 0 %}
+  <p class="empty-note">No posts tagged here yet — drop a file into <code>_posts/</code> with this theme in its front matter.</p>
+{% elsif include.style == "grid" %}
+  <div class="post-grid">
+    {% for post in include.posts %}
+      {% include post-card.html post=post %}
+    {% endfor %}
+  </div>
+{% else %}
+  <div class="carousel" data-carousel>
+    <div class="carousel-track">
+      {% for post in include.posts %}
+        {% include post-card.html post=post %}
+      {% endfor %}
+    </div>
+    <div class="carousel-controls">
+      <button type="button" data-prev aria-label="Scroll left">←</button>
+      <button type="button" data-next aria-label="Scroll right">→</button>
+    </div>
+  </div>
+{% endif %}

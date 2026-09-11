@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<section class="page-content wrap">
+  <p class="eyebrow">{{ page.eyebrow | default: "Funding" }}</p>
+  <h1>{{ page.title }}</h1>
+  <div class="blurb">
+    {{ content }}
+  </div>
+
+  <ul class="funding-list">
+    {% for grant in site.data.funding %}
+      <li>
+        <div class="role">{{ grant.role }} · {{ grant.period }}</div>
+        <div>
+          {% if grant.link and grant.link != "#" %}
+            <a href="{{ grant.link }}">{{ grant.title }}</a>
+          {% else %}
+            {{ grant.title }}
+          {% endif %}
+        </div>
+        <div class="authors">{{ grant.funder }}</div>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<section class="page-content wrap">
+  <p class="eyebrow">{{ page.eyebrow | default: "Publications" }}</p>
+  <h1>{{ page.title }}</h1>
+  <div class="blurb">
+    {{ content }}
+  </div>
+
+  {% for group in site.data.publications %}
+    <h2 class="pub-year">{{ group.year }}</h2>
+    <ul class="pub-list">
+      {% for paper in group.papers %}
+        <li>
+          <div class="authors">{{ paper.authors }}</div>
+          <div>
+            {% if paper.link and paper.link != "#" %}
+              <a href="{{ paper.link }}">{{ paper.title }}</a>
+            {% else %}
+              {{ paper.title }}
+            {% endif %}
+            — <em>{{ paper.journal }}</em>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+</section>

@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<article class="post-body wrap">
+  <p class="eyebrow">{{ page.date | date: "%-d %B %Y" }}</p>
+  <h1>{{ page.title }}</h1>
+
+  {% if page.image %}
+    <div class="post-hero">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.title | escape }}">
+    </div>
+  {% endif %}
+
+  <div class="content">
+    {{ content }}
+  </div>
+
+  {% if page.themes %}
+    <div class="themes">
+      {% for theme in page.themes %}
+        <span class="tag-pill">{{ theme | replace: '-', ' ' | capitalize }}</span>
+      {% endfor %}
+    </div>
+  {% endif %}
+</article>

@@ -1,0 +1,37 @@
+# Drives the header menu (see _includes/header.html).
+# Each top-level item is either a plain link (has "url") or a dropdown (has "children").
+
+- title: Home
+  url: /
+
+- title: Research themes
+  children:
+    - title: Visual Ecology
+      url: /research/visual-ecology/
+    - title: Visual Modelling
+      url: /research/visual-modelling/
+    - title: Light Pollution
+      url: /research/light-pollution/
+
+- title: Projects
+  children:
+    - title: BehaveAI
+      url: /projects/behaveai/
+    - title: micaToolbox
+      url: /projects/micatoolbox/
+    - title: Light Measurement Tools
+      url: /projects/light-measurement-tools/
+    - title: Experimental Tools
+      url: /projects/experimental-tools/
+
+- title: Animal Vision
+  url: /animal-vision/
+
+- title: Publications
+  url: /publications/
+
+- title: Funding
+  url: /funding/
+
+- title: Outreach & Media
+  url: /outreach-media/

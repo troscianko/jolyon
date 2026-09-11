@@ -1,0 +1,19 @@
+# TODO: replace with your real publication list.
+# Grouped by year; each entry renders on /publications/.
+- year: 2026
+  papers:
+    - authors: "Troscianko, J., et al."
+      title: "TODO: Placeholder publication title"
+      journal: "Journal Name"
+      link: "#"
+    - authors: "Troscianko, J., et al."
+      title: "TODO: Another placeholder publication"
+      journal: "Journal Name"
+      link: "#"
+
+- year: 2025
+  papers:
+    - authors: "Troscianko, J., et al."
+      title: "TODO: Placeholder publication title"
+      journal: "Journal Name"
+      link: "#"

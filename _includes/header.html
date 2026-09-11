@@ -1,0 +1,26 @@
+<header class="site-header">
+  <div class="wrap">
+    <a class="site-title" href="{{ '/' | relative_url }}">Jolyon Troscianko <span>· Visual Ecology Lab</span></a>
+
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰ Menu</button>
+
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        {% for item in site.data.navigation %}
+          {% if item.children %}
+            <li class="nav-item has-children">
+              <a href="#">{{ item.title }}</a>
+              <ul class="dropdown">
+                {% for child in item.children %}
+                  <li><a href="{{ child.url | relative_url }}">{{ child.title }}</a></li>
+                {% endfor %}
+              </ul>
+            </li>
+          {% else %}
+            <li class="nav-item"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>
