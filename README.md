@@ -43,30 +43,42 @@ Funding pages — edit those data files rather than the page templates.
 
 The menu itself is `_data/navigation.yml`.
 
-## Preview locally
-
-Requires Ruby. Then:
+## One-off setup (Ubuntu)
 
 ```sh
+sudo apt update
+sudo apt install -y ruby-full build-essential zlib1g-dev
+
+# Install gems into your home directory instead of system-wide (no sudo needed after this).
+echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
+echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+
+gem install bundler
+cd /home/jolyon/Documents/Work/Websites/jolyon
 bundle install
+```
+
+## Preview locally
+
+```sh
 bundle exec jekyll serve
 ```
 
-Visit http://localhost:4000. `bundle exec jekyll build` (no `serve`) just builds `_site/`
-without watching, and is a good way to catch errors before pushing.
+Visit http://localhost:4000 — it rebuilds automatically as you edit files. `bundle exec jekyll
+build` (no `serve`) just builds `_site/` once without watching, and is a good way to catch
+errors before deploying.
 
 ## Deploying
 
-**GitHub Pages (default):** push to `main` on `git@github.com:troscianko/jolyon.git` — the
-workflow in `.github/workflows/pages.yml` builds and deploys automatically. One-off setup: in
-the GitHub repo's Settings → Pages, set "Source" to "GitHub Actions".
-
-**Your own server (fallback):** build locally and rsync the output over, e.g.:
+Build, then rsync the output to your server:
 
 ```sh
 bundle exec jekyll build
 rsync -avz --delete _site/ user@yourserver:/path/to/webroot/
 ```
 
-No code changes are needed to switch between the two — both just consume the same `_site/`
-build output.
+`--delete` removes files on the server that no longer exist in `_site/` (e.g. after you delete
+a post) — drop it if you'd rather old files stuck around instead.
+
+GitHub is still used for version control/backup (`git push`), just not for hosting.
