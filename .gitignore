@@ -1,4 +1,5 @@
 _site/
+assets/images/derived/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata

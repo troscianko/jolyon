@@ -1,0 +1,24 @@
+{% comment %}
+  Renders one managed photo with its overlay (if metadata exists) and lightbox trigger.
+  Usage: {% include photo.html src="/assets/images/site/butterflies/butterfly_01.jpg" %}
+  Params:
+    src     - required, site-root-relative path to the ORIGINAL image under /assets/images/
+    size    - "thumb" or "display" derivative to actually display here (default "display")
+    gallery - lightbox grouping id (default "page" — shares nav with the rest of the page)
+    overlay - pass false to suppress the title/excerpt overlay even if metadata exists
+{% endcomment %}
+{% assign src = include.src %}
+{% assign meta = site.data.photos[src] %}
+{% assign size = include.size | default: "display" %}
+{% assign size_prefix = "/assets/images/derived/" | append: size | append: "/" %}
+{% assign shown_src = src | replace: "/assets/images/", size_prefix %}
+{% assign full_src = src | replace: "/assets/images/", "/assets/images/derived/display/" %}
+<figure class="photo" data-photo data-gallery="{{ include.gallery | default: 'page' }}" data-full="{{ full_src | relative_url }}"{% if meta %} data-title="{{ meta.title | escape }}" data-excerpt="{{ meta.excerpt | escape }}"{% if meta.caption_html %} data-caption="{{ meta.caption_html | escape }}"{% endif %}{% endif %}>
+  <img src="{{ shown_src | relative_url }}" alt="{{ meta.title | default: '' | escape }}" loading="lazy">
+  {% if meta and include.overlay != false %}
+    <div class="photo-overlay">
+      <strong>{{ meta.title }}</strong>
+      {% if meta.excerpt %}<span>{{ meta.excerpt }}</span>{% endif %}
+    </div>
+  {% endif %}
+</figure>

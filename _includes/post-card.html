@@ -2,9 +2,11 @@
   Usage: {% include post-card.html post=some_post %}
 {% endcomment %}
 {% assign post = include.post %}
+{% assign card_image = post.image | default: "/assets/images/site/default-post.jpg" %}
+{% assign card_thumb = card_image | replace: "/assets/images/", "/assets/images/derived/thumb/" %}
 <a class="post-card" href="{{ post.url | relative_url }}">
   <div class="thumb">
-    <img src="{{ post.image | default: '/assets/images/site/default-post.jpg' | relative_url }}" alt="{{ post.title | escape }}" loading="lazy">
+    <img src="{{ card_thumb | relative_url }}" alt="{{ post.title | escape }}" loading="lazy">
   </div>
   <div class="body">
     <span class="date">{{ post.date | date: "%-d %B %Y" }}</span>

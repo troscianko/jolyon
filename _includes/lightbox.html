@@ -1,0 +1,16 @@
+{% comment %} Hidden shell reused by assets/js/lightbox.js — included once in default.html. {% endcomment %}
+<div id="lightbox" class="lightbox" hidden>
+  <button type="button" class="lightbox-close" aria-label="Close">&times;</button>
+  <button type="button" class="lightbox-prev" aria-label="Previous image">&larr;</button>
+  <button type="button" class="lightbox-next" aria-label="Next image">&rarr;</button>
+  <div class="lightbox-content">
+    <img class="lightbox-image" src="" alt="">
+    <div class="lightbox-text">
+      <h3 class="lightbox-title"></h3>
+      <p class="lightbox-excerpt"></p>
+      <div class="lightbox-caption"></div>
+    </div>
+  </div>
+</div>
+<script type="application/json" id="photo-metadata">{{ site.data.photos | jsonify }}</script>
+<script>var SITE_BASEURL = {{ site.baseurl | jsonify }};</script>

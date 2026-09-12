@@ -1,0 +1,20 @@
+{% comment %}
+  Renders a thumbnail gallery from every image in a directory.
+  Usage: {% include gallery.html dir="/assets/images/site/butterflies" thumb_width=200 overlay=true %}
+  Params:
+    dir         - required, site-root-relative directory path (no trailing slash)
+    thumb_width - CSS grid column width in px (default 200)
+    overlay     - pass false to hide title/excerpt overlays for every photo in this gallery
+{% endcomment %}
+{% assign images = site.data.photo_dirs[include.dir] %}
+{% assign gallery_id = include.dir | slugify %}
+{% assign thumb_width = include.thumb_width | default: 200 %}
+<div class="photo-gallery" style="--thumb-width: {{ thumb_width }}px;">
+  {% if images and images.size > 0 %}
+    {% for img in images %}
+      {% include photo.html src=img size="thumb" gallery=gallery_id overlay=include.overlay %}
+    {% endfor %}
+  {% else %}
+    <p class="empty-note">No images found in {{ include.dir }}.</p>
+  {% endif %}
+</div>

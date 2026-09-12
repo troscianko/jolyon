@@ -34,6 +34,46 @@ See `_posts/2026-09-01-example-visual-ecology-post.md` and
 `_posts/2026-09-05-example-video-embed-post.md` for worked examples — delete the three example
 posts (and their image folders) once you're happy with the format.
 
+## Adding photos / a photo gallery
+
+Drop images anywhere under `assets/images/` (they don't need to belong to a post). For any
+image, add an optional sidecar Markdown file with the *same name* to give it a title, excerpt,
+and caption — e.g. `butterfly_01.jpg` + `butterfly_01.md`:
+
+```yaml
+---
+title: "Red admiral"
+excerpt: "Resting on yellow ragwort"
+---
+
+Any Markdown here becomes the caption shown below the photo in the full-size lightbox view
+(not the small overlay).
+```
+
+If there's no sidecar `.md` file, the image just has no title/excerpt/overlay — it's still
+viewable full-size. See `assets/images/site/butterflies/` for a working example.
+
+To turn a whole folder of images into a gallery, add this to any page or post:
+
+```liquid
+{% include gallery.html dir="/assets/images/site/butterflies" thumb_width=200 %}
+```
+
+- `dir` — the folder, as a site-root path (no trailing slash).
+- `thumb_width` — grid thumbnail width in px (default 200).
+- `overlay=false` — add this to hide the title/excerpt overlay for every photo in that gallery.
+
+Wherever a managed photo appears (gallery, a post's hero image, or just embedded inline in a
+post/page with normal `![alt](path)` Markdown), clicking it opens a full-width lightbox with
+the title/excerpt/caption shown below the image and arrow buttons to step through every other
+photo on that page (or, for a `gallery.html` block, through just that gallery). Post-card
+thumbnails on the homepage/theme pages are the one exception — they stay as plain links to
+their post.
+
+Real thumbnail/display-size image files are generated automatically at build time (see
+`_plugins/photos.rb`) — you never need to resize images yourself, and the generated files
+(`assets/images/derived/`) aren't committed to git.
+
 ## Editing the fixed pages
 
 The research/project/Animal Vision/Outreach pages live in `_pages/`, one file each, with a
@@ -47,7 +87,7 @@ The menu itself is `_data/navigation.yml`.
 
 ```sh
 sudo apt update
-sudo apt install -y ruby-full build-essential zlib1g-dev
+sudo apt install -y ruby-full build-essential zlib1g-dev imagemagick
 
 # Install gems into your home directory instead of system-wide (no sudo needed after this).
 echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc

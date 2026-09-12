@@ -6,8 +6,9 @@ layout: default
   <h1>{{ page.title }}</h1>
 
   {% if page.image %}
+    {% assign hero_src = page.image | replace: "/assets/images/", "/assets/images/derived/display/" %}
     <div class="post-hero">
-      <img src="{{ page.image | relative_url }}" alt="{{ page.title | escape }}">
+      <img src="{{ hero_src | relative_url }}" alt="{{ page.title | escape }}">
     </div>
   {% endif %}
 

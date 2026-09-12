@@ -3,6 +3,8 @@ title: "Visual Ecology"
 slug: visual-ecology
 permalink: /research/visual-ecology/
 eyebrow: "Research theme"
+gallery_dir: /assets/images/site/butterflies
+gallery_thumb_width: 200
 ---
 
 > **TODO:** replace this placeholder with a real blurb about your visual ecology research —

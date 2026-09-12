@@ -8,13 +8,9 @@ layout: default
     {{ content }}
   </div>
 
-  {% if page.gallery %}
+  {% if page.gallery_dir %}
     <h2>Gallery</h2>
-    <div class="gallery">
-      {% for img in page.gallery %}
-        <img src="{{ img | relative_url }}" alt="{{ page.title | escape }}" loading="lazy">
-      {% endfor %}
-    </div>
+    {% include gallery.html dir=page.gallery_dir thumb_width=page.gallery_thumb_width %}
   {% endif %}
 </section>
 
