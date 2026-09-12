@@ -79,7 +79,10 @@ Real thumbnail/display-size image files are generated automatically at build tim
 The research/project/Animal Vision/Outreach pages live in `_pages/`, one file each, with a
 `slug:` that matching posts' `themes:` reference. Edit the placeholder text (marked
 `> TODO:`) directly. `_data/publications.yml` and `_data/funding.yml` drive the Publications and
-Funding pages — edit those data files rather than the page templates.
+Funding pages — edit those data files rather than the page templates. Each entry can
+optionally have an `image:` (shown to the right, same thumbnail pipeline as galleries) and a
+`description:` (Markdown — link to a related post, media coverage, code/data, etc.), shown
+indented below the citation. See the example entries already in those files.
 
 The menu itself is `_data/navigation.yml`.
 
