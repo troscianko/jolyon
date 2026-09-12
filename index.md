@@ -5,6 +5,10 @@ subtitle: "Visual ecology, visual modelling and light pollution research at the 
 reaction:
   text: spots
   background: stripes
+  text_colour: "#909090"   # colour of the static original letterforms (only visible if text_alpha > 0)
+  # pattern_colour left at its default (bright green) — #202020 here would now match the fixed
+  # background exactly and make the pattern invisible, since pattern_colour is the pattern's own
+  # "ink" colour, not the background
 ---
 
 ## About the lab

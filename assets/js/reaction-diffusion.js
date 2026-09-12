@@ -95,14 +95,15 @@
     // it drifts into a regular grid, forgetting the original text. 0 = no
     // pull (can fully drift); try 0.5-2 for a visible effect.
     var attraction = Math.max(0, numAttr(el, "attraction", 0));
-    // textColour/patternColour: manual override for the two rendered colours
-    // (default: the site's bright green for text, dark header grey for the
-    // surrounding pattern — see below). Handy for experimenting with which
-    // colour reads as "the letters" vs "the surrounding pattern", since
-    // some preset pairings (e.g. spots text / stripes background) read more
-    // like the two regions repelling each other than the text attracting —
-    // swapping which colour is used for which can help sell the letters as
-    // the focal shape regardless of what the pattern itself is doing.
+    // textColour: colour of the static original letterforms (the text
+    // layer, shown at textAlpha). patternColour: colour of the evolving
+    // Gray-Scott result's "ink" — it sometimes forms letter-like shapes and
+    // sometimes only outlines them, so this is one colour for wherever
+    // concentration is high, not a two-tone pair. The background itself
+    // always stays the header's own colour regardless of either of these.
+    // Both default to the site's bright green (see below); override either
+    // independently to make the pattern and the underlying letters read as
+    // distinct from each other, e.g. a dark pattern against light letters.
     var textColourOverride = el.dataset.textColour;
     var patternColourOverride = el.dataset.patternColour;
 
@@ -206,20 +207,27 @@
       }
     }
 
-    // Defaults match the header: bright green "ink" on the dark header
-    // background, so an unstyled reaction title blends straight in.
+    // The background always matches the header, regardless of text/pattern
+    // colour choices — it's not something reaction: overrides.
     var rootStyle = getComputedStyle(document.documentElement);
+    var backgroundRgb = hexToRgb(rootStyle.getPropertyValue("--header-dark") || "#202020");
+    var backgroundCss = "rgb(" + backgroundRgb[0] + "," + backgroundRgb[1] + "," + backgroundRgb[2] + ")";
+    // textColour: the static original letterforms (the text layer below).
+    // patternColour: the evolving Gray-Scott result's "ink" — the pattern
+    // sometimes forms letter-like shapes and sometimes only outlines them,
+    // so this is a single colour for wherever concentration is high, not a
+    // two-tone pair; everywhere else in both layers is left transparent so
+    // the constant background always shows through unchanged.
     var textColorRgb = hexToRgb(
       textColourOverride || rootStyle.getPropertyValue("--accent-green") || "#b9f855"
     );
     var patternColorRgb = hexToRgb(
-      patternColourOverride || rootStyle.getPropertyValue("--header-dark") || "#202020"
+      patternColourOverride || rootStyle.getPropertyValue("--accent-green") || "#b9f855"
     );
-    var patternColorCss = "rgb(" + patternColorRgb[0] + "," + patternColorRgb[1] + "," + patternColorRgb[2] + ")";
 
     // Static colored text layer, built once (the text never changes) at
-    // simulation resolution then upscaled — composited under the pattern
-    // each frame at textAlpha, only visible where patternAlpha < 1.
+    // simulation resolution then upscaled — composited over the background
+    // each frame at textAlpha. Transparent outside the letterforms.
     var textLayerCanvas = document.createElement("canvas");
     textLayerCanvas.width = renderW;
     textLayerCanvas.height = renderH;
@@ -232,12 +240,11 @@
       var textPixels = textImageData.data;
       for (var ti = 0; ti < size; ti++) {
         var tOn = maskData[ti * 4] > 128;
-        var tRgb = tOn ? textColorRgb : patternColorRgb;
         var tp = ti * 4;
-        textPixels[tp] = tRgb[0];
-        textPixels[tp + 1] = tRgb[1];
-        textPixels[tp + 2] = tRgb[2];
-        textPixels[tp + 3] = 255;
+        textPixels[tp] = textColorRgb[0];
+        textPixels[tp + 1] = textColorRgb[1];
+        textPixels[tp + 2] = textColorRgb[2];
+        textPixels[tp + 3] = tOn ? 255 : 0;
       }
       textSmallCtx.putImageData(textImageData, 0, 0);
       var textLayerCtx = textLayerCanvas.getContext("2d");
@@ -326,25 +333,28 @@
       patternCtx.drawImage(simCanvas, 0, 0, w, h, 0, 0, renderW, renderH);
       patternCtx.filter = "none";
 
-      // 3. Threshold the blurred, upscaled grayscale to two-tone in place.
+      // 3. Threshold the blurred, upscaled grayscale in place: patternColour
+      //    where concentration is high, fully transparent elsewhere (so the
+      //    constant background — and the text layer, if visible — show
+      //    through rather than a second hardcoded "off" colour).
       var out = patternCtx.getImageData(0, 0, renderW, renderH);
       var data = out.data;
       for (var j = 0; j < data.length; j += 4) {
         var on = data[j] > THRESHOLD * 255;
-        var rgb = on ? textColorRgb : patternColorRgb;
-        data[j] = rgb[0];
-        data[j + 1] = rgb[1];
-        data[j + 2] = rgb[2];
-        data[j + 3] = 255;
+        data[j] = patternColorRgb[0];
+        data[j + 1] = patternColorRgb[1];
+        data[j + 2] = patternColorRgb[2];
+        data[j + 3] = on ? 255 : 0;
       }
       patternCtx.putImageData(out, 0, 0);
 
-      // 4. Composite onto the visible canvas: opaque background, the static
-      //    text layer at textAlpha, then the pattern at patternAlpha on top.
-      //    At the defaults (0/1) this reduces to just the pattern, unchanged
-      //    from before.
+      // 4. Composite onto the visible canvas: opaque background (always the
+      //    header colour, never overridden), the static text layer at
+      //    textAlpha, then the pattern at patternAlpha on top. At the
+      //    defaults (textAlpha 0, patternAlpha 1) this reduces to just the
+      //    pattern's ink over the background.
       ctx.globalAlpha = 1;
-      ctx.fillStyle = patternColorCss;
+      ctx.fillStyle = backgroundCss;
       ctx.fillRect(0, 0, renderW, renderH);
       if (textAlpha > 0) {
         ctx.globalAlpha = textAlpha;

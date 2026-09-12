@@ -89,6 +89,10 @@ p { margin: 0 0 1em; }
   z-index: 50;
 }
 .site-header .wrap {
+  // Wider than the site's normal --max-width (1180px, used for readable
+  // article content) — the header is a UI bar, not prose, and a ~7-item nav
+  // plus a title need more room than that to ever share one row.
+  max-width: 1500px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -104,15 +108,19 @@ p { margin: 0 0 1em; }
 }
 .title-hero-text {
   color: var(--accent-green);
-  // Fluid between 2rem (at a 400px viewport) and 3.2rem (at 1180px — the
-  // same breakpoint as .wrap's own max-width, i.e. --max-width above), so
-  // growth finishes exactly when the header's flex row stops getting wider
-  // too. A plain `vw` value here (as this used to be) keeps scaling with the
-  // full viewport past that point even though .wrap itself has stopped
-  // growing, which let the title outgrow its row and push the nav below it
-  // again on very wide/maximized windows despite fitting fine just below
-  // that width. Recompute the two constants below if --max-width changes.
-  font-size: clamp(2rem, 1.39rem + 2.46vw, 3.2rem);
+  // Fluid between 2rem (at a 400px viewport) and 2.4rem (at 1500px — the
+  // same breakpoint as .site-header .wrap's own max-width above), so growth
+  // finishes exactly when the header's flex row stops getting wider too. A
+  // plain `vw` value here (as this used to be) keeps scaling with the full
+  // viewport past that point even though .wrap itself has stopped growing,
+  // which let the title outgrow its row and push the nav below it again on
+  // very wide/maximized windows despite fitting fine just below that width.
+  // The 2.4rem ceiling (down from an earlier 3.2rem) is deliberately modest:
+  // the nav alone is already ~900px wide across its 7 items, so a much
+  // bigger title has nowhere left to go without wrapping regardless of this
+  // formula. Recompute both constants below if .site-header .wrap's
+  // max-width changes.
+  font-size: clamp(2rem, 1.855rem + 0.582vw, 2.4rem);
   margin-bottom: 0;
 }
 

@@ -104,8 +104,11 @@ reaction:
                            # e.g. 0.9 = long fading trails)
   attraction: 0            # how strongly the pattern is pulled back into the letterforms as it
                            # evolves (default 0 = free drift; try 0.5-2 for a visible pull)
-  text_colour: "#b9f855"   # override the two rendered colours manually (defaults: bright green
-  pattern_colour: "#202020" # for the letters, dark header grey for the surrounding pattern)
+  text_colour: "#b9f855"    # colour of the static original letterforms (default: bright green)
+  pattern_colour: "#b9f855" # colour of the evolving pattern's "ink" (default: bright green) —
+                             # it sometimes forms letters and sometimes only outlines them, so
+                             # this is one colour, not a two-tone pair. The background always
+                             # stays the header's own colour regardless of either of these.
 ```
 
 Every field is optional — with none set, `reaction:` still needs to exist (even as `reaction:
