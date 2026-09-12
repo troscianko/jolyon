@@ -1,13 +1,9 @@
 ---
 layout: default
 ---
-<section class="hero">
-  <div class="wrap">
-    <p class="eyebrow">Visual Ecology Lab</p>
-    <h1>{{ page.title | default: site.title }}</h1>
-    <p>{{ page.subtitle | default: site.tagline }}</p>
-  </div>
-</section>
+{% assign home_title = page.title | default: site.title %}
+{% assign home_subtitle = page.subtitle | default: site.tagline %}
+{% include page-title.html title=home_title eyebrow="Visual Ecology Lab" subtitle=home_subtitle %}
 
 <section class="section wrap">
   {% assign recent_posts = site.posts | slice: 0, site.recent_posts_count %}

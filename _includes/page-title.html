@@ -1,0 +1,31 @@
+{% comment %}
+  Shared green title/hero section, used by every top-level layout.
+  Params: title (default page.title), eyebrow (default page.eyebrow), subtitle (optional).
+
+  Always renders a real <h1> — the accessibility/SEO/no-JS fallback, and the whole story when
+  page.reaction isn't set ("normal title section"). When page.reaction IS set, also renders a
+  <canvas> on top of it; assets/js/reaction-diffusion.js measures the h1, seeds a Gray-Scott
+  simulation from its rendered text, and takes over the visuals.
+{% endcomment %}
+{% assign title_text = include.title | default: page.title %}
+{% assign eyebrow_text = include.eyebrow | default: page.eyebrow %}
+<section class="title-hero">
+  <div class="wrap">
+    {% if eyebrow_text %}<p class="eyebrow eyebrow-on-hero">{{ eyebrow_text }}</p>{% endif %}
+    {% if page.reaction %}
+      <div class="reaction-title" data-reaction
+           data-text-pattern="{{ page.reaction.text | default: 'spots' }}"
+           data-bg-pattern="{{ page.reaction.background | default: 'stripes' }}"
+           {% if page.reaction.feed_in %}data-feed-in="{{ page.reaction.feed_in }}"{% endif %}
+           {% if page.reaction.kill_in %}data-kill-in="{{ page.reaction.kill_in }}"{% endif %}
+           {% if page.reaction.feed_out %}data-feed-out="{{ page.reaction.feed_out }}"{% endif %}
+           {% if page.reaction.kill_out %}data-kill-out="{{ page.reaction.kill_out }}"{% endif %}>
+        <h1 class="title-hero-text">{{ title_text }}</h1>
+        <canvas aria-hidden="true"></canvas>
+      </div>
+    {% else %}
+      <h1 class="title-hero-text">{{ title_text }}</h1>
+    {% endif %}
+    {% if include.subtitle %}<p class="title-hero-subtitle">{{ include.subtitle }}</p>{% endif %}
+  </div>
+</section>

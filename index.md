@@ -2,6 +2,9 @@
 layout: home
 title: "Jolyon Troscianko"
 subtitle: "Visual ecology, visual modelling and light pollution research at the University of Exeter."
+reaction:
+  text: spots
+  background: stripes
 ---
 
 ## About the lab

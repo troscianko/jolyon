@@ -10,4 +10,4 @@ Testing the gallery function.
 
 ## Gallery
 
-{% include gallery.html dir="/assets/images/site/butterflies" thumb_width=200 %}
+{% include gallery.html dir="/assets/images/site/butterflies" thumb_width=300 %}

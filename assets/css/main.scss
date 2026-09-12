@@ -13,6 +13,7 @@
   --white: #ffffff;
 
   --accent-green: #b9f855;
+  --accent-green-dark: #1f3d0c;
   --accent-blue: #5cc3fa;
 
   --text: var(--grey-900);
@@ -78,8 +79,7 @@ p { margin: 0 0 1em; }
 
 /* ---------- Header ---------- */
 .site-header {
-  border-bottom: 1px solid var(--border);
-  background: var(--bg);
+  background: var(--accent-green);
   position: sticky;
   top: 0;
   z-index: 50;
@@ -99,12 +99,12 @@ p { margin: 0 0 1em; }
   text-decoration: none;
   white-space: nowrap;
 }
-.site-title span { color: var(--grey-500); font-weight: 500; }
+.site-title span { color: var(--grey-700); font-weight: 500; }
 
 .nav-toggle {
   display: none;
   background: none;
-  border: 1px solid var(--border);
+  border: 1px solid rgba(18, 19, 20, 0.3);
   border-radius: 6px;
   padding: 0.4rem 0.6rem;
   font-size: 1rem;
@@ -131,7 +131,7 @@ p { margin: 0 0 1em; }
 }
 .main-nav a:hover,
 .main-nav .active > a {
-  background: var(--grey-100);
+  background: rgba(255, 255, 255, 0.55);
   color: var(--grey-950);
 }
 
@@ -140,7 +140,7 @@ p { margin: 0 0 1em; }
   content: "▾";
   font-size: 0.7em;
   margin-left: 0.3em;
-  color: var(--grey-500);
+  color: var(--grey-700);
 }
 .dropdown {
   list-style: none;
@@ -186,15 +186,36 @@ p { margin: 0 0 1em; }
   .nav-item.has-children > a::after { float: right; }
 }
 
-/* ---------- Hero ---------- */
-.hero {
-  background: var(--grey-950);
-  color: var(--grey-100);
+/* ---------- Title hero (shared by every layout via _includes/page-title.html) ---------- */
+.title-hero {
+  background: var(--accent-green);
   padding: 3.5rem 0 3rem;
 }
-.hero h1 { color: var(--white); }
-.hero p { color: var(--grey-300); max-width: 60ch; }
-.hero .accent { color: var(--accent-green); }
+.eyebrow-on-hero {
+  background: var(--accent-green-dark);
+  color: var(--white);
+}
+.title-hero-text {
+  color: var(--accent-green-dark);
+  margin-bottom: 0;
+}
+.title-hero-subtitle {
+  color: var(--grey-900);
+  max-width: 60ch;
+  margin: 0.6em 0 0;
+}
+
+.reaction-title {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+.reaction-title canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
 
 /* ---------- Post cards / carousel ---------- */
 .section {

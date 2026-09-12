@@ -3,7 +3,7 @@ title: "Falmouth in Infrared"
 image: /assets/images/posts/falmouth-in-infrared/main.jpg
 excerpt: "I took these shots to test out a Samsung NX1000 converted to full spectrum with…"
 date: 2014-09-30 14:42:02 +0000
-themes: []
+themes: [outreach-media]
 original_url: https://www.jolyon.co.uk/2014/09/falmouth-in-infrared/
 ---
 
