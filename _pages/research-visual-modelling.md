@@ -6,10 +6,11 @@ eyebrow: "Research theme"
 reaction:
   text: spots
   background: spots
-  text_alpha: 0.7      # default 0 (invisible)
-  pattern_alpha: 0.7  # default 1 (opaque) — needs to drop below 1 for text_alpha to show through
+  text_alpha: 1      # default 0 (invisible)
+  pattern_alpha: 1  # default 1 (opaque) — needs to drop below 1 for text_alpha to show through
   decay: 0.3          # default 0 (no smoothing) — try 0.7-0.95 for visible trails
   attraction: 1.5     # default 0 (free drift) — try 0.5-2, it needs to be much bigger than feed/kill values to matter
+  pattern_colour: "#606060"
 ---
 
 Digital cameras are extremely powerful tools for recording spatial information across different wavelengths, but for testing biological hypotheses we generally need to know what a scene will look like to an animal, not our camera. To do this we use a number of image processing techniques and camera calibration procedures. We have released a software toolbox that enables easy objective image analysis. The toolbox can be downloaded from [here](http://www.jolyon.co.uk/myresearch/image-analysis/image-analysis-tools/).

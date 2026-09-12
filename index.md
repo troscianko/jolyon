@@ -5,7 +5,12 @@ subtitle: "Visual ecology, visual modelling and light pollution research at the 
 reaction:
   text: spots
   background: stripes
-  text_colour: "#909090"   # colour of the static original letterforms (only visible if text_alpha > 0)
+  text_colour: "#b9f855"   # colour of the static original letterforms (only visible if text_alpha > 0)
+  text_alpha: 1
+  pattern_colour: "#606060"
+  decay: 0.5          # default 0 (no smoothing) — try 0.7-0.95 for visible trails
+
+  
   # pattern_colour left at its default (bright green) — #202020 here would now match the fixed
   # background exactly and make the pattern invisible, since pattern_colour is the pattern's own
   # "ink" colour, not the background
