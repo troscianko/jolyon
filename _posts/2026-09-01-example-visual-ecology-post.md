@@ -1,6 +1,7 @@
 ---
 title: "Butterfly images"
 image: /assets/images/site/butterflies/butterfly_01.jpg
+banner: true
 excerpt: "Example of an image gallery"
 themes: [visual-ecology]
 ---
