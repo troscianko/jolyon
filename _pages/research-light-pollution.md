@@ -3,6 +3,9 @@ title: "Light Pollution"
 slug: light-pollution
 permalink: /research/light-pollution/
 eyebrow: "Research theme"
+reaction:
+  text: spots
+  background: stripes
 ---
 
 > **TODO:** replace this placeholder with a real blurb about your light pollution research —

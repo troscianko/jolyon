@@ -3,6 +3,9 @@ title: "Visual Modelling"
 slug: visual-modelling
 permalink: /research/visual-modelling/
 eyebrow: "Research theme"
+reaction:
+  text: spots
+  background: spots
 ---
 
 Digital cameras are extremely powerful tools for recording spatial information across different wavelengths, but for testing biological hypotheses we generally need to know what a scene will look like to an animal, not our camera. To do this we use a number of image processing techniques and camera calibration procedures. We have released a software toolbox that enables easy objective image analysis. The toolbox can be downloaded from [here](http://www.jolyon.co.uk/myresearch/image-analysis/image-analysis-tools/).

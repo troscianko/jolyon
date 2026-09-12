@@ -5,6 +5,9 @@ permalink: /research/visual-ecology/
 eyebrow: "Research theme"
 gallery_dir: /assets/images/site/butterflies
 gallery_thumb_width: 200
+reaction:
+  text: stripes
+  background: spots
 ---
 
 ## Sensory Ecology

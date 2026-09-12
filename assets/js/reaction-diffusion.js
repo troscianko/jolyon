@@ -11,17 +11,21 @@
 // how smooth/legible the on-screen result looks.
 (function () {
   var RUNTIME_MS = 30000;
-  var SUBSTEPS_PER_FRAME = 5; // was 14 — slower per-frame evolution, and leaves
+  var SUBSTEPS_PER_FRAME = 2; // default 5, was 14 — slower per-frame evolution, and leaves
                               // compute headroom for the render upscale below
   var SIM_LONG_EDGE = 320;
   var RENDER_SCALE = 2; // simulation stays cheap at SIM_LONG_EDGE; only the
                         // once-per-frame render pass runs at SIM_LONG_EDGE * this
-  var BLUR_SIGMA_PX = 0.9;
+  var BLUR_SIGMA_PX = 1.2; // default 0.9
   var THRESHOLD = 0.28;
-  var NOISE_AMOUNT = 0.03;
+  var NOISE_AMOUNT = 0.1; // default 0.03
   var NOISE_FRACTION = 0.004; // fraction of cells perturbed per substep
   var DU = 1.0;
   var DV = 0.5;
+  var EDGE_BUFFER = 3; // sim-grid cells kept high-kill so the pattern can't
+                       // cling to the canvas edge (the clamped-edge Laplacian
+                       // has nowhere to diffuse concentration away to there)
+  var EDGE_KILL_RATE = 0.15; // comfortably above every preset's kill rate
 
   // Approximate, well-known Gray-Scott (feed, kill) pairs from the Pearson
   // parameter space. Starting points for the named presets authors can pick
@@ -131,12 +135,19 @@
     var v1 = new Float32Array(size);
     var feed = new Float32Array(size);
     var kill = new Float32Array(size);
+    var isEdge = new Uint8Array(size);
 
     for (var i = 0; i < size; i++) {
-      var inText = maskData[i * 4] > 128;
+      var x = i % w;
+      var y = (i / w) | 0;
+      var nearEdge = x < EDGE_BUFFER || x >= w - EDGE_BUFFER || y < EDGE_BUFFER || y >= h - EDGE_BUFFER;
+      var inText = !nearEdge && maskData[i * 4] > 128;
       feed[i] = inText ? feedIn : feedOut;
       kill[i] = inText ? killIn : killOut;
-      if (inText) {
+      if (nearEdge) {
+        isEdge[i] = 1;
+        kill[i] = EDGE_KILL_RATE;
+      } else if (inText) {
         // Standard Gray-Scott seed: lower u alongside raising v. Leaving u at
         // the background's 1.0 while pushing v to ~1 makes the reaction term
         // u*v*v ~1 — far bigger than the feed/kill rates it's meant to
@@ -189,6 +200,7 @@
       var kicks = Math.floor(size * NOISE_FRACTION);
       for (var n = 0; n < kicks; n++) {
         var idx = (Math.random() * size) | 0;
+        if (isEdge[idx]) continue; // keep the border buffer noise-free too
         v1[idx] += (Math.random() - 0.5) * NOISE_AMOUNT;
         if (v1[idx] < 0) v1[idx] = 0;
         if (v1[idx] > 1) v1[idx] = 1;
