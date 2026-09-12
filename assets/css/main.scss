@@ -189,7 +189,7 @@ p { margin: 0 0 1em; }
 /* ---------- Title hero (shared by every layout via _includes/page-title.html) ---------- */
 .title-hero {
   background: var(--accent-green);
-  padding: 3.5rem 0 3rem;
+  padding: 2rem 0;
 }
 .eyebrow-on-hero {
   background: var(--accent-green-dark);
@@ -197,6 +197,7 @@ p { margin: 0 0 1em; }
 }
 .title-hero-text {
   color: var(--accent-green-dark);
+  font-size: clamp(2.7rem, 4.8vw, 3.9rem);
   margin-bottom: 0;
 }
 .title-hero-subtitle {

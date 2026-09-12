@@ -1,6 +1,8 @@
 {% comment %}
   Shared green title/hero section, used by every top-level layout.
-  Params: title (default page.title), eyebrow (default page.eyebrow), subtitle (optional).
+  Params: title (default page.title), eyebrow (opt-in — only shown when the including
+  layout explicitly passes one, e.g. post.html passes the date; front matter's own
+  `eyebrow:` is intentionally NOT used as a fallback here), subtitle (optional).
 
   Always renders a real <h1> — the accessibility/SEO/no-JS fallback, and the whole story when
   page.reaction isn't set ("normal title section"). When page.reaction IS set, also renders a
@@ -8,7 +10,7 @@
   simulation from its rendered text, and takes over the visuals.
 {% endcomment %}
 {% assign title_text = include.title | default: page.title %}
-{% assign eyebrow_text = include.eyebrow | default: page.eyebrow %}
+{% assign eyebrow_text = include.eyebrow %}
 <section class="title-hero">
   <div class="wrap">
     {% if eyebrow_text %}<p class="eyebrow eyebrow-on-hero">{{ eyebrow_text }}</p>{% endif %}
