@@ -44,6 +44,10 @@
     return v < 0 ? 0 : v > max ? max : v;
   }
 
+  function clamp01(v) {
+    return v < 0 ? 0 : v > 1 ? 1 : v;
+  }
+
   function setupOne(el) {
     var h1 = el.querySelector(".title-hero-text");
     var canvas = el.querySelector("canvas");
@@ -109,7 +113,15 @@
       var inText = maskData[i * 4] > 128;
       feed[i] = inText ? feedIn : feedOut;
       kill[i] = inText ? killIn : killOut;
-      if (inText) v0[i] = 0.9 + Math.random() * 0.1;
+      if (inText) {
+        // Standard Gray-Scott seed: lower u alongside raising v. Leaving u at
+        // the background's 1.0 while pushing v to ~1 makes the reaction term
+        // u*v*v ~1 — far bigger than the feed/kill rates it's meant to
+        // balance against — which blows the fields out of range within the
+        // first frame's substeps.
+        u0[i] = 0.5 + (Math.random() - 0.5) * 0.04;
+        v0[i] = 0.25 + (Math.random() - 0.5) * 0.04;
+      }
     }
 
     var rootStyle = getComputedStyle(document.documentElement);
@@ -144,8 +156,12 @@
           var uvv = u * v * v;
           var lu = laplacian(u0, x, y);
           var lv = laplacian(v0, x, y);
-          u1[i] = u + DU * lu - uvv + feed[i] * (1 - u);
-          v1[i] = v + DV * lv + uvv - (feed[i] + kill[i]) * v;
+          // Clamped as a safety net — the seed above is chosen to already keep
+          // the reaction term well-behaved, but this guarantees a stray
+          // parameter combination can never diverge into NaN/out-of-range
+          // territory and silently blank the whole render.
+          u1[i] = clamp01(u + DU * lu - uvv + feed[i] * (1 - u));
+          v1[i] = clamp01(v + DV * lv + uvv - (feed[i] + kill[i]) * v);
         }
       }
       var kicks = Math.floor(size * NOISE_FRACTION);
