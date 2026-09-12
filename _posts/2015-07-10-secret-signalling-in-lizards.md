@@ -17,26 +17,4 @@ Two Tenerife lizards (Gallotia galloti) basking. The image on the left is in hum
 
 A male Tenerife lizard (Gallotia galloti). Again, the blue patch is more conspicuous to lizard vision (right) than human vision (left).
 
-![](/assets/images/posts/secret-signalling-in-lizards/Lizard-Human.jpg)
-
-Lizard in Human vision.
-
-![](/assets/images/posts/secret-signalling-in-lizards/Lizard-Dog.jpg)
-
-Lizard in dog vision. This is how the lizards would look to most mammals or red-green colour-blind humans. The blue flank of the lizard is quite visible, but the red foliage is completely invisible.
-
-![](/assets/images/posts/secret-signalling-in-lizards/Lizard-Bluetit-LMS.jpg)
-
-Lizard in bluetit longwave, mediumwave and shortwave in place of RGB. This is similar to human LMS, but notice the colours are slightly more saturated. This is because of their spectral tuning of their receptors, giving them better colour vision.
-
-![](/assets/images/posts/secret-signalling-in-lizards/Lizard-Bluetit-MSU.jpg)
-
-Lizard in bluetit mediumwave, shortwave and ultraviolet in place of RGB. The flanks of the male lizard are highly visible and blue in this image, meaning they are highly UV reflective.
-
-![](/assets/images/posts/secret-signalling-in-lizards/Lizard-Gecko.jpg)
-
-Lizards in Gecko-vision. This isn’t a very ecologically plausible model, but shows the colour vision that geckos have (which works at night!)
-
-![](/assets/images/posts/secret-signalling-in-lizards/Lizard-Jumping-Spider.jpg)
-
-Lizards in jumping spider vision. Some jumping spiders can see in red, green and ultraviolet ranges, a large spectral range for any animal.
+{% include gallery.html dir="/assets/images/posts/secret-signalling-in-lizards/gallery" thumb_width=200 %}

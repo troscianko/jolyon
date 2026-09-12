@@ -9,13 +9,7 @@ original_url: https://www.jolyon.co.uk/2015/11/green-shore-crab-in-bird-vision/
 
 Here’s a green shore crab I found on Gylly beach in false-colour peafowl-vision. This individual is very pale, but the shore crabs are highly polymorphic, particularly when they’re less than a couple of centimetres across. When they get older they all tend to turn a dark green/brown. Interestingly the dead crab carapace is highly UV reflective. The rock-pool environment also has lots of other colours, from bright red and green algae to interesting rock colours and even some hints of blue from some algae.
 
-![](/assets/images/posts/green-shore-crab-in-bird-vision/crab2-Peafowl-combo-1024x386.jpg)
-
-Green shore crab in false-colour peafowl vision (lw, mw and sw on the left, mw, sw and vs on the right).
-
-![](/assets/images/posts/green-shore-crab-in-bird-vision/crab1-Peafowl-combo-1024x384.jpg)
-
-Green shore crab close-up in false-colour peafowl vision (lw, mw and sw on the left, mw, sw and vs on the right).
+{% include gallery.html dir="/assets/images/posts/green-shore-crab-in-bird-vision/gallery" thumb_width=200 %}
 
 Peafowl, like all birds are tetrachromats, so it’s impossible for our screens or eyes to replicate the range of colours they can see. Instead I’ve created false-colour images, on the left are the peafowl sensors than roughly match our own red, green and blue. On the right are the MW, SW and VS (violet/uv) channels shown in RGB. To me the crab is slightly more obvious (doesn’t match its background colours as well) in the VS image on the right, suggesting the ultraviolet/violet vision of birds does help them find these guys. However, that could well be an artefact of my computer monitor, or the many differences in colour processing our brains will apply between the two pictures.
 

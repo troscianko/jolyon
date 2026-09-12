@@ -25,13 +25,7 @@ To make sure we’re testing our hypothesis and not people’s ability to rememb
 
 These four different backgrounds offer a nice complex backdrop for your artificial moths. They need to be printed out around A1 size (~80-90cm wide is about right), two of each (8 prints in total). [Click here to download all the files you need](http://jolyon.co.uk/research/outreach/MothGame.zip).
 
-![](/assets/images/posts/camouflaged-moth-game/main.jpg)
-
-![](/assets/images/posts/camouflaged-moth-game/Moss.jpg)
-
-![](/assets/images/posts/camouflaged-moth-game/Leaves.jpg)
-
-![](/assets/images/posts/camouflaged-moth-game/Blossom.jpg)
+{% include gallery.html dir="/assets/images/posts/camouflaged-moth-game/gallery" thumb_width=200 %}
 
 The blue shell background was from a beach in South Africa where we were researching plover camouflage. There are actually two White-fronted plover eggs in the photo. The leaf litter is from our research in Zambia, and contains two nightjar chicks that look just like fluffy seed pods found in the area (a type of camouflage called “masquerade”). The same photo also has a pair of mating locusts in the top left. These are really cool because the male is a plain background-matching brown colour, while the female has a fascinating black and white thorax (middle bit), separating her grey head and grey abdomen, providing a nice example of edge disruption. The moss photo has a little fly – barely discernible, and the blackthorn blossom photo doesn’t have any animals.
 

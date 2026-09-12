@@ -35,14 +35,4 @@ Box Jellyfish have eyes that point up and sideways simultaneously. They don’t 
 
 Snails have simple lens eyes with very poor acuity and no colour vision.
 
-![](/assets/images/posts/colour-and-vision-exhibition-at-the-natural-history-museum/NHM-Display.jpg)
-
-Emma and Ailla visiting the NHM Exhibition
-
-![](/assets/images/posts/colour-and-vision-exhibition-at-the-natural-history-museum/NHM-Exhibit1.jpg)
-
-NHM Exhibit that we provided the images for. The touchscreen display allows visitors to see images in ‘animal vision’
-
-![](/assets/images/posts/colour-and-vision-exhibition-at-the-natural-history-museum/NHM-Exhibit2.jpg)
-
-NHM Exhibit that we provided the images for. The touchscreen display allows visitors to see images in ‘animal vision’
+{% include gallery.html dir="/assets/images/posts/colour-and-vision-exhibition-at-the-natural-history-museum/gallery" thumb_width=200 %}
