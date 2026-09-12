@@ -4,7 +4,7 @@ slug: visual-modelling
 permalink: /research/visual-modelling/
 eyebrow: "Research theme"
 reaction:
-  text: spots
+  text: stripes
   background: spots
 ---
 

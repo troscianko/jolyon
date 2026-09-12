@@ -58,6 +58,11 @@
     return v < 0 ? 0 : v > 1 ? 1 : v;
   }
 
+  function numAttr(el, name, def) {
+    var v = parseFloat(el.dataset[name]);
+    return isNaN(v) ? def : v;
+  }
+
   function setupOne(el) {
     var h1 = el.querySelector(".title-hero-text");
     var canvas = el.querySelector("canvas");
@@ -72,6 +77,24 @@
     var killIn = parseFloat(el.dataset.killIn) || textPreset.kill;
     var feedOut = parseFloat(el.dataset.feedOut) || bgPreset.feed;
     var killOut = parseFloat(el.dataset.killOut) || bgPreset.kill;
+
+    // textAlpha/patternAlpha: opacity of the static original text vs. the
+    // evolving pattern, composited text-under-pattern each frame. At the
+    // defaults (0/1) only the pattern shows — patternAlpha < 1 is what lets
+    // textAlpha > 0 actually become visible underneath it.
+    var textAlpha = clamp01(numAttr(el, "textAlpha", 0));
+    var patternAlpha = clamp01(numAttr(el, "patternAlpha", 1));
+    // decay: exponential temporal smoothing between consecutive rendered
+    // frames (0 = none, e.g. 0.9 = 90% previous frame / 10% new -> smooth
+    // fading trails). Costs one extra full-frame blend pass when > 0.
+    var decay = clamp01(numAttr(el, "decay", 0));
+    // attraction: how strongly the text region is pulled back toward
+    // reproducing the letter shape as it evolves, by boosting the feed rate
+    // wherever concentration there has dropped below its seed value —
+    // otherwise the pattern's own preferred spacing eventually dominates and
+    // it drifts into a regular grid, forgetting the original text. 0 = no
+    // pull (can fully drift); try 0.5-2 for a visible effect.
+    var attraction = Math.max(0, numAttr(el, "attraction", 0));
 
     var rect = h1.getBoundingClientRect();
     var displayW = Math.max(1, rect.width);
@@ -110,6 +133,14 @@
     var simImageData = simCtx.createImageData(w, h);
     var simPixels = simImageData.data;
 
+    // The pattern is rendered into its own offscreen canvas each frame (at
+    // render resolution) so it can be composited onto the visible canvas at
+    // patternAlpha, over the static text layer, rather than drawn directly.
+    var patternCanvas = document.createElement("canvas");
+    patternCanvas.width = renderW;
+    patternCanvas.height = renderH;
+    var patternCtx = patternCanvas.getContext("2d");
+
     // Render the title's actual text (matching its live computed font) to an
     // offscreen mask at simulation resolution — this is both the seed pattern
     // and, thresholded at t=0, the initial "coherent text" frame.
@@ -136,6 +167,12 @@
     var feed = new Float32Array(size);
     var kill = new Float32Array(size);
     var isEdge = new Uint8Array(size);
+    // The seed V value for text cells — also doubles as the "attraction"
+    // target: step() nudges feed upward wherever a text cell's current V has
+    // fallen below this, encouraging it to regrow there. Zero everywhere else,
+    // which also means attraction has no effect outside the text region (the
+    // deficit -- target minus v -- can never be positive there).
+    var targetV = new Float32Array(size);
 
     for (var i = 0; i < size; i++) {
       var x = i % w;
@@ -148,6 +185,7 @@
         isEdge[i] = 1;
         kill[i] = EDGE_KILL_RATE;
       } else if (inText) {
+        targetV[i] = 0.25;
         // Standard Gray-Scott seed: lower u alongside raising v. Leaving u at
         // the background's 1.0 while pushing v to ~1 makes the reaction term
         // u*v*v ~1 — far bigger than the feed/kill rates it's meant to
@@ -161,6 +199,36 @@
     var rootStyle = getComputedStyle(document.documentElement);
     var darkRgb = hexToRgb(rootStyle.getPropertyValue("--accent-green-dark") || "#1f3d0c");
     var lightRgb = hexToRgb(rootStyle.getPropertyValue("--accent-green") || "#b9f855");
+    var lightCss = "rgb(" + lightRgb[0] + "," + lightRgb[1] + "," + lightRgb[2] + ")";
+
+    // Static colored text layer, built once (the text never changes) at
+    // simulation resolution then upscaled — composited under the pattern
+    // each frame at textAlpha, only visible where patternAlpha < 1.
+    var textLayerCanvas = document.createElement("canvas");
+    textLayerCanvas.width = renderW;
+    textLayerCanvas.height = renderH;
+    if (textAlpha > 0) {
+      var textSmall = document.createElement("canvas");
+      textSmall.width = w;
+      textSmall.height = h;
+      var textSmallCtx = textSmall.getContext("2d");
+      var textImageData = textSmallCtx.createImageData(w, h);
+      var textPixels = textImageData.data;
+      for (var ti = 0; ti < size; ti++) {
+        var tOn = maskData[ti * 4] > 128;
+        var tRgb = tOn ? darkRgb : lightRgb;
+        var tp = ti * 4;
+        textPixels[tp] = tRgb[0];
+        textPixels[tp + 1] = tRgb[1];
+        textPixels[tp + 2] = tRgb[2];
+        textPixels[tp + 3] = 255;
+      }
+      textSmallCtx.putImageData(textImageData, 0, 0);
+      var textLayerCtx = textLayerCanvas.getContext("2d");
+      textLayerCtx.imageSmoothingEnabled = true;
+      if ("imageSmoothingQuality" in textLayerCtx) textLayerCtx.imageSmoothingQuality = "high";
+      textLayerCtx.drawImage(textSmall, 0, 0, w, h, 0, 0, renderW, renderH);
+    }
 
     function laplacian(field, x, y) {
       var xm = clampIndex(x - 1, w - 1);
@@ -189,12 +257,21 @@
           var uvv = u * v * v;
           var lu = laplacian(u0, x, y);
           var lv = laplacian(v0, x, y);
+          // Pull text cells back toward their seed concentration as they fade,
+          // via the feed rate (rather than forcing v directly) — targetV is 0
+          // outside the text region, so this deficit can never be positive
+          // there and background cells are always unaffected.
+          var effFeed = feed[i];
+          if (attraction > 0) {
+            var deficit = targetV[i] - v;
+            if (deficit > 0) effFeed += attraction * deficit;
+          }
           // Clamped as a safety net — the seed above is chosen to already keep
           // the reaction term well-behaved, but this guarantees a stray
           // parameter combination can never diverge into NaN/out-of-range
           // territory and silently blank the whole render.
-          u1[i] = clamp01(u + DU * lu - uvv + feed[i] * (1 - u));
-          v1[i] = clamp01(v + DV * lv + uvv - (feed[i] + kill[i]) * v);
+          u1[i] = clamp01(u + DU * lu - uvv + effFeed * (1 - u));
+          v1[i] = clamp01(v + DV * lv + uvv - (effFeed + kill[i]) * v);
         }
       }
       var kicks = Math.floor(size * NOISE_FRACTION);
@@ -209,6 +286,8 @@
       v0.set(v1);
     }
 
+    var prevFrame = null; // for decay: previous frame's rendered RGBA
+
     function render() {
       // 1. Raw simulation concentration -> small grayscale image.
       for (var i = 0; i < size; i++) {
@@ -221,18 +300,18 @@
       }
       simCtx.putImageData(simImageData, 0, 0);
 
-      // 2. Upscale onto the visible canvas (native high-quality smoothing —
+      // 2. Upscale onto the pattern canvas (native high-quality smoothing —
       //    the "bicubic-ish" resize) with a light Gaussian blur applied in the
       //    same draw, softening both the upscale and the simulation's own
       //    blocky cell edges before we threshold.
-      ctx.filter = "blur(" + BLUR_SIGMA_PX + "px)";
-      ctx.imageSmoothingEnabled = true;
-      if ("imageSmoothingQuality" in ctx) ctx.imageSmoothingQuality = "high";
-      ctx.drawImage(simCanvas, 0, 0, w, h, 0, 0, renderW, renderH);
-      ctx.filter = "none";
+      patternCtx.filter = "blur(" + BLUR_SIGMA_PX + "px)";
+      patternCtx.imageSmoothingEnabled = true;
+      if ("imageSmoothingQuality" in patternCtx) patternCtx.imageSmoothingQuality = "high";
+      patternCtx.drawImage(simCanvas, 0, 0, w, h, 0, 0, renderW, renderH);
+      patternCtx.filter = "none";
 
       // 3. Threshold the blurred, upscaled grayscale to two-tone in place.
-      var out = ctx.getImageData(0, 0, renderW, renderH);
+      var out = patternCtx.getImageData(0, 0, renderW, renderH);
       var data = out.data;
       for (var j = 0; j < data.length; j += 4) {
         var on = data[j] > THRESHOLD * 255;
@@ -242,7 +321,39 @@
         data[j + 2] = rgb[2];
         data[j + 3] = 255;
       }
-      ctx.putImageData(out, 0, 0);
+      patternCtx.putImageData(out, 0, 0);
+
+      // 4. Composite onto the visible canvas: opaque background, the static
+      //    text layer at textAlpha, then the pattern at patternAlpha on top.
+      //    At the defaults (0/1) this reduces to just the pattern, unchanged
+      //    from before.
+      ctx.globalAlpha = 1;
+      ctx.fillStyle = lightCss;
+      ctx.fillRect(0, 0, renderW, renderH);
+      if (textAlpha > 0) {
+        ctx.globalAlpha = textAlpha;
+        ctx.drawImage(textLayerCanvas, 0, 0);
+      }
+      ctx.globalAlpha = patternAlpha;
+      ctx.drawImage(patternCanvas, 0, 0);
+      ctx.globalAlpha = 1;
+
+      // 5. Optional exponential temporal smoothing across frames, for a
+      //    trailing/ghosting look. Skipped entirely (no extra cost) when
+      //    decay is 0, the default.
+      if (decay > 0) {
+        var composited = ctx.getImageData(0, 0, renderW, renderH);
+        var cd = composited.data;
+        if (!prevFrame) {
+          prevFrame = new Uint8ClampedArray(cd);
+        } else {
+          for (var k = 0; k < cd.length; k++) {
+            cd[k] = decay * prevFrame[k] + (1 - decay) * cd[k];
+          }
+          prevFrame.set(cd);
+          ctx.putImageData(composited, 0, 0);
+        }
+      }
     }
 
     // First frame reproduces the text mask before any diffusion has happened.

@@ -8,6 +8,13 @@
   page.reaction isn't set ("normal title section"). When page.reaction IS set, also renders a
   <canvas> on top of it; assets/js/reaction-diffusion.js measures the h1, seeds a Gray-Scott
   simulation from its rendered text, and takes over the visuals.
+
+  page.reaction sub-fields (all optional, see reaction-diffusion.js for defaults/tuning notes):
+    text / background   - preset names ("spots", "stripes", "coral", "maze", "holes", "waves")
+    feed_in/kill_in/feed_out/kill_out - raw Gray-Scott rates, override the presets above
+    text_alpha / pattern_alpha - opacity of the static text vs. the evolving pattern (0-1)
+    decay                - temporal smoothing between frames, 0 = none, e.g. 0.9 = long trails
+    attraction           - how strongly the pattern is pulled back into the letter shapes
 {% endcomment %}
 {% assign title_text = include.title | default: page.title %}
 {% assign eyebrow_text = include.eyebrow %}
@@ -21,7 +28,11 @@
            {% if page.reaction.feed_in %}data-feed-in="{{ page.reaction.feed_in }}"{% endif %}
            {% if page.reaction.kill_in %}data-kill-in="{{ page.reaction.kill_in }}"{% endif %}
            {% if page.reaction.feed_out %}data-feed-out="{{ page.reaction.feed_out }}"{% endif %}
-           {% if page.reaction.kill_out %}data-kill-out="{{ page.reaction.kill_out }}"{% endif %}>
+           {% if page.reaction.kill_out %}data-kill-out="{{ page.reaction.kill_out }}"{% endif %}
+           {% if page.reaction.text_alpha %}data-text-alpha="{{ page.reaction.text_alpha }}"{% endif %}
+           {% if page.reaction.pattern_alpha %}data-pattern-alpha="{{ page.reaction.pattern_alpha }}"{% endif %}
+           {% if page.reaction.decay %}data-decay="{{ page.reaction.decay }}"{% endif %}
+           {% if page.reaction.attraction %}data-attraction="{{ page.reaction.attraction }}"{% endif %}>
         <h1 class="title-hero-text">{{ title_text }}</h1>
         <canvas aria-hidden="true"></canvas>
       </div>
