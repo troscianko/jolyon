@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "Jolyon Troscianko"
+title: "Troscianko Lab"
 subtitle: "Visual ecology, visual modelling and light pollution research at the University of Exeter."
 reaction:
   text: spots

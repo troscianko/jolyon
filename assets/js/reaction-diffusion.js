@@ -4,13 +4,19 @@
 // legible text and degrades from there), with a spatially-varying feed/kill
 // map — different values inside the text shape vs. outside it — so the two
 // regions can grow into different pattern families (e.g. spots vs stripes).
-// Runs at a small internal resolution regardless of on-screen size (upscaled
-// by the browser) since the two-tone threshold hides the low resolution
-// anyway; this is what keeps it cheap on weak devices without needing WebGL.
+// The Gray-Scott solver itself runs on a small, cheap grid regardless of
+// on-screen size — what keeps this lightweight on weak devices without
+// needing WebGL. Only the once-per-frame render step (upscale + light blur +
+// threshold) runs at a higher resolution, which is what actually determines
+// how smooth/legible the on-screen result looks.
 (function () {
   var RUNTIME_MS = 30000;
-  var SUBSTEPS_PER_FRAME = 14;
+  var SUBSTEPS_PER_FRAME = 5; // was 14 — slower per-frame evolution, and leaves
+                              // compute headroom for the render upscale below
   var SIM_LONG_EDGE = 320;
+  var RENDER_SCALE = 2; // simulation stays cheap at SIM_LONG_EDGE; only the
+                        // once-per-frame render pass runs at SIM_LONG_EDGE * this
+  var BLUR_SIGMA_PX = 0.9;
   var THRESHOLD = 0.28;
   var NOISE_AMOUNT = 0.03;
   var NOISE_FRACTION = 0.004; // fraction of cells perturbed per substep
@@ -78,10 +84,27 @@
     var scale = SIM_LONG_EDGE / Math.max(displayW, displayH);
     var w = Math.max(40, Math.round(displayW * scale));
     var h = Math.max(20, Math.round(displayH * scale));
+    var renderW = w * RENDER_SCALE;
+    var renderH = h * RENDER_SCALE;
 
-    canvas.width = w;
-    canvas.height = h;
+    // The visible canvas renders at RENDER_SCALE x the simulation grid — that
+    // upscale (plus a light blur, both applied in render() below) is what
+    // turns the simulation's blocky cells into smooth-edged shapes without
+    // having to run the actual Gray-Scott solver at a higher, much more
+    // expensive resolution.
+    canvas.width = renderW;
+    canvas.height = renderH;
     var ctx = canvas.getContext("2d");
+
+    // Small offscreen canvas the simulation writes its raw (pre-blur,
+    // pre-threshold) grayscale concentration into each frame, before it gets
+    // scaled up onto the visible canvas.
+    var simCanvas = document.createElement("canvas");
+    simCanvas.width = w;
+    simCanvas.height = h;
+    var simCtx = simCanvas.getContext("2d");
+    var simImageData = simCtx.createImageData(w, h);
+    var simPixels = simImageData.data;
 
     // Render the title's actual text (matching its live computed font) to an
     // offscreen mask at simulation resolution — this is both the seed pattern
@@ -127,7 +150,6 @@
     var rootStyle = getComputedStyle(document.documentElement);
     var darkRgb = hexToRgb(rootStyle.getPropertyValue("--accent-green-dark") || "#1f3d0c");
     var lightRgb = hexToRgb(rootStyle.getPropertyValue("--accent-green") || "#b9f855");
-    var pixels = new Uint8ClampedArray(size * 4);
 
     function laplacian(field, x, y) {
       var xm = clampIndex(x - 1, w - 1);
@@ -176,16 +198,39 @@
     }
 
     function render() {
+      // 1. Raw simulation concentration -> small grayscale image.
       for (var i = 0; i < size; i++) {
-        var on = v0[i] > THRESHOLD;
-        var rgb = on ? darkRgb : lightRgb;
+        var g = Math.round(v0[i] * 255);
         var p = i * 4;
-        pixels[p] = rgb[0];
-        pixels[p + 1] = rgb[1];
-        pixels[p + 2] = rgb[2];
-        pixels[p + 3] = 255;
+        simPixels[p] = g;
+        simPixels[p + 1] = g;
+        simPixels[p + 2] = g;
+        simPixels[p + 3] = 255;
       }
-      ctx.putImageData(new ImageData(pixels, w, h), 0, 0);
+      simCtx.putImageData(simImageData, 0, 0);
+
+      // 2. Upscale onto the visible canvas (native high-quality smoothing —
+      //    the "bicubic-ish" resize) with a light Gaussian blur applied in the
+      //    same draw, softening both the upscale and the simulation's own
+      //    blocky cell edges before we threshold.
+      ctx.filter = "blur(" + BLUR_SIGMA_PX + "px)";
+      ctx.imageSmoothingEnabled = true;
+      if ("imageSmoothingQuality" in ctx) ctx.imageSmoothingQuality = "high";
+      ctx.drawImage(simCanvas, 0, 0, w, h, 0, 0, renderW, renderH);
+      ctx.filter = "none";
+
+      // 3. Threshold the blurred, upscaled grayscale to two-tone in place.
+      var out = ctx.getImageData(0, 0, renderW, renderH);
+      var data = out.data;
+      for (var j = 0; j < data.length; j += 4) {
+        var on = data[j] > THRESHOLD * 255;
+        var rgb = on ? darkRgb : lightRgb;
+        data[j] = rgb[0];
+        data[j + 1] = rgb[1];
+        data[j + 2] = rgb[2];
+        data[j + 3] = 255;
+      }
+      ctx.putImageData(out, 0, 0);
     }
 
     // First frame reproduces the text mask before any diffusion has happened.
