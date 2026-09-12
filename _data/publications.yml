@@ -1,11 +1,20 @@
 # TODO: replace with your real publication list.
 # Grouped by year; each entry renders on /publications/.
+# Optional per-entry fields:
+#   image       - a site-root image path (shown to the right, uses the same thumbnail
+#                 pipeline as galleries — see README's "Adding photos" section)
+#   description - Markdown text shown indented below the citation; use it to link to an
+#                 associated post, media coverage, code/data, etc.
 - year: 2026
   papers:
     - authors: "Troscianko, J., et al."
       title: "TODO: Placeholder publication title"
       journal: "Journal Name"
       link: "#"
+      image: /assets/images/site/butterflies/butterfly_01.jpg
+      description: >-
+        TODO: a sentence or two about the paper. Link to the [related
+        post](/posts/example-visual-ecology-post/) or [media coverage](#).
     - authors: "Troscianko, J., et al."
       title: "TODO: Another placeholder publication"
       journal: "Journal Name"

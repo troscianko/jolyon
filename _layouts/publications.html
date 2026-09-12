@@ -12,16 +12,29 @@ layout: default
     <h2 class="pub-year">{{ group.year }}</h2>
     <ul class="pub-list">
       {% for paper in group.papers %}
-        <li>
-          <div class="authors">{{ paper.authors }}</div>
-          <div>
-            {% if paper.link and paper.link != "#" %}
-              <a href="{{ paper.link }}">{{ paper.title }}</a>
-            {% else %}
-              {{ paper.title }}
+        <li class="pub-item">
+          <div class="pub-main">
+            <div class="pub-text">
+              <div class="authors">{{ paper.authors }}</div>
+              <div>
+                {% if paper.link and paper.link != "#" %}
+                  <a href="{{ paper.link }}">{{ paper.title }}</a>
+                {% else %}
+                  {{ paper.title }}
+                {% endif %}
+                — <em>{{ paper.journal }}</em>
+              </div>
+            </div>
+            {% if paper.image %}
+              {% assign pub_thumb = paper.image | replace: "/assets/images/", "/assets/images/derived/thumb/" %}
+              <div class="pub-media">
+                <img src="{{ pub_thumb | relative_url }}" alt="{{ paper.title | escape }}" loading="lazy">
+              </div>
             {% endif %}
-            — <em>{{ paper.journal }}</em>
           </div>
+          {% if paper.description %}
+            <div class="pub-description">{{ paper.description | markdownify }}</div>
+          {% endif %}
         </li>
       {% endfor %}
     </ul>

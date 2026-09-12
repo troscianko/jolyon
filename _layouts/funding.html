@@ -10,16 +10,29 @@ layout: default
 
   <ul class="funding-list">
     {% for grant in site.data.funding %}
-      <li>
-        <div class="role">{{ grant.role }} · {{ grant.period }}</div>
-        <div>
-          {% if grant.link and grant.link != "#" %}
-            <a href="{{ grant.link }}">{{ grant.title }}</a>
-          {% else %}
-            {{ grant.title }}
+      <li class="pub-item">
+        <div class="pub-main">
+          <div class="pub-text">
+            <div class="role">{{ grant.role }} · {{ grant.period }}</div>
+            <div>
+              {% if grant.link and grant.link != "#" %}
+                <a href="{{ grant.link }}">{{ grant.title }}</a>
+              {% else %}
+                {{ grant.title }}
+              {% endif %}
+            </div>
+            <div class="authors">{{ grant.funder }}</div>
+          </div>
+          {% if grant.image %}
+            {% assign grant_thumb = grant.image | replace: "/assets/images/", "/assets/images/derived/thumb/" %}
+            <div class="pub-media">
+              <img src="{{ grant_thumb | relative_url }}" alt="{{ grant.title | escape }}" loading="lazy">
+            </div>
           {% endif %}
         </div>
-        <div class="authors">{{ grant.funder }}</div>
+        {% if grant.description %}
+          <div class="pub-description">{{ grant.description | markdownify }}</div>
+        {% endif %}
       </li>
     {% endfor %}
   </ul>

@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var photos = Array.prototype.slice.call(document.querySelectorAll("[data-photo]"));
 
   var plainImgs = Array.prototype.slice
-    .call(document.querySelectorAll(".post-hero img, .content img, .blurb img"))
+    .call(document.querySelectorAll(".post-hero img, .content img, .blurb img, .pub-media img"))
     .filter(function (img) {
       return !img.closest("[data-photo]");
     });

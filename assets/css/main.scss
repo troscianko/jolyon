@@ -354,6 +354,36 @@ p { margin: 0 0 1em; }
 .pub-list .authors { color: var(--text-muted); font-size: 0.9rem; }
 .funding-list .role { color: var(--accent-blue); font-weight: 700; font-size: 0.8rem; text-transform: uppercase; }
 
+.pub-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+.pub-text { flex: 1 1 auto; min-width: 0; }
+.pub-media {
+  flex: 0 0 auto;
+  width: 140px;
+}
+.pub-media img {
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.pub-description {
+  margin: 0.6rem 0 0 1rem;
+  padding-left: 0.9rem;
+  border-left: 2px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+.pub-description :first-child { margin-top: 0; }
+.pub-description :last-child { margin-bottom: 0; }
+
+@media (max-width: 500px) {
+  .pub-media { width: 96px; }
+}
+
 /* ---------- Photo galleries + overlay + lightbox ---------- */
 .photo-gallery {
   --thumb-width: 200px;

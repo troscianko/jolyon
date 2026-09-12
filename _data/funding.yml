@@ -1,9 +1,15 @@
 # TODO: replace with your real funders/grants.
+# Optional per-entry fields: image (shown to the right) and description (Markdown,
+# shown indented below — link to a related post, coverage, etc). See publications.yml.
 - funder: "TODO: Funding body name"
   title: "TODO: Grant title"
   period: "2024–2027"
   role: "Principal Investigator"
   link: "#"
+  image: /assets/images/site/butterflies/butterfly_02.jpg
+  description: >-
+    TODO: a sentence or two about the grant. Link to [related work](#) or
+    [press coverage](#).
 
 - funder: "TODO: Funding body name"
   title: "TODO: Grant title"
