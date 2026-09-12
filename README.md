@@ -86,6 +86,36 @@ indented below the citation. See the example entries already in those files.
 
 The menu itself is `_data/navigation.yml`.
 
+## Animated reaction-diffusion titles
+
+Any page or post's title (shown in the header/nav bar, on the left, next to the menu) can
+optionally degrade into a Gray-Scott reaction-diffusion pattern over ~30 seconds instead of
+sitting static. Add a `reaction:` block to that page's front matter:
+
+```yaml
+reaction:
+  text: spots            # pattern family inside the letterforms — a preset name
+  background: stripes    # pattern family in the surrounding area — a preset name
+  # feed_in / kill_in / feed_out / kill_out — raw Gray-Scott rates, override the presets above
+  text_alpha: 0           # opacity of the static original text (default 0, invisible)
+  pattern_alpha: 1        # opacity of the evolving pattern (default 1) — needs to drop below 1
+                           # for text_alpha to actually show through underneath it
+  decay: 0                # temporal smoothing between frames, 0-1 (default 0 = none;
+                           # e.g. 0.9 = long fading trails)
+  attraction: 0            # how strongly the pattern is pulled back into the letterforms as it
+                           # evolves (default 0 = free drift; try 0.5-2 for a visible pull)
+  text_colour: "#b9f855"   # override the two rendered colours manually (defaults: bright green
+  pattern_colour: "#202020" # for the letters, dark header grey for the surrounding pattern)
+```
+
+Every field is optional — with none set, `reaction:` still needs to exist (even as `reaction:
+{}`) to turn the effect on at all; leave it out entirely for a plain static title. Preset names:
+`spots`, `stripes`, `worms`, `coral`, `maze`, `holes`, `waves` — see `assets/js/
+reaction-diffusion.js` for the underlying feed/kill values and tuning constants (blur amount,
+simulation resolution, run length, etc). Automatically skipped (falls back to a plain title) for
+titles that wrap onto more than one line, and under the OS "reduce motion" accessibility
+setting.
+
 ## One-off setup (Ubuntu)
 
 ```sh

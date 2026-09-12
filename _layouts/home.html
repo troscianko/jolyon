@@ -1,9 +1,8 @@
 ---
 layout: default
 ---
-{% assign home_title = page.title | default: site.title %}
 {% assign home_subtitle = page.subtitle | default: site.tagline %}
-{% include page-title.html title=home_title subtitle=home_subtitle %}
+{% include page-title.html subtitle=home_subtitle %}
 
 <section class="section wrap">
   {% assign recent_posts = site.posts | slice: 0, site.recent_posts_count %}

@@ -18,7 +18,7 @@
                         // once-per-frame render pass runs at SIM_LONG_EDGE * this
   var BLUR_SIGMA_PX = 1.2; // default 0.9
   var THRESHOLD = 0.28;
-  var NOISE_AMOUNT = 0.1; // default 0.03
+  var NOISE_AMOUNT = 0.15; // default 0.03
   var NOISE_FRACTION = 0.004; // fraction of cells perturbed per substep
   var DU = 1.0;
   var DV = 0.5;
@@ -95,6 +95,16 @@
     // it drifts into a regular grid, forgetting the original text. 0 = no
     // pull (can fully drift); try 0.5-2 for a visible effect.
     var attraction = Math.max(0, numAttr(el, "attraction", 0));
+    // textColour/patternColour: manual override for the two rendered colours
+    // (default: the site's bright green for text, dark header grey for the
+    // surrounding pattern — see below). Handy for experimenting with which
+    // colour reads as "the letters" vs "the surrounding pattern", since
+    // some preset pairings (e.g. spots text / stripes background) read more
+    // like the two regions repelling each other than the text attracting —
+    // swapping which colour is used for which can help sell the letters as
+    // the focal shape regardless of what the pattern itself is doing.
+    var textColourOverride = el.dataset.textColour;
+    var patternColourOverride = el.dataset.patternColour;
 
     var rect = h1.getBoundingClientRect();
     var displayW = Math.max(1, rect.width);
@@ -196,10 +206,16 @@
       }
     }
 
+    // Defaults match the header: bright green "ink" on the dark header
+    // background, so an unstyled reaction title blends straight in.
     var rootStyle = getComputedStyle(document.documentElement);
-    var darkRgb = hexToRgb(rootStyle.getPropertyValue("--accent-green-dark") || "#1f3d0c");
-    var lightRgb = hexToRgb(rootStyle.getPropertyValue("--accent-green") || "#b9f855");
-    var lightCss = "rgb(" + lightRgb[0] + "," + lightRgb[1] + "," + lightRgb[2] + ")";
+    var textColorRgb = hexToRgb(
+      textColourOverride || rootStyle.getPropertyValue("--accent-green") || "#b9f855"
+    );
+    var patternColorRgb = hexToRgb(
+      patternColourOverride || rootStyle.getPropertyValue("--header-dark") || "#202020"
+    );
+    var patternColorCss = "rgb(" + patternColorRgb[0] + "," + patternColorRgb[1] + "," + patternColorRgb[2] + ")";
 
     // Static colored text layer, built once (the text never changes) at
     // simulation resolution then upscaled — composited under the pattern
@@ -216,7 +232,7 @@
       var textPixels = textImageData.data;
       for (var ti = 0; ti < size; ti++) {
         var tOn = maskData[ti * 4] > 128;
-        var tRgb = tOn ? darkRgb : lightRgb;
+        var tRgb = tOn ? textColorRgb : patternColorRgb;
         var tp = ti * 4;
         textPixels[tp] = tRgb[0];
         textPixels[tp + 1] = tRgb[1];
@@ -315,7 +331,7 @@
       var data = out.data;
       for (var j = 0; j < data.length; j += 4) {
         var on = data[j] > THRESHOLD * 255;
-        var rgb = on ? darkRgb : lightRgb;
+        var rgb = on ? textColorRgb : patternColorRgb;
         data[j] = rgb[0];
         data[j + 1] = rgb[1];
         data[j + 2] = rgb[2];
@@ -328,7 +344,7 @@
       //    At the defaults (0/1) this reduces to just the pattern, unchanged
       //    from before.
       ctx.globalAlpha = 1;
-      ctx.fillStyle = lightCss;
+      ctx.fillStyle = patternColorCss;
       ctx.fillRect(0, 0, renderW, renderH);
       if (textAlpha > 0) {
         ctx.globalAlpha = textAlpha;
