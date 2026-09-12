@@ -104,7 +104,15 @@ p { margin: 0 0 1em; }
 }
 .title-hero-text {
   color: var(--accent-green);
-  font-size: clamp(2rem, 3.6vw, 3.2rem);
+  // Fluid between 2rem (at a 400px viewport) and 3.2rem (at 1180px — the
+  // same breakpoint as .wrap's own max-width, i.e. --max-width above), so
+  // growth finishes exactly when the header's flex row stops getting wider
+  // too. A plain `vw` value here (as this used to be) keeps scaling with the
+  // full viewport past that point even though .wrap itself has stopped
+  // growing, which let the title outgrow its row and push the nav below it
+  // again on very wide/maximized windows despite fitting fine just below
+  // that width. Recompute the two constants below if --max-width changes.
+  font-size: clamp(2rem, 1.39rem + 2.46vw, 3.2rem);
   margin-bottom: 0;
 }
 
