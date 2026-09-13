@@ -9,7 +9,7 @@ reaction:
   text_alpha: 1      # default 0 (invisible)
   pattern_alpha: 1  # default 1 (opaque) — needs to drop below 1 for text_alpha to show through
   decay: 0.3          # default 0 (no smoothing) — try 0.7-0.95 for visible trails
-  attraction: 1.5     # default 0 (free drift) — try 0.5-2, it needs to be much bigger than feed/kill values to matter
+  attraction: 1.2     # default 0 (free drift) — try 0.5-2, it needs to be much bigger than feed/kill values to matter
   pattern_colour: "#606060"
 ---
 

@@ -13,7 +13,7 @@
   var RUNTIME_MS = 30000;
   var SUBSTEPS_PER_FRAME = 2; // default 5, was 14 — slower per-frame evolution, and leaves
                               // compute headroom for the render upscale below
-  var SIM_LONG_EDGE = 320;
+  var SIM_LONG_EDGE = 500; //320
   var RENDER_SCALE = 2; // simulation stays cheap at SIM_LONG_EDGE; only the
                         // once-per-frame render pass runs at SIM_LONG_EDGE * this
   var BLUR_SIGMA_PX = 1.2; // default 0.9

@@ -3,7 +3,7 @@ title: "Garden Spider in UV"
 image: /assets/images/posts/garden-spider-in-uv/main.jpg
 excerpt: "Garden spiders Araneus diadematus are commonly found across Europe and North America. While their appearance…"
 date: 2015-03-30 15:28:21 +0000
-themes: [animal-vision, visual-ecology, visual-modelling]
+themes: [animal-vision, visual-ecology, visual-modelling, photos]
 original_url: https://www.jolyon.co.uk/2015/03/garden-spider-in-uv/
 ---
 

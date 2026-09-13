@@ -3,7 +3,7 @@ title: "Spring Flowers in Bee Vision"
 image: /assets/images/posts/spring-flowers-in-uv/main.jpg
 excerpt: "Here are some flowers converted to human and honeybee vision. Where our eyes have three…"
 date: 2015-04-09 09:07:39 +0000
-themes: [animal-vision, visual-ecology, visual-modelling]
+themes: [animal-vision, visual-ecology, visual-modelling, photos]
 original_url: https://www.jolyon.co.uk/2015/04/spring-flowers-in-uv/
 ---
 

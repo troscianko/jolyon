@@ -4,7 +4,7 @@
 - title: Home
   url: /
 
-- title: Research themes
+- title: Research
   children:
     - title: Visual Ecology
       url: /research/visual-ecology/
@@ -24,8 +24,8 @@
     - title: Experimental Tools
       url: /projects/experimental-tools/
 
-- title: Animal Vision
-  url: /animal-vision/
+#~ - title: Animal Vision
+  #~ url: /animal-vision/
 
 - title: Publications
   url: /publications/
@@ -35,3 +35,8 @@
 
 - title: Outreach & Media
   url: /outreach-media/
+  children:
+    - title: Press Releases
+      url: /outreach-media/press-releases/
+    - title: Photos
+      url: /outreach-media/photos/

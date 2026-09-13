@@ -3,7 +3,7 @@ title: "South African Flowers in Animal Vision"
 image: /assets/images/posts/south-african-flowers-in-animal-vision/main.jpg
 excerpt: "After lunch today I pointed my UV camera at some flowers instead of plover eggs.…"
 date: 2013-08-23 15:14:30 +0000
-themes: [animal-vision, visual-ecology, visual-modelling]
+themes: [animal-vision, visual-ecology, visual-modelling,  photos]
 original_url: https://www.jolyon.co.uk/2013/08/south-african-flowers-in-animal-vision/
 ---
 

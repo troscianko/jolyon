@@ -3,7 +3,7 @@ title: "New Caledonian Crow Photos"
 image: /assets/images/posts/new-caledonian-crow-photos/main.jpg
 excerpt: "Here are some of the photos I’ve caught of New Caledonian Crows. I worked on…"
 date: 2010-04-02 13:35:20 +0000
-themes: [outreach-media]
+themes: [outreach-media, photos]
 original_url: https://www.jolyon.co.uk/2010/04/new-caledonian-crow-photos/
 ---
 

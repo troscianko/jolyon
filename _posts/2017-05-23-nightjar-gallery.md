@@ -3,7 +3,7 @@ title: "Nightjar Gallery"
 image: /assets/images/posts/nightjar-gallery/main.jpg
 excerpt: "Here is a selection of my nightjar photos, all taken near Choma in Zambia during…"
 date: 2017-05-23 10:15:25 +0000
-themes: [visual-ecology, animal-vision, outreach-media]
+themes: [visual-ecology, animal-vision, outreach-media, photos]
 original_url: https://www.jolyon.co.uk/2017/05/nightjar-gallery/
 banner: true
 ---

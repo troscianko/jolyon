@@ -1,268 +1,362 @@
-# Migrated from the old site's publications page.
+# Publications list, curated from Google Scholar (excludes preprints, datasets, duplicates).
 # Optional per-entry fields: image, description (see README).
+- year: 2026
+  papers:
+  - authors: Hancock, G. R. A., Cuthill, I. C., & Troscianko, J. (2026).
+    title: 'Shining a light on camouflage evolution: using genetic algorithms to determine the effects of geometry and lighting on optimal camouflage'
+    journal: PLoS One, 21(4), e0346231
+    link: https://doi.org/10.1371/journal.pone.0346231
+  - authors: Troscianko, J., O'Shea-Wheller, T. A., Galloway, J. A. M., & Gaston, K. J. (2026).
+    title: BehaveAI enables rapid detection and classification of objects and behavior from motion
+    journal: PLOS Biology, 24(2), e3003632
+    link: https://doi.org/10.1371/journal.pbio.3003632
+  - authors: Briolat, E. S., Galloway, J. A. M., Cornelius, E., Wright, C. J., Bennie, J., Gaston, K. J., et al. (2026).
+    title: Severe and widespread reductions in night-time activity of nocturnal moths under modern artificial lighting spectra
+    journal: 'Proceedings of the Royal Society B: Biological Sciences, 293'
+    link: https://doi.org/10.1098/rspb.2025.2704
+- year: 2025
+  papers:
+  - authors: Hughes, A. E., Mari, L., Troscianko, J., Jelínek, V., Albrecht, T., & Šulc, M. (2025).
+    title: A machine learning approach to facilitate parasitic egg identification in a conspecific brood parasite
+    journal: 'Proceedings of the Royal Society B: Biological Sciences, 292(2059), 20252085'
+    link: https://doi.org/10.1098/rspb.2025.2085
+  - authors: Medina, I., Exnerová, A., Daňková, K., Penacchio, O., Sherratt, T. N., Albrecht, T., et al. (2025).
+    title: Global selection on insect antipredator coloration
+    journal: Science, 389(6767), 1336-1341
+    link: https://doi.org/10.1126/science.adr7368
+  - authors: Major, T., Hesten, A. C. M., Stipala, J., Cant, M. A., Stevens, M., & Troscianko, J. (2025).
+    title: Flap-necked chameleons change colour to match their background
+    journal: Biology Letters, 21(8), 20250134
+    link: https://doi.org/10.1098/rsbl.2025.0134
+  - authors: Wainwright, J. B., Loupasaki, T., Ramírez, F., Penry-Williams, I. L., England, S. J., et al. (2025).
+    title: Mutualisms within light microhabitats are associated with sensory convergence in a mimetic butterfly community
+    journal: Proceedings of the National Academy of Sciences, 122(29), e2422397122
+    link: https://doi.org/10.1073/pnas.2422397122
+  - authors: Zanghi, C., Troscianko, J., & Ioannou, C. C. (2025).
+    title: Enhanced conspicuousness of prey in warmer water mitigates the constraint of turbidity for predators
+    journal: Behavioral Ecology, 36(4), araf079
+    link: https://doi.org/10.1093/beheco/araf079
+  - authors: Santon, M., Troscianko, J., Heatubun, C. D., & How, M. J. (2025).
+    title: 'Stealth and deception: adaptive motion camouflage in hunting broadclub cuttlefish'
+    journal: Science Advances, 11(13), eadr3686
+    link: https://doi.org/10.1126/sciadv.adr3686
+  - authors: Troscianko, J. (2025).
+    title: A hyperspectral open-source imager (HOSI)
+    journal: BMC Biology, 23(1), 5
+    link: https://doi.org/10.1186/s12915-024-02110-w
+  - authors: Mari, L., Šulc, M., Szala, K., Troscianko, J., Eeva, T., & Ruuskanen, S. (2025).
+    title: Heavy metal pollution exposure affects egg coloration but not male provisioning effort in the pied flycatcher Ficedula hypoleuca
+    journal: Journal of Avian Biology, 2025(1), e03283
+    link: https://doi.org/10.1111/jav.03283
+- year: 2024
+  papers:
+  - authors: Fabusova, M., Gaston, K. J., & Troscianko, J. (2024).
+    title: Pulsed artificial light at night alters moth flight behaviour
+    journal: Biology Letters, 20(11), 20240403
+    link: https://doi.org/10.1098/rsbl.2024.0403
+  - authors: Briolat, E. S., Hancock, G. R. A., & Troscianko, J. (2024).
+    title: Adapting genetic algorithms for artificial evolution of visual patterns under selection from wild predators
+    journal: PLoS One, 19(5), e0295106
+    link: https://doi.org/10.1371/journal.pone.0295106
+- year: 2023
+  papers:
+  - authors: Kelley, J. L., Jessop, A. L., Kelley, L. A., & Troscianko, J. (2023).
+    title: The role of pictorial cues and contrast for camouflage
+    journal: Evolutionary Ecology, 37(6), 909-925
+    link: https://doi.org/10.1007/s10682-023-10267-z
+  - authors: Hancock, G. R. A., Grayshon, L., Burrell, R., Cuthill, I., Hoodless, A., & Troscianko, J. (2023).
+    title: Habitat geometry rather than visual acuity limits the visibility of a ground-nesting bird's clutch to terrestrial predators
+    journal: Ecology and Evolution, 13(9), e10471
+    link: https://doi.org/10.1002/ece3.10471
+  - authors: Troscianko, J. (2023).
+    title: 'OSpRad: an open-source, low-cost, high-sensitivity spectroradiometer'
+    journal: Journal of Experimental Biology, 226(13), jeb245416
+    link: https://doi.org/10.1242/jeb.245416
+  - authors: Troscianko, J., & Osorio, D. (2023).
+    title: A model of colour appearance based on efficient coding of natural images
+    journal: PLOS Computational Biology, 19(6), e1011117
+    link: https://doi.org/10.1371/journal.pcbi.1011117
+  - authors: Bullough, K., Gaston, K. J., & Troscianko, J. (2023).
+    title: Artificial light at night causes conflicting behavioural and morphological defence responses in a marine isopod
+    journal: 'Proceedings of the Royal Society B: Biological Sciences, 290(2000), 20230725'
+    link: https://doi.org/10.1098/rspb.2023.0725
+  - authors: Dixit, T., Choi, G. P. T., Al-Mosleh, S., Lund, J., Troscianko, J., Moya, C., et al. (2023).
+    title: Combined measures of mimetic fidelity explain imperfect mimicry in a brood parasite–host system
+    journal: Biology Letters, 19(2), 20220538
+    link: https://doi.org/10.1098/rsbl.2022.0538
+  - authors: Jolkkonen, J., Gaston, K. J., & Troscianko, J. (2023).
+    title: Artificial lighting affects the landscape of fear in a widely distributed shorebird
+    journal: Communications Biology, 6(1), 131
+    link: https://doi.org/10.1038/s42003-023-04486-x
+- year: 2022
+  papers:
+  - authors: Yorzinski, J. L., Troscianko, J., Briolat, E., Schapiro, S. J., & Whitham, W. (2022).
+    title: A songbird can detect the eyes of conspecifics under daylight and artificial nighttime lighting
+    journal: Environmental Pollution, 313, 120000
+    link: https://doi.org/10.1016/j.envpol.2022.120000
+  - authors: Šulc, M., Hughes, A. E., Mari, L., Troscianko, J., Tomášek, O., Albrecht, T., et al. (2022).
+    title: Nest sanitation as an effective defence against brood parasitism
+    journal: Animal Cognition, 25(4), 991-1002
+    link: https://doi.org/10.1007/s10071-022-01646-0
+  - authors: Whitham, W., Schapiro, S. J., Troscianko, J., & Yorzinski, J. L. (2022).
+    title: Chimpanzee (Pan troglodytes) gaze is conspicuous at ecologically-relevant distances
+    journal: Scientific Reports, 12(1), 9249
+    link: https://doi.org/10.1038/s41598-022-13273-3
+  - authors: Whitham, W., Schapiro, S. J., Troscianko, J., & Yorzinski, J. L. (2022).
+    title: The gaze of a social monkey is perceptible to conspecifics and predators but not prey
+    journal: 'Proceedings of the Royal Society B: Biological Sciences, 289(1976), 20220194'
+    link: https://doi.org/10.1098/rspb.2022.0194
+  - authors: Hancock, G. R. A., & Troscianko, J. (2022).
+    title: 'CamoEvo: an open access toolbox for artificial camouflage evolution experiments'
+    journal: Evolution, 76(5), 870-882
+    link: https://doi.org/10.1111/evo.14476
+  - authors: Šulc, M., Hughes, A. E., Troscianko, J., Štětková, G., Procházka, P., Požgayová, M., et al. (2022).
+    title: Automatic identification of bird females using egg phenotype
+    journal: Zoological Journal of the Linnean Society, 195(1), 33-44
+    link: https://doi.org/10.1093/zoolinnean/zlab051
+  - authors: Yong, L., Croft, D. P., Troscianko, J., Ramnarine, I. W., & Wilson, A. J. (2022).
+    title: Sensory-based quantification of male colour patterns in Trinidadian guppies reveals no support for parallel phenotypic evolution in multivariate trait space
+    journal: Molecular Ecology, 31(5), 1337-1357
+    link: https://doi.org/10.1111/mec.16039
 - year: 2021
   papers:
-    - authors: "Briolat, E. S., Gaston, K. J., Bennie, J., Rosenfeld, E. J., & Troscianko, J. (2021)."
-      title: "Artificial nighttime lighting impacts visual ecology links between flowers, pollinators and predators"
-      journal: "Nature Communications, 12(1), 4163"
-      link: "https://doi.org/10.1038/s41467-021-24394-0"
-      description: "[Read the related post](/posts/night-time-lighting-has-complex-effects-on-moth-vision/)"
-      image: "/assets/images/posts/night-time-lighting-has-complex-effects-on-moth-vision/main.jpg"
-    - authors: "Massy, R., Hawkes, W. L. S., Doyle, T., Troscianko, J., Menz, M. H. M., Roberts, N. W., Chapman, J. W., & Wotton, K. R. (2021)."
-      title: "Hoverflies use a time-compensated sun compass to orientate during autumn migration"
-      journal: "Proceedings of the Royal Society B: Biological Sciences, 288(1959), 20211805"
-      link: "https://doi.org/10.1098/rspb.2021.1805"
-    - authors: "Troscianko, J., Nokelainen, O., Skelhorn, J., & Stevens, M. (2021)."
-      title: "Variable crab camouflage patterns defeat search image formation"
-      journal: "Communications Biology, 4(1), 287"
-      link: "https://doi.org/10.1038/s42003-021-01817-8"
-    - authors: "Yong, L., Croft, D. P., Troscianko, J., Ramnarine, I. W., & Wilson, A. J. (2021)."
-      title: "Sensory-based quantification of male colour patterns in Trinidadian guppies reveals no support for parallel phenotypic evolution in multivariate trait space"
-      journal: "Molecular Ecology"
-      link: "https://doi.org/10.1111/mec.16039"
-    - authors: "Hughes, A. E., Griffiths, D., Troscianko, J., & Kelley, L. A. (2021)."
-      title: "The evolution of patterning during movement in a large-scale citizen science game"
-      journal: "Proceedings of the Royal Society B: Biological Sciences, 288(1942), 20202823"
-      link: "http://dazzle-bug.co.uk/"
-    - authors: "Šulc, M., Hughes, A.E., Troscianko, J., Štětková, G., Procházka, P., Požgayová, M., Piálek, L., Piálková, R., Brlík, V., & Honza, M. (2021)."
-      title: "Automatic Identification of Bird Females Using Egg Phenotype"
-      journal: "Zoological Journal of the Linnean Society"
-      link: "https://doi.org/10.1093/zoolinnean/zlab051"
+  - authors: Massy, R., Hawkes, W. L. S., Doyle, T., Troscianko, J., Menz, M. H. M., Roberts, N. W., et al. (2021).
+    title: Hoverflies use a time-compensated sun compass to orientate during autumn migration
+    journal: 'Proceedings of the Royal Society B: Biological Sciences, 288(1959), 20211805'
+    link: https://doi.org/10.1098/rspb.2021.1805
+  - authors: Briolat, E. S., Gaston, K. J., Bennie, J., Rosenfeld, E. J., & Troscianko, J. (2021).
+    title: Artificial nighttime lighting impacts visual ecology links between flowers, pollinators and predators
+    journal: Nature Communications, 12(1), 4163
+    link: https://doi.org/10.1038/s41467-021-24394-0
+    description: '[Read the related post](/posts/night-time-lighting-has-complex-effects-on-moth-vision/)'
+    image: /assets/images/posts/night-time-lighting-has-complex-effects-on-moth-vision/main.jpg
+  - authors: Troscianko, J., Nokelainen, O., Skelhorn, J., & Stevens, M. (2021).
+    title: Variable crab camouflage patterns defeat search image formation
+    journal: Communications Biology, 4(1), 287
+    link: https://doi.org/10.1038/s42003-021-01817-8
+  - authors: Hughes, A. E., Griffiths, D., Troscianko, J., & Kelley, L. A. (2021).
+    title: The evolution of patterning during movement in a large-scale citizen science game
+    journal: 'Proceedings of the Royal Society B: Biological Sciences, 288(1942), 20202823'
+    link: http://dazzle-bug.co.uk/
 - year: 2020
   papers:
-    - authors: "Heathcote, R. J. P., Troscianko, J., Darden, S. K., Naisbett-Jones, L. C., Laker, P. R., Brown, A. M., … Croft, D. P. (2020)."
-      title: "A Matador-like Predator Diversion Strategy Driven by Conspicuous Coloration in Guppies"
-      journal: "Current Biology, 30, 1–8"
-      link: "https://www.cell.com/current-biology/fulltext/S0960-9822(20)30656-4#%20"
-      description: "[Read the related post](http://www.jolyon.co.uk/wp-content/uploads/2020/07/male-and-female-offset.jpg)"
-    - authors: "Caves, E. M., Troscianko, J., & Kelley, L. A. (2020)."
-      title: "A customizable, low-cost optomotor apparatus: a powerful tool for behaviourally measuring visual capability"
-      journal: "Methods in Ecology and Evolution, doi:"
-      link: "https://doi.org/10.1111/2041-210X.13449"
-    - authors: ""
-      title: "Jamie, G.A., Van Belleghem, S.M., Hogan, B.G., Hamama, S., Moya, C., Troscianko, J., Stoddard, M.C., Kilner, R.M., & Spottiswoode, C.N. 2020. ‘Multimodal Mimicry of Hosts in a Radiation of Parasitic Finches’."
-      journal: "Evolution"
-      link: "https://doi.org/10.1111/evo.14057"
-    - authors: "Young, M. M. I., Winters, S., Young, C., Weiß, B. M., Troscianko, J., Ganswindt, A., … Widdig, A. (2020)."
-      title: "Male characteristics as predictors of genital color and display variation in vervet monkeys"
-      journal: "Behavioral Ecology and Sociobiology, 74(2), 14"
-      link: "https://doi.org/10.1007/s00265-019-2787-4"
-    - authors: ""
-      title: "van den Berg, C. P.*, Troscianko, J.* (*joint first authors), Endler, J. A., Marshall, N. J., & Cheney, K. L. (2020). Quantitative Colour Pattern Analysis (QCPA): A comprehensive framework for the analysis of colour patterns in nature. Methods in Ecology and Evolution, 11(2): 316-332 – link (open access) – user guide & community website –"
-      journal: "Methods in Ecology and Evolution"
-      link: "http://www.empiricalimaging.com/"
+  - authors: Stephenson, J. F., Stevens, M., Troscianko, J., & Jokela, J. (2020).
+    title: The size, symmetry, and color saturation of a male guppy's ornaments forecast his resistance to parasites
+    journal: The American Naturalist, 196(5), 597-608
+    link: https://doi.org/10.1086/711033
+  - authors: Jamie, G. A., Van Belleghem, S. M., Hogan, B. G., Hamama, S., Moya, C., et al. (2020).
+    title: Multimodal mimicry of hosts in a radiation of parasitic finches
+    journal: Evolution, 74(11), 2526-2538
+    link: https://doi.org/10.1111/evo.14057
+  - authors: Caves, E. M., Troscianko, J., & Kelley, L. A. (2020).
+    title: 'A customizable, low-cost optomotor apparatus: a powerful tool for behaviourally measuring visual capability'
+    journal: Methods in Ecology and Evolution, 11(10), 1319-1324
+    link: https://doi.org/10.1111/2041-210X.13449
+  - authors: Heathcote, R. J. P., Troscianko, J., Darden, S. K., Naisbett-Jones, L. C., Laker, P. R., et al. (2020).
+    title: A matador-like predator diversion strategy driven by conspicuous coloration in guppies
+    journal: Current Biology, 30(14), 2844-2851.e8
+    link: https://www.cell.com/current-biology/fulltext/S0960-9822(20)30656-4#%20
+    description: '[Read the related post](http://www.jolyon.co.uk/wp-content/uploads/2020/07/male-and-female-offset.jpg)'
+  - authors: Young, M. M. I., Winters, S., Young, C., Weiß, B. M., Troscianko, J., Ganswindt, A., et al. (2020).
+    title: Male characteristics as predictors of genital color and display variation in vervet monkeys
+    journal: Behavioral Ecology and Sociobiology, 74(2), 14
+    link: https://doi.org/10.1007/s00265-019-2787-4
+  - authors: van den Berg, C. P., Troscianko, J., Endler, J. A., Marshall, N. J., & Cheney, K. L. (2020).
+    title: 'Quantitative Colour Pattern Analysis (QCPA): a comprehensive framework for the analysis of colour patterns in nature'
+    journal: Methods in Ecology and Evolution, 11(2), 316-332
+    link: https://doi.org/10.1111/2041-210x.13328
 - year: 2019
   papers:
-    - authors: "Hawkes M. F., Duffy E., Joag R., Skeats A., Radwan J., Wedell N., Sharma M. D., Hosken D. J., Troscianko J. (2019)."
-      title: "Sexual selection drives the evolution of male wing interference patterns"
-      journal: "Proceedings of the Royal Society B: Biological Sciences, 286(1903), 20182850"
-      link: "https://royalsocietypublishing.org/doi/10.1098/rspb.2018.2850"
-      description: "[Read the related post](http://www.jolyon.co.uk/wp-content/uploads/2019/05/Figure1-e1559127992709.jpg)"
-    - authors: ""
-      title: "Price, N., Green, S., Troscianko, J., Tregenza, T., & Stevens, M. (2019). Background matching and disruptive coloration as habitat-specific strategies for camouflage. Scientific Reports, 9(1), 7840. – link (open access) –"
-      journal: "Scientific Reports"
-      link: "https://www.nature.com/articles/s41598-019-44349-2"
-    - authors: "Šulc, M., Troscianko, J., Štětková, G., Hughes, A. E., Jelínek, V., Capek, M., & Honza, M. (2019)."
-      title: "Mimicry cannot explain rejection type in a host–brood parasite system"
-      journal: "Animal Behaviour, 155, 111–118"
-      link: "https://www.sciencedirect.com/science/article/pii/S000334721930209X"
-    - authors: "Dell’Aglio, D. D., Troscianko, J., McMillan, W.O., Stevens, M., Jiggins, C.D. (2019)"
-      title: "Dell’Aglio, D. D., Troscianko, J., McMillan, W.O., Stevens, M., Jiggins, C.D. (2019). The appearance of mimetic Heliconius butterflies to predators and conspecifics. Evolution 72(10): 2156-2166- link –  download PDF –"
-      journal: "., The appearance of mimetic Heliconius butterflies to predators and conspecifics. Evolution 72(10): 2156-2166"
-      link: "https://onlinelibrary.wiley.com/doi/abs/10.1111/evo.13583"
+  - authors: Šulc, M., Troscianko, J., Štětková, G., Hughes, A. E., Jelínek, V., Capek, M., et al. (2019).
+    title: Mimicry cannot explain rejection type in a host–brood parasite system
+    journal: Animal Behaviour, 155, 111-118
+    link: https://www.sciencedirect.com/science/article/pii/S000334721930209X
+  - authors: Price, N., Green, S., Troscianko, J., Tregenza, T., & Stevens, M. (2019).
+    title: Background matching and disruptive coloration as habitat-specific strategies for camouflage
+    journal: Scientific Reports, 9(1), 7840
+    link: https://doi.org/10.1038/s41598-019-44349-2
+  - authors: Koleček, J., Šulc, M., Piálková, R., Troscianko, J., Požgayová, M., Honza, M., et al. (2019).
+    title: Rufous common cuckoo chicks are not always female
+    journal: Journal of Ornithology, 160(1), 155-163
+    link: https://link.springer.com/article/10.1007%2Fs10336-018-1591-7
 - year: 2018
   papers:
-    - authors: ""
-      title: "Troscianko, J., Skelhorn, J., Stevens, M. (2018) Camouflage strategies interfere differently with observer search images. Proceedings of the Royal Society B 285(1886): 20181386 – link (open access) –"
-      journal: "Proceedings of the Royal Society B"
-      link: "http://rspb.royalsocietypublishing.org/content/285/1886/20181386"
-    - authors: ""
-      title: "Ligon, R. A., Diaz, C. D., Morano, J. L., Troscianko, J. Stevens, M., Moskeland, A., Laman, T. G., & Scholes, E. III. (2018). Evolution of correlated complexity in the radically different courtship signals of birds-of-paradise. PLOS Biology.  16(11): e2006962 – link (open access) – blog post –"
-      journal: "PLOS Biology"
-      link: "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2006962"
-      description: "[Read the related post](/posts/new-publication-among-birds-of-paradise-good-looks-are-not-enough-to-win-a-mate/)"
-    - authors: "Heathcote, R.J.P., Darden, S.K., Troscianko, J., Lawson, M.R.M., Brown, A.M., Laker, P.R., Naisbett-Jones, L.C., MacGregor, H.E.A., Ramnarine, I., & Croft, D.P. (2018)."
-      title: "Dynamic Eye Colour as an Honest Signal of Aggression"
-      journal: "Current Biology, 28 (11): R652–53"
-      link: "https://doi.org/10.1016/j.cub.2018.04.078"
-    - authors: "Holmes, G.G., Delferrière, E., Rowe, C., Troscianko, J., & Skelhorn, J. (2018)."
-      title: "Testing the Feasibility of the Startle-First Route to Deimatism"
-      journal: "Scientific Reports, 8 (1): 10737"
-      link: "https://www.nature.com/articles/s41598-018-28565-w"
-    - authors: "Gómez, J., Ramo, C., Stevens, M., Liñán‐Cembrano, G., Rendón, M. A., Troscianko, J. T., & Amat, J. A. (2018)."
-      title: "Latitudinal variation in biophysical characteristics of avian eggshells to cope with differential effects of solar radiation"
-      journal: "Ecology and Evolution."
-      link: "https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.4335"
-    - authors: "Gómez, J., Ramo, C., Troscianko, J., Stevens, M., Castro, M., Pérez-Hurtado, A., Liñán-Cembrano, G., and Amat, J.A. (2018)."
-      title: "Individual egg camouflage is influenced by microhabitat selection and use of nest materials in ground-nesting birds"
-      journal: "Behavioural Ecology & Sociobiology, 72, 142"
-      link: "https://link.springer.com/article/10.1007/s00265-018-2558-7"
-    - authors: "Koleček, J., Šulc, M., Piálková, R., Troscianko, J., Požgayová, M., Honza, M., and Procházka, P. (2018)."
-      title: "Rufous Common Cuckoo chicks are not always female"
-      journal: "Journal of Ornithology"
-      link: "https://link.springer.com/article/10.1007%2Fs10336-018-1591-7"
+  - authors: Ligon, R. A., Diaz, C. D., Morano, J. L., Troscianko, J., Stevens, M., Moskeland, A., et al. (2018).
+    title: Evolution of correlated complexity in the radically different courtship signals of birds-of-paradise
+    journal: PLoS Biology, 16(11), e2006962
+    link: https://doi.org/10.1371/journal.pbio.2006962
+    description: '[Read the related post](/posts/new-publication-among-birds-of-paradise-good-looks-are-not-enough-to-win-a-mate/)'
+  - authors: Dell'Aglio, D. D., Troscianko, J., McMillan, W. O., Stevens, M., & Jiggins, C. D. (2018).
+    title: The appearance of mimetic Heliconius butterflies to predators and conspecifics
+    journal: Evolution, 72(10), 2156-2166
+    link: https://doi.org/10.1111/evo.13583
+  - authors: Troscianko, J., Skelhorn, J., & Stevens, M. (2018).
+    title: Camouflage strategies interfere differently with observer search images
+    journal: 'Proceedings of the Royal Society B: Biological Sciences, 285(1886), 20181386'
+    link: https://doi.org/10.1098/rspb.2018.1386
+  - authors: Gómez, J., Ramo, C., Troscianko, J., Stevens, M., Castro, M., Pérez-Hurtado, A., et al. (2018).
+    title: Individual egg camouflage is influenced by microhabitat selection and use of nest materials in ground-nesting birds
+    journal: Behavioral Ecology and Sociobiology, 72(9), 142
+    link: https://link.springer.com/article/10.1007/s00265-018-2558-7
+  - authors: Holmes, G. G., Delferrière, E., Rowe, C., Troscianko, J., & Skelhorn, J. (2018).
+    title: Testing the feasibility of the startle-first route to deimatism
+    journal: Scientific Reports, 8(1), 10737
+    link: https://www.nature.com/articles/s41598-018-28565-w
+  - authors: Heathcote, R. J. P., Darden, S. K., Troscianko, J., Lawson, M. R. M., Brown, A. M., et al. (2018).
+    title: Dynamic eye colour as an honest signal of aggression
+    journal: Current Biology, 28(11), R652-R653
+    link: https://doi.org/10.1016/j.cub.2018.04.078
+  - authors: Gómez, J., Ramo, C., Stevens, M., Liñán-Cembrano, G., et al. (2018).
+    title: Latitudinal variation in biophysical characteristics of avian eggshells to cope with differential effects of solar radiation
+    journal: Ecology and Evolution
+    link: https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.4335
 - year: 2017
   papers:
-    - authors: "Stevens, M., Troscianko, J., Wilson-Aggarwal, J.K. & Spottiswoode, C.N. (2017)."
-      title: "Improvement of individual camouflage through background choice in ground-nesting birds"
-      journal: "Nature Ecology & Evolution, 1, 1325"
-      link: "https://www.nature.com/articles/s41559-017-0256-x.epdf?author_access_token=R1Z8UF31fs9sBRULiwP3fNRgN0jAjWel9jnR3ZoTv0OC1Cbi8UqWSuWLQI2rzvQJN2wViF09M4QlYGZ8RS66E7uJUtwH9UiNKhrVfeC7esUSi0xj0qxJZECXzK0IUuE_5VJge-F5lpXwORrPuXiz_Q%3D%3D"
-    - authors: "Troscianko J., Skelhorn, J., & Stevens M. (2017)."
-      title: "Quantifying camouflage: how to predict detectability from appearance"
-      journal: "BMC Evolutionary Biology, 17:7"
-      link: "http://www.biomedcentral.com/1471-2148/17/7"
-      description: "[Read the related post](/posts/measuring-disruptive-camouflage/)"
-    - authors: "Troscianko J., Wilson-Aggarwal J., Griffiths D., Spottiswoode C.N. & Stevens M. (2017)."
-      title: "Relative advantages of dichromatic and trichromatic color vision in camouflage breaking"
-      journal: "Behavioral Ecology, 28:556-564"
-      link: "https://academic.oup.com/beheco/article/2967973/Relative-Advantages-of-Dichromatic-and"
-      description: "[Read the related post](/posts/online-games-help-us-understand-colour-vision-and-camouflage/)"
-    - authors: "Koski, T-M, Lindstedt, C, Klemola, T, Troscianko, J, Mäntylä, E, Tyystjärvi, E, Stevens, M, Helander, M, Laaksonen, T. (2017)."
-      title: "Insect herbivory may cause changes in the visual properties of leaves and affect the camouflage of herbivores to avian predators"
-      journal: "Behavioral Ecology and Sociobiology, 71:97"
-      link: "https://link.springer.com/article/10.1007/s00265-017-2326-0"
-    - authors: "Abernathy, V.E., Troscianko, J. & Langmore, N.E. (2017)."
-      title: "Egg mimicry by the pacific koel: mimicry of one host facilitates exploitation of other hosts with similar egg types"
-      journal: "Journal of Avian Biology, 48:11 1414-1424"
-      link: "http://onlinelibrary.wiley.com/doi/10.1111/jav.01530/full"
-    - authors: ""
-      title: "Robledo-Ospina L.E., Escobar-Sarria F. Troscianko J., & Rao D. (2017). Two ways to hide: predator and prey perspective of disruptive colouration and background matching in jumping spiders. Biological Journal of the Linnean Society blx108 – link –"
-      journal: "Biological Journal of the Linnean Society,  "
-      link: "https://academic.oup.com/biolinnean/article/doi/10.1093/biolinnean/blx108/4430394"
+  - authors: Robledo-Ospina, L. E., Escobar-Sarria, F., Troscianko, J., & Rao, D. (2017).
+    title: 'Two ways to hide: predator and prey perspectives of disruptive coloration and background matching in jumping spiders'
+    journal: Biological Journal of the Linnean Society, 122(4), 752-764
+    link: https://doi.org/10.1093/biolinnean/blx108
+  - authors: Abernathy, V. E., Troscianko, J., & Langmore, N. E. (2017).
+    title: 'Egg mimicry by the Pacific koel: mimicry of one host facilitates exploitation of other hosts with similar egg types'
+    journal: Journal of Avian Biology, 48(11), 1414-1424
+    link: http://onlinelibrary.wiley.com/doi/10.1111/jav.01530/full
+  - authors: Stevens, M., Troscianko, J., Wilson-Aggarwal, J. K., & Spottiswoode, C. N. (2017).
+    title: Improvement of individual camouflage through background choice in ground-nesting birds
+    journal: Nature Ecology & Evolution, 1(9), 1325-1333
+    link: https://www.nature.com/articles/s41559-017-0256-x.epdf?author_access_token=R1Z8UF31fs9sBRULiwP3fNRgN0jAjWel9jnR3ZoTv0OC1Cbi8UqWSuWLQI2rzvQJN2wViF09M4QlYGZ8RS66E7uJUtwH9UiNKhrVfeC7esUSi0xj0qxJZECXzK0IUuE_5VJge-F5lpXwORrPuXiz_Q%3D%3D
+  - authors: Koski, T. M., Lindstedt, C., Klemola, T., Troscianko, J., Mäntylä, E., Tyystjärvi, E., et al. (2017).
+    title: Insect herbivory may cause changes in the visual properties of leaves and affect the camouflage of herbivores to avian predators
+    journal: Behavioral Ecology and Sociobiology, 71(6), 97
+    link: https://link.springer.com/article/10.1007/s00265-017-2326-0
+  - authors: Troscianko, J., Wilson-Aggarwal, J., Griffiths, D., Spottiswoode, C. N., & Stevens, M. (2017).
+    title: Relative advantages of dichromatic and trichromatic color vision in camouflage breaking
+    journal: Behavioral Ecology, 28(2), 556-564
+    link: https://academic.oup.com/beheco/article/2967973/Relative-Advantages-of-Dichromatic-and
+    description: '[Read the related post](/posts/online-games-help-us-understand-colour-vision-and-camouflage/)'
+  - authors: Troscianko, J., Skelhorn, J., & Stevens, M. (2017).
+    title: 'Quantifying camouflage: how to predict detectability from appearance'
+    journal: BMC Evolutionary Biology, 17(1), 7
+    link: http://www.biomedcentral.com/1471-2148/17/7
+    description: '[Read the related post](/posts/measuring-disruptive-camouflage/)'
 - year: 2016
   papers:
-    - authors: "Troscianko J., Wilson-Aggarwal J., Spottiswoode, C.N. & Stevens, M. (2016)."
-      title: "Nest covering in plovers: how modifying the visual environment influences egg camouflage"
-      journal: "Ecology and Evolution, 10.1002/ece3.2494"
-      link: "http://onlinelibrary.wiley.com/doi/10.1002/ece3.2494/full"
-      description: "[Read the related post](/posts/nest-covering-camouflage-in-kittlitzs-plovers/)"
-    - authors: "Troscianko J., Wilson-Aggarwal J., Stevens, M. & Spottiswoode, C.N. (2016)."
-      title: "Camouflage Predicts Survival in Ground-Nesting Birds"
-      journal: "Scientific Reports,  6:19966"
-      link: "http://www.nature.com/articles/srep19966"
-      description: "[Read the related post](/posts/camouflage-really-does-reduce-the-chances-of-being-eaten/)"
-    - authors: "De Gasperin O., Duarte A., Troscianko J. & Kilner R.M. (2016)."
-      title: "Fitness costs associated with building and maintaining the burying beetle’s carrion nest"
-      journal: "Scientific Reports, 6, 35293"
-      link: "http://www.nature.com/articles/srep35293"
-      description: "[Read the related post](/posts/bigger-burying-beetles-make-better-nests/)"
-    - authors: "Medina, I., Troscianko, J., Stevens, M., Langmore, N.E., Brodie, E.D., and Michalakis, Y. (2016)."
-      title: "Brood Parasitism Is Linked to Egg Pattern Diversity within and among Species of Australian Passerines"
-      journal: "The American Naturalist, 6:1320-1331"
-      link: "http://www.journals.uchicago.edu/doi/full/10.1086/684627"
-    - authors: "Wilson-Aggarwal J., Troscianko, J., Stevens, M. & Spottiswoode, C.N. (2016)."
-      title: "Escape distance in ground-nesting birds differs with individual level of camouflage"
-      journal: "The American Naturalist"
-      link: "http://www.journals.uchicago.edu/doi/abs/10.1086/687254"
-      description: "[Read the related post](/posts/birds-flee-from-predators-earlier-if-theyre-poorly-camouflaged/)"
+  - authors: De Gasperin, O., Duarte, A., Troscianko, J., & Kilner, R. M. (2016).
+    title: Fitness costs associated with building and maintaining the burying beetle's carrion nest
+    journal: Scientific Reports, 6(1), 35293
+    link: http://www.nature.com/articles/srep35293
+    description: '[Read the related post](/posts/bigger-burying-beetles-make-better-nests/)'
+  - authors: Troscianko, J., Wilson-Aggarwal, J., Spottiswoode, C. N., & Stevens, M. (2016).
+    title: 'Nest covering in plovers: how modifying the visual environment influences egg camouflage'
+    journal: Ecology and Evolution, 6(20), 7536-7545
+    link: http://onlinelibrary.wiley.com/doi/10.1002/ece3.2494/full
+    description: '[Read the related post](/posts/nest-covering-camouflage-in-kittlitzs-plovers/)'
+  - authors: Wilson-Aggarwal, J. K., Troscianko, J. T., Stevens, M., & Spottiswoode, C. N. (2016).
+    title: Escape distance in ground-nesting birds differs with individual level of camouflage
+    journal: The American Naturalist, 188(2), 231-239
+    link: http://www.journals.uchicago.edu/doi/abs/10.1086/687254
+    description: '[Read the related post](/posts/birds-flee-from-predators-earlier-if-theyre-poorly-camouflaged/)'
+  - authors: Medina, I., Troscianko, J., Stevens, M., & Langmore, N. E. (2016).
+    title: Brood parasitism is linked to egg pattern diversity within and among species of Australian passerines
+    journal: The American Naturalist, 187(3), 351-362
+    link: http://www.journals.uchicago.edu/doi/full/10.1086/684627
+  - authors: Troscianko, J., Wilson-Aggarwal, J., Stevens, M., & Spottiswoode, C. N. (2016).
+    title: Camouflage predicts survival in ground-nesting birds
+    journal: Scientific Reports, 6(1), 19966
+    link: http://www.nature.com/articles/srep19966
+    description: '[Read the related post](/posts/camouflage-really-does-reduce-the-chances-of-being-eaten/)'
 - year: 2015
   papers:
-    - authors: "Troscianko, J. & Rutz, C. (2015)."
-      title: "Activity profiles and hook-tool use of New Caledonian crows recorded by bird-borne video cameras"
-      journal: "Biology Letters, 11:20150777. – link (open access) – Blog Post –\n\n"
-      link: "http://rsbl.royalsocietypublishing.org/content/11/12/20150777"
-      description: "[Read the related post](/posts/crow-cam-catches-hook-tool-manufacture/)"
-    - authors: "Stevens, M., Broderick, A.C., Godley, B.J., Lown, A.E., Troscianko, J., Weber, N., and Weber, S.B. (2015)."
-      title: "Phenotype–environment matching in sand fleas"
-      journal: "Biology Letters, 11: 20150494"
-      link: "http://rsbl.royalsocietypublishing.org/content/11/8/20150494"
-      description: "[Read the related post](/posts/camouflage-matching-in-sand-fleas/)"
-    - authors: "Troscianko, J., and Stevens, M. (2015)."
-      title: "Image Calibration and Analysis Toolbox – a free software suite for objectively measuring reflectance, colour and pattern"
-      journal: "Methods Ecology and Evolution, 6:1320-1331"
-      link: "http://onlinelibrary.wiley.com/doi/10.1111/2041-210X.12439/full"
-      description: "[Read the related post](http://www.jolyon.co.uk/myresearch/image-analysis/image-analysis-tools/)"
-    - authors: "Burriss, R.P., Troscianko, J., Lovell, P.G., Fulford, A.J.C., Stevens, M., Quigley, R., Payne, J., Saxton, T.K., and Rowland, H.M. (2015)."
-      title: "Changes in Women’s Facial Skin Color over the Ovulatory Cycle are Not Detectable by the Human Visual System"
-      journal: "PLoS ONE, 10, e0130093"
-      link: "http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0130093"
-    - authors: "Feeney, W.E., Troscianko, J., Langmore, N.E., & Spottiswoode, C.N. (2015)."
-      title: "Evidence for aggressive mimicry in an adult brood parasitic bird, and generalized defences in its host"
-      journal: "Proceedings of the Royal Society B: Biological Sciences, 282, 20150795"
-      link: "http://rspb.royalsocietypublishing.org/content/282/1810/20150795"
+  - authors: Troscianko, J., & Rutz, C. (2015).
+    title: Activity profiles and hook-tool use of New Caledonian crows recorded by bird-borne video cameras
+    journal: Biology Letters, 11(12), 20150777
+    link: http://rsbl.royalsocietypublishing.org/content/11/12/20150777
+    description: '[Read the related post](/posts/crow-cam-catches-hook-tool-manufacture/)'
+  - authors: Troscianko, J., & Stevens, M. (2015).
+    title: Image calibration and analysis toolbox – a free software suite for objectively measuring reflectance, colour and pattern
+    journal: Methods in Ecology and Evolution, 6(11), 1320-1331
+    link: http://onlinelibrary.wiley.com/doi/10.1111/2041-210X.12439/full
+    description: '[Read the related post](http://www.jolyon.co.uk/myresearch/image-analysis/image-analysis-tools/)'
+  - authors: Stevens, M., Broderick, A. C., Godley, B. J., Lown, A. E., Troscianko, J., Weber, N., et al. (2015).
+    title: Phenotype–environment matching in sand fleas
+    journal: Biology Letters, 11(8), 20150494
+    link: http://rsbl.royalsocietypublishing.org/content/11/8/20150494
+    description: '[Read the related post](/posts/camouflage-matching-in-sand-fleas/)'
+  - authors: Feeney, W. E., Troscianko, J., Langmore, N. E., & Spottiswoode, C. N. (2015).
+    title: Evidence for aggressive mimicry in an adult brood parasitic bird, and generalized defences in its host
+    journal: 'Proceedings of the Royal Society B: Biological Sciences, 282(1810), 20150795'
+    link: http://rspb.royalsocietypublishing.org/content/282/1810/20150795
+  - authors: Burriss, R. P., Troscianko, J., Lovell, P. G., Fulford, A. J. C., Stevens, M., Quigley, R., et al. (2015).
+    title: Changes in women's facial skin color over the ovulatory cycle are not detectable by the human visual system
+    journal: PLoS One, 10(7), e0130093
+    link: http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0130093
 - year: 2014
   papers:
-    - authors: "Hughes, A. E., Troscianko, J., & Stevens, M. (2014)."
-      title: "Motion Dazzle and the Effects of Target Patterning on Capture Success"
-      journal: "BMC Evolutionary Biology, 14 (1): 201"
-      link: "http://www.biomedcentral.com/1471-2148/14/201/abstract"
-    - authors: "Troscianko, J. (2014)."
-      title: "A Simple Tool for Calculating Egg Shape, Volume and Surface Area from Digital Images"
-      journal: "Ibis, 156 (4): 874–878"
-      link: "http://onlinelibrary.wiley.com/enhanced/doi/10.1111/ibi.12177/"
-      description: "[Read the related post](http://jolyon.co.uk/research/eggs/index.html)"
-    - authors: "Arenas, L.M., Troscianko, J., Stevens, M. (2014)."
-      title: "Color contrast and stability as key elements for effective warning signals"
-      journal: "Frontiers in Ecology and Evolution, 2:25"
-      link: "http://journal.frontiersin.org/Journal/10.3389/fevo.2014.00025/abstract"
+  - authors: Troscianko, J. (2014).
+    title: A simple tool for calculating egg shape, volume and surface area from digital images
+    journal: Ibis, 156(4), 874-878
+    link: http://onlinelibrary.wiley.com/enhanced/doi/10.1111/ibi.12177/
+    description: '[Read the related post](http://jolyon.co.uk/research/eggs/index.html)'
+  - authors: Hughes, A. E., Troscianko, J., & Stevens, M. (2014).
+    title: Motion dazzle and the effects of target patterning on capture success
+    journal: BMC Evolutionary Biology, 14(1), 201
+    link: http://www.biomedcentral.com/1471-2148/14/201/abstract
+  - authors: Arenas, L. M., Troscianko, J., & Stevens, M. (2014).
+    title: Color contrast and stability as key elements for effective warning signals
+    journal: Frontiers in Ecology and Evolution, 2, 25
+    link: http://journal.frontiersin.org/Journal/10.3389/fevo.2014.00025/abstract
 - year: 2013
   papers:
-    - authors: "Stevens, M. Troscianko, J. Spottiswoode, C. N. (2013)."
-      title: "Repeated targeting of the same hosts by a brood parasite compromises host egg rejection"
-      journal: "Nature Communications, 4(2475)"
-      link: "http://www.nature.com/ncomms/2013/130924/ncomms3475/full/ncomms3475.html"
-    - authors: "Troscianko, J, Lown, A. E., Hughes, A. E., Stevens, M. (2013)."
-      title: "Defeating Crypsis: Detection and Learning of Camouflage Strategies"
-      journal: "PLoS One, 8(9): e73733"
-      link: "http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0073733"
-    - authors: "Stevens, M., Marshall, K.L.A., Troscianko, J., Finlay, S., Burnand, D. & Chadwick, S.L. (2013)."
-      title: "Revealed by conspicuousness: distractive markings reduce camouflage"
-      journal: "Behavioural Ecology, 4: 213-222"
-      link: "#"
-    - authors: "Stevens, M., Troscianko, J., Marshall, K.L. & Finlay, S. (2013)."
-      title: "What is camouflage through distractive markings? A reply to Merilaita et al.(2013)"
-      journal: "Behavioral Ecology, 24, e1272–e1273"
-      link: "https://academic.oup.com/beheco/article/24/5/e1272/255820/What-is-camouflage-through-distractive-markings-A"
+  - authors: Stevens, M., Troscianko, J., & Spottiswoode, C. N. (2013).
+    title: Repeated targeting of the same hosts by a brood parasite compromises host egg rejection
+    journal: Nature Communications, 4(1), 2475
+    link: http://www.nature.com/ncomms/2013/130924/ncomms3475/full/ncomms3475.html
+  - authors: Troscianko, J., Lown, A. E., Hughes, A. E., & Stevens, M. (2013).
+    title: 'Defeating crypsis: detection and learning of camouflage strategies'
+    journal: PLoS One, 8(9), e73733
+    link: http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0073733
+  - authors: Stevens, M., Troscianko, J., Marshall, K. L. A., & Finlay, S. (2013).
+    title: What is camouflage through distractive markings? A reply to Merilaita et al.(2013)
+    journal: Behavioral Ecology, 24(5), e1272-e1273
+    link: https://academic.oup.com/beheco/article/24/5/e1272/255820/What-is-camouflage-through-distractive-markings-A
+  - authors: Stevens, M., Marshall, K. L. A., Troscianko, J., Finlay, S., Burnand, D., et al. (2013).
+    title: 'Revealed by conspicuousness: distractive markings reduce camouflage'
+    journal: Behavioral Ecology, 24(1), 213-222
+    link: https://doi.org/10.1093/beheco/ars156
+  - authors: Rutz, C., & Troscianko, J. (2013).
+    title: Programmable, miniature video-loggers for deployment on wild birds and other wildlife
+    journal: Methods in Ecology and Evolution, 4(2), 114-122
+    link: https://doi.org/10.1111/2041-210x.12003
 - year: 2012
   papers:
-    - authors: "Rutz, C., & Troscianko, J. (2012)."
-      title: "Programmable, miniature video-loggers for deployment on wild birds and other wildlife"
-      journal: "Methods in Ecology and Evolution, 4: 114–122"
-      link: "#"
-    - authors: "Troscianko, J., von Bayern, A.M.P., Chappell, J., Rutz, C. & Martin, G.R. (2012)."
-      title: "Extreme binocular vision and a straight bill facilitate tool use in New Caledonian crows"
-      journal: "Nature communications, 3: 1110"
-      link: "#"
+  - authors: Troscianko, J., Von Bayern, A. M., Chappell, J., Rutz, C., & Martin, G. R. (2012).
+    title: Extreme binocular vision and a straight bill facilitate tool use in New Caledonian crows
+    journal: Nature Communications, 3(1), 1110
+    link: https://doi.org/10.1038/ncomms2111
 - year: 2010
   papers:
-    - authors: "Rutz, C., Bluff, L.A., Reed, N., Troscianko, J., Newton, J., Inger, R., Kacelnik, A. & Bearhop, S. (2010)."
-      title: "The ecological significance of tool use in New Caledonian crows"
-      journal: "Science, 329: 1523-1526"
-      link: "#"
-    - authors: "Bluff, L. A., Troscianko, J., Weir, A. A. S., Kacelnik, A. & Rutz, C. (2010)."
-      title: "Tool use by wild New Caledonian crows Corvus moneduloides at natural foraging sites"
-      journal: "Proceedings of the Royal Society B: Biological Sciences, 277: 1377-1385"
-      link: "#"
-      description: "[Read the related post](http://www.jolyon.co.uk/wp-content/uploads/2015/03/NCCwithTool.png)"
+  - authors: Rutz, C., Bluff, L. A., Reed, N., Troscianko, J., Newton, J., Inger, R., et al. (2010).
+    title: The ecological significance of tool use in New Caledonian crows
+    journal: Science, 329(5998), 1523-1526
+    link: https://doi.org/10.1126/science.1192053
+  - authors: Bluff, L. A., Troscianko, J., Weir, A. A. S., Kacelnik, A., & Rutz, C. (2010).
+    title: Tool use by wild New Caledonian crows Corvus moneduloides at natural foraging sites
+    journal: 'Proceedings of the Royal Society B: Biological Sciences, 277(1686), 1377'
+    link: https://doi.org/10.1098/rspb.2009.1953
 - year: 2009
   papers:
-    - authors: "Takahashi, T., McDougall, C., Troscianko, J., Chen, W. C., Jayaraman-Nagarajan, A., Shimeld, S. M. & Ferrier, D. E. K. (2009)."
-      title: "An EST screen from the annelid Pomatoceros lamarckii reveals patterns of gene loss and gain in animals"
-      journal: "BMC Evolutionary Biology, 9: 240"
-      link: "#"
+  - authors: Takahashi, T., McDougall, C., Troscianko, J., Chen, W. C., et al. (2009).
+    title: An EST screen from the annelid Pomatoceros lamarckii reveals patterns of gene loss and gain in animals
+    journal: BMC Evolutionary Biology, 9(1), 240
+    link: https://doi.org/10.1186/1471-2148-9-240
 - year: 2008
   papers:
-    - authors: "Troscianko, J., Bluff, L. A. & Rutz, C. (2008)."
-      title: "Grass-stem tool use in New Caledonian Crows Corvus moneduloides"
-      journal: "Ardea, 96: 283-285"
-      link: "#"
+  - authors: Troscianko, J., Bluff, L. A., & Rutz, C. (2008).
+    title: Grass-stem tool use in New Caledonian crows Corvus moneduloides
+    journal: Ardea, 96(2), 283-285
+    link: https://doi.org/10.5253/078.096.0214
 - year: 2005
   papers:
-    - authors: "Lovell, P. G., Tolhurst, D. J., Parraga, C. A., Baddeley, R., Leonards, U. & Troscianko, J. (2005)."
-      title: "Stability of the color-opponent signals under changes of illuminant in natural scenes"
-      journal: "Journal of the Optical Society of America, A., 22: 2060-2071"
-      link: "#"
-    - authors: "Lovell, P. G., Tolhurst, D. J., Parraga, C. A., Baddeley, R. J., Leonards, U., Troscianko, J. & Troscianko, T. (2005)."
-      title: "Opponent channel responses to changes in the illuminant of natural scenes for primates and birds"
-      journal: "Perception, 34: 59"
-      link: "#"
-- year: 2003
-  papers:
-    - authors: "Troscianko, T., Parraga, C. A., Leonards, U., Baddeley, R. J., Troscianko, J. & Tolhurst, D. J. (2003)."
-      title: "Leaves, fruit, shadows, and lighting in kibale forest, Uganda"
-      journal: "Perception, 32: 51"
-      link: "#"
-    - authors: "Parraga, C.A., Troscianko, T., Troscianko, J., Tolhurst, D.J., and Leonards, U. (2003)."
-      title: "Spatiochromatic Properties of Images of Fruits and Leaves from Kibale Forest, Uganda"
-      journal: "Journal of Vision, 3 (9): 315–315"
-      link: "#"
+  - authors: Lovell, P. G., Tolhurst, D. J., Parraga, C. A., Baddeley, R., Leonards, U., et al. (2005).
+    title: Stability of the color-opponent signals under changes of illuminant in natural scenes
+    journal: Journal of the Optical Society of America A, 22(10), 2060-2071
+    link: https://doi.org/10.1364/josaa.22.002060

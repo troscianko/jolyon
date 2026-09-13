@@ -3,7 +3,7 @@ title: "Tenerife Wild Flowers in UV Bee Vision"
 image: /assets/images/posts/tenerife-wild-flowers-in-uv-bee-vision/main.jpg
 excerpt: "Here are some photographs of wild flowers I found in Tenerife. We were staying in…"
 date: 2015-04-26 18:48:43 +0000
-themes: [animal-vision, visual-ecology]
+themes: [animal-vision, visual-ecology,  photos]
 original_url: https://www.jolyon.co.uk/2015/04/tenerife-wild-flowers-in-uv-bee-vision/
 ---
 

@@ -3,7 +3,7 @@ title: "Buenos Aires Tetra reveals its colours"
 image: /assets/images/posts/buenos-aires-tetra/main.jpg
 excerpt: "Photographing fish in full-spectrum colour is incredibly difficult as they rarely stay still long enough…"
 date: 2016-06-24 16:27:37 +0000
-themes: [animal-vision]
+themes: [animal-vision, photos]
 original_url: https://www.jolyon.co.uk/2016/06/buenos-aires-tetra/
 ---
 

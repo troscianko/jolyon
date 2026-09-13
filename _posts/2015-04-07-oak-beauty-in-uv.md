@@ -3,7 +3,7 @@ title: "Oak Beauty in UV"
 image: /assets/images/posts/oak-beauty-in-uv/main.jpg
 excerpt: "I found this Oak Beauty Biston strataria sitting on a fencepost today and took some…"
 date: 2015-04-07 21:10:45 +0000
-themes: [animal-vision, visual-ecology]
+themes: [animal-vision, visual-ecology, photos]
 original_url: https://www.jolyon.co.uk/2015/04/oak-beauty-in-uv/
 ---
 

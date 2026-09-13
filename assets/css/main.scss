@@ -13,7 +13,7 @@
   --white: #ffffff;
 
   --accent-green: #b9f855;
-  --accent-green-dark: #1f3d0c;
+  --accent-green-dark: #729439;
   --accent-blue: #5cc3fa;
   --header-dark: #202020;
 
@@ -43,7 +43,7 @@ img { max-width: 100%; display: block; }
 
 a {
   color: var(--grey-900);
-  text-decoration-color: var(--accent-blue);
+  text-decoration-color: var(--accent-green-dark);
   text-decoration-thickness: 2px;
 }
 a:hover { color: var(--grey-700); }
@@ -287,8 +287,8 @@ p { margin: 0 0 1em; }
   color: var(--grey-800);
 }
 .carousel-controls button:hover {
-  background: var(--accent-blue);
-  border-color: var(--accent-blue);
+  background: var(--accent-green-dark);
+  border-color: var(--accent-green-dark);
   color: var(--grey-950);
 }
 
@@ -338,7 +338,7 @@ p { margin: 0 0 1em; }
 .post-card .date {
   display: block;
   font-size: 0.75rem;
-  color: var(--accent-blue-text, var(--grey-500));
+  color: var(--accent-green-dark, var(--grey-500));
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-bottom: 0.3em;
@@ -407,7 +407,7 @@ p { margin: 0 0 1em; }
   border-radius: 999px;
   text-decoration: none;
 }
-.tag-pill:hover { background: var(--accent-blue); color: var(--grey-950); }
+.tag-pill:hover { background: var(--accent-green-dark); color: var(--grey-950); }
 
 /* ---------- Lists: publications / funding ---------- */
 .pub-year { margin: 2rem 0 0.75rem; color: var(--grey-700); }
@@ -417,7 +417,7 @@ p { margin: 0 0 1em; }
   border-bottom: 1px solid var(--border);
 }
 .pub-list .authors { color: var(--text-muted); font-size: 0.9rem; }
-.funding-list .role { color: var(--accent-blue); font-weight: 700; font-size: 0.8rem; text-transform: uppercase; }
+.funding-list .role { color: var(--accent-green-dark); font-weight: 700; font-size: 0.8rem; text-transform: uppercase; }
 
 .pub-main {
   display: flex;
@@ -571,7 +571,7 @@ p { margin: 0 0 1em; }
 .lightbox-close:hover,
 .lightbox-prev:hover,
 .lightbox-next:hover {
-  background: var(--accent-blue);
+  background: var(--accent-green-dark);
   color: var(--grey-950);
 }
 .lightbox-close { top: 1rem; right: 1rem; }

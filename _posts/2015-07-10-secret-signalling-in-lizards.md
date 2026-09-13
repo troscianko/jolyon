@@ -3,7 +3,7 @@ title: "Secret signalling in lizards"
 image: /assets/images/posts/secret-signalling-in-lizards/main.jpg
 excerpt: "While on holiday in Tenerife I managed to snap a few of the local lizards…"
 date: 2015-07-10 08:24:38 +0000
-themes: [animal-vision, visual-ecology]
+themes: [animal-vision, visual-ecology, photos]
 original_url: https://www.jolyon.co.uk/2015/07/secret-signalling-in-lizards/
 ---
 

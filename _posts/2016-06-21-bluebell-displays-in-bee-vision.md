@@ -3,7 +3,7 @@ title: "Bluebell displays in bee vision"
 image: /assets/images/posts/bluebell-displays-in-bee-vision/main.jpg
 excerpt: "This spring we went to Enys gardens, which has an impressive bluebell display, and I…"
 date: 2016-06-21 14:01:06 +0000
-themes: [animal-vision]
+themes: [animal-vision, photos]
 original_url: https://www.jolyon.co.uk/2016/06/bluebell-displays-in-bee-vision/
 ---
 

@@ -3,7 +3,7 @@ title: "Provence burnet moth warning colours"
 image: /assets/images/posts/provence-burnet-moth/main.jpg
 excerpt: "Burnet moths are day-flying moths with striking red and black patterns. They’re highly distasteful to…"
 date: 2016-06-21 20:07:12 +0000
-themes: [animal-vision, visual-ecology]
+themes: [animal-vision, visual-ecology, photos]
 original_url: https://www.jolyon.co.uk/2016/06/provence-burnet-moth/
 ---
 
