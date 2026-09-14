@@ -10,6 +10,8 @@
     title: BehaveAI enables rapid detection and classification of objects and behavior from motion
     journal: PLOS Biology, 24(2), e3003632
     link: https://doi.org/10.1371/journal.pbio.3003632
+    description: '[GitHub download](https://github.com/troscianko/BehaveAI/), [User guide](https://github.com/troscianko/BehaveAI/wiki)'
+    image: assets/images/pages/publications/BehaveAI_200.png
   - authors: Briolat, E. S., Galloway, J. A. M., Cornelius, E., Wright, C. J., Bennie, J., Gaston, K. J., et al. (2026).
     title: Severe and widespread reductions in night-time activity of nocturnal moths under modern artificial lighting spectra
     journal: 'Proceedings of the Royal Society B: Biological Sciences, 293'
