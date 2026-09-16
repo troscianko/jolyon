@@ -9,7 +9,7 @@ original_url: https://www.jolyon.co.uk/2017/04/online-games-help-us-understand-c
 
 We wanted to know why many animals are dichromats (having two types of colour receptor cells in their eyes) while others, like humans, are trichromats (with three types of colour cells), and how colour vision affects animals’ ability to detect camouflaged prey. Our online computer games played by more than 30,000 people have helped us explore this question.
 
-![](/assets/images/posts/online-games-help-us-understand-colour-vision-and-camouflage/Figure1.jpg)
+![]({{ "/assets/images/posts/online-games-help-us-understand-colour-vision-and-camouflage/Figure1.jpg" | relative_url }})
 
 Game players were shown photographs and had to find camouflaged nightjar birds or nests containing eggs – either in normal colour or in a version imitating the limited colours seen by the dichromatic vision of predators like mongooses.
 

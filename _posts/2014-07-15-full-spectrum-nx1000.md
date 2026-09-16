@@ -34,47 +34,47 @@ Take out the battery & SD card for safety & to avoid short circuits.
 
 Unscrew all the required screws. There are two screws on the right side of the body (one under the USB flap), one on the left, and three on the bottom (you don’t need to undo the screw nearest the front of the camera next to the tripod mount). Very gently prize off the rear casing with the screen. Don’t pull too hard because there’s a ribbon to undo that you might tear (at the top right of this photo). Use the tweezers to very gently pull the ribbon out of its connector. Some (but not all) of the ribbon connectors have a flap you need to pull up to release the ribbon:
 
-![NX1000 IR UV conversion - prize off the screen](/assets/images/posts/full-spectrum-nx1000/NX1000-FullSpectrum-7.jpg)
+![NX1000 IR UV conversion - prize off the screen]({{ "/assets/images/posts/full-spectrum-nx1000/NX1000-FullSpectrum-7.jpg" | relative_url }})
 
 NX1000 IR UV conversion – prize off the screen
 
 Keep undoing more ribbons:
 
-![NX1000 UV IR full spectrum](/assets/images/posts/full-spectrum-nx1000/NX1000-FullSpectrum-6.jpg)
+![NX1000 UV IR full spectrum]({{ "/assets/images/posts/full-spectrum-nx1000/NX1000-FullSpectrum-6.jpg" | relative_url }})
 
 NX1000 UV IR full spectrum
 
 Next, prize off the little metal cover on the flash shoe to reveal the two screws underneath and undo these screws:
 
-![NX1000 - Screws hidden under the flash hotshoe](/assets/images/posts/full-spectrum-nx1000/NX1000-FullSpectrum-5.jpg)
+![NX1000 - Screws hidden under the flash hotshoe]({{ "/assets/images/posts/full-spectrum-nx1000/NX1000-FullSpectrum-5.jpg" | relative_url }})
 
 NX1000 – Screws hidden under the flash hotshoe
 
 Now you can take the top casing off:
 
-![NX1000-FullSpectrum-4](/assets/images/posts/full-spectrum-nx1000/NX1000-FullSpectrum-4.jpg)
+![NX1000-FullSpectrum-4]({{ "/assets/images/posts/full-spectrum-nx1000/NX1000-FullSpectrum-4.jpg" | relative_url }})
 
 Once you’ve disconnected all the ribbons in the way (and one power connector) you’ll have access to the three hex screws securing the sensor housing. These tighten into springs to set the precise position of the sensor.
 
-![NX1000-FullSpectrum-3](/assets/images/posts/full-spectrum-nx1000/main.jpg)
+![NX1000-FullSpectrum-3]({{ "/assets/images/posts/full-spectrum-nx1000/main.jpg" | relative_url }})
 
 I used digital callipers to measure the distance between the sensor housing and the camera chassis (the length of the springs in the above photo). I made a note of these distances so I could re-set them later. Removal of the filter causes a change of focus, you can restore normal focussing by moving the sensor 0.6mm closer to the lens than these values you just measured. The distances for the screw at the bottom of the camera can be measured with the other end of the callipers (because there’s not space to get the normal end of the callipers in), measuring against the plastic casing.
 
-![NX1000-FullSpectrum-2](/assets/images/posts/full-spectrum-nx1000/NX1000-FullSpectrum-2.jpg)
+![NX1000-FullSpectrum-2]({{ "/assets/images/posts/full-spectrum-nx1000/NX1000-FullSpectrum-2.jpg" | relative_url }})
 
 Finally you can undo these three screws and take off the sensor housing. Remove the two little screws securing the sonic dust cleaner and IR/UV blocking filter.
 
-![NX1000-FullSpectrum-1](/assets/images/posts/full-spectrum-nx1000/NX1000-FullSpectrum-1.jpg)
+![NX1000-FullSpectrum-1]({{ "/assets/images/posts/full-spectrum-nx1000/NX1000-FullSpectrum-1.jpg" | relative_url }})
 
 I removed both the IR/UV blocking filter and the sonic dust cleaner for maximal spectral sensitivity. Camera conversions would now often replace the filters with a clear (e.g. quartz) filter for protection and to restore (roughly) the same refractive index in front of the sensor. But I’m using manual lenses with plenty of freedom to move the lenses back and forth, so didn’t bother sourcing the clear filter and it focuses perfectly.
 
 This conversion revealed a fair amount of light leaking onto the sensor from the camera itself. This only occurred on long exposure shots, and resulted in a bright haze on the image. This was presumably due to light from the camera’s circuitry and screen. To remove the effect I used some black PVC insulation tape to make a light-blocking skirt around the sensor.
 
-![NX1000-FullSpectrum-9](/assets/images/posts/full-spectrum-nx1000/NX1000-FullSpectrum-9.jpg)
+![NX1000-FullSpectrum-9]({{ "/assets/images/posts/full-spectrum-nx1000/NX1000-FullSpectrum-9.jpg" | relative_url }})
 
 Make four flaps, folding the tape back on itself.
 
-![NX1000-FullSpectrum-8](/assets/images/posts/full-spectrum-nx1000/NX1000-FullSpectrum-8.jpg)
+![NX1000-FullSpectrum-8]({{ "/assets/images/posts/full-spectrum-nx1000/NX1000-FullSpectrum-8.jpg" | relative_url }})
 
 Finally, make cuts in each corner of the skirt so that the skirt can fold away from the camera body. About 5mm from the plastic should do.
 

@@ -31,7 +31,7 @@ We caught and released 428 moths from 64 species on the Penryn Campus, exposing 
 
 On release, moths from the light-free control group typically flew either up or down.
 
-![](/assets/images/posts/headlights-dazzle-moths/moths-dazzle-figure.png)
+![]({{ "/assets/images/posts/headlights-dazzle-moths/moths-dazzle-figure.png" | relative_url }})
 
 
 Those exposed to the cool phosphor-coated LEDs were more likely to fly towards the light, or in tight circles (something rarely seen in moths when night-lighting is not present).

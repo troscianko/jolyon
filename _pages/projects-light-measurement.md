@@ -11,7 +11,7 @@ Eyes detect light, so measuring the intensity and spectrum of light is crucial f
  
 So I built two open-source instruments to fill this gap: **OSpRad**, a low-cost, high-sensitivity spectroradiometer, and **HOSI**, a hyperspectral imaging system built around the same core sensor. Together they let researchers measure not just how bright a light is, but its full spectral range, down to levels far dimmer than most commercial equipment can register.
 
-![](/assets/images/pages/projects-light-measurement/osprad-photo.jpg)
+![]({{ "/assets/images/pages/projects-light-measurement/osprad-photo.jpg" | relative_url }})
 
  
 ### OSpRad: a high-sensitivity spectroradiometer
@@ -27,7 +27,7 @@ Some key features make this far more useful than typical lab equipment:
 - **Nothing is thrown away.** Every measurement is saved with its raw sensor counts alongside the calibrated values, so data can be recalibrated later without repeating fieldwork.
 OSpRad was published in the *Journal of Experimental Biology* in 2023, and it's already been used to study how artificial lighting reshapes the "landscape of fear" for an endangered shorebird — exactly the kind of question that needed a sensitive, affordable spectroradiometer to even ask.
  
-![](/assets/images/pages/projects-light-measurement/hosi-butterfly.jpg) 
+![]({{ "/assets/images/pages/projects-light-measurement/hosi-butterfly.jpg" | relative_url }}) 
  
 ### HOSI: hyperspectral imaging
  
@@ -39,7 +39,7 @@ Because each pixel is captured with its own independent exposure, HOSI achieves 
  
 In practice, this means being able to point HOSI at a harbour, a street, or a patch of habitat at night and come away with a full hyperspectral panorama: not just an image, but a dataset in which any pixel's exact light spectrum can be examined and compared, individual light sources identified, and the whole night-time light environment characterised in a way no standard camera can manage. HOSI was published in *BMC Biology* in 2025.
 
-![](/assets/images/pages/projects-light-measurement/hosi-wiring-parts.jpg) 
+![]({{ "/assets/images/pages/projects-light-measurement/hosi-wiring-parts.jpg" | relative_url }}) 
  
 ### Free & open source
  

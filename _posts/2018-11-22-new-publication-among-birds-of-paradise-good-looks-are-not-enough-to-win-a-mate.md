@@ -29,7 +29,7 @@ Because female birds-of-paradise judge male quality based on a combination of ch
 
 The researchers found that where a bird-of-paradise puts on his courtship display also makes a difference.
 
-![](/assets/images/posts/new-publication-among-birds-of-paradise-good-looks-are-not-enough-to-win-a-mate/Screenshot-20181122114155-499x393.png)
+![]({{ "/assets/images/posts/new-publication-among-birds-of-paradise-good-looks-are-not-enough-to-win-a-mate/Screenshot-20181122114155-499x393.png" | relative_url }})
 
 Graphic shows which types of displays are most common at varying heights in the rainforest. Birds-of-paradise illustrations by Szabolcs Kókay; background illustration and graphic design by Jillian Ditner. Graphic courtesy of the Cornell Lab of Ornithology.
 

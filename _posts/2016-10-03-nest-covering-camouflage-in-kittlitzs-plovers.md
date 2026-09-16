@@ -9,7 +9,7 @@ original_url: https://www.jolyon.co.uk/2016/10/nest-covering-camouflage-in-kittl
 
 Kittlitz’s plovers cover their nests with materials to help hide them from predators. In our recent study (just published [here](http://onlinelibrary.wiley.com/doi/10.1002/ece3.2494/full)), we show that the materials plovers select to cover their nests are a near-perfect colour match to their eggs, whether they’re using pebbles, sticks or dried vegetation. This helps to conceal the eggs themselves within the nest, but makes the nests a worse colour match to their immediate surroundings.
 
-![Examples of three Kittlitz's nests in simulated bird vision, both covered (left) and uncovered (right).](/assets/images/posts/nest-covering-camouflage-in-kittlitzs-plovers/Nest-Example-Image.jpg)
+![Examples of three Kittlitz's nests in simulated bird vision, both covered (left) and uncovered (right).]({{ "/assets/images/posts/nest-covering-camouflage-in-kittlitzs-plovers/Nest-Example-Image.jpg" | relative_url }})
 
 Examples of three Kittlitz’s nests in simulated bird vision, both covered (left) and uncovered (right). The nest at the top is covered with entirely organic material, the central nest a mix of organic and inorganic, the bottom nest is covered with inorganic pebbles.
 
@@ -19,6 +19,6 @@ This video shows the ‘leaving scuffle’ the plovers use to cover their eggs w
 
 <iframe allowfullscreen="" frameborder="0" height="281" loading="lazy" src="https://www.youtube.com/embed/QI1zjdQnjlU?feature=oembed" width="500"></iframe>
 
-![Blacksmith Plover Adult](/assets/images/posts/nest-covering-camouflage-in-kittlitzs-plovers/BlacksmithAdult.jpg)
+![Blacksmith Plover Adult]({{ "/assets/images/posts/nest-covering-camouflage-in-kittlitzs-plovers/BlacksmithAdult.jpg" | relative_url }})
 
 Blacksmith Plover Adult incubating its nest. The blacksmith plovers ‘sabotaged’ the nests of nearby Kittltiz’s plovers.

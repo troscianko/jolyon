@@ -22,6 +22,14 @@ Visual information guides many aspects of animal behaviour, in turn affecting th
 
 Camouflage is the most common defence used by prey and predators alike, highlighting the fundamental importance of vision for predator-prey interactions. These interactions in turn affect whole food webs and ecosystems. My own work has demonstrated how camouflage protects wild animals (e.g. nightjars and other ground nesting birds), how camouflage can be maximised through behaviourally selecting optimal backgrounds (e.g. ground nesting birds, shore crabs and marine isopods), or changing colour to match backgrounds (marine isopods and chameleons). Predator learning is also crucial, and I’ve shown how this can select for evolutionary diversity (e.g. in shore crabs). I’ve also developed new methods for quantifying how well various camouflage strategies work, such as pattern matching or edge disruption.
 
+![Fiery-neck Nightjar in Leaves](./assets/images/pages/research-visual-ecology/Nightjar-in-Leaves.jpg)
+
+Fiery-neck Nightjar in Leaves
+
+![Nightjar in Leaves highlighted](./assets/images/pages/research-visual-ecology/Nightjar-in-Leaves-highlighted.jpg)
+
+Nightjar in Leaves highlighted
+
 ### Signalling
 
 Visual signals are crucial for attracting mates, advertising defences, attracting pollinators, or deceiving others for personal gain. These processes are fundamental to the evolutionary trajectories of vast swathes of species, with sexual signalling (e.g. my work with guppies, drosophila, and birds of paradise) and brood parasitism (e.g. work with various cuckoo systems) driving rapid evolutionary arms races and fuelling explosive radiation events, and warning colours being copied both honestly or dishonestly to put off would-be predators. My work has let me explore many of these wonderfully complex questions.
@@ -49,7 +57,7 @@ Working as part of the Sensory ecology group (previously at Cambridge University
 
 ### Camouflage and prey survival
 
-![](/assets/images/pages/research-visual-ecology/PloverCamoSmallPortrait.png)
+![]({{ "/assets/images/pages/research-visual-ecology/PloverCamoSmallPortrait.png" | relative_url }})
 
 A pair of three banded coursers (*Rhinoptilus cinctus*) blending into their background beautifully
 
@@ -65,17 +73,11 @@ See my [publications](http://www.jolyon.co.uk/myresearch/mypublications/) to see
 
 There’s a Fiery-necked nightjar (*Caprimulgus pectoralis*) incubating her eggs in this image – can you find her? If you enjoy doing this, help our research and play our [online games](http://www.sensoryecology.com/games/)!
 
-![Fiery-neck Nightjar in Leaves](/assets/images/pages/research-visual-ecology/Nightjar-in-Leaves.jpg)
 
-Fiery-neck Nightjar in Leaves
-
-![Nightjar in Leaves highlighted](/assets/images/pages/research-visual-ecology/Nightjar-in-Leaves-highlighted.jpg)
-
-Nightjar in Leaves highlighted
 
 ### Distractive markings
 
-![](/assets/images/pages/research-visual-ecology/ThayerSmall.png)
+![]({{ "/assets/images/pages/research-visual-ecology/ThayerSmall.png" | relative_url }})
 
 Abbott Thayer
 
@@ -87,7 +89,7 @@ We didn’t find any evidence to suggest that distractive markings improve the s
 
 Examples of our touchscreen ‘moth’ prey. The graph shows how distractive markings not only make it easier to find the prey targets, they also allow our human ‘predators’ to learn to find them faster the more they encounter them.
 
-![](/assets/images/pages/research-visual-ecology/DistractiveMarkingsSmall.png)
+![]({{ "/assets/images/pages/research-visual-ecology/DistractiveMarkingsSmall.png" | relative_url }})
 
 
 ## Brood Parasites

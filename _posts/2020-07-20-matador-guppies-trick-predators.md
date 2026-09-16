@@ -37,7 +37,7 @@ This paper demonstrates a previously unknown divertive strategy – but the rese
 
 “Our latest research gives new insight into why ‘conspicuous’ and colourful eyes have evolved.”
 
-![](/assets/images/posts/matador-guppies-trick-predators/Composite-guppy-to-predator-vision-three-levels-2048x1639.jpg)
+![]({{ "/assets/images/posts/matador-guppies-trick-predators/Composite-guppy-to-predator-vision-three-levels-2048x1639.jpg" | relative_url }})
 
 This image shows a female (left) and male (right) guppy in “predator vision” of a pike cichlid at different distances.
 

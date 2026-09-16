@@ -13,7 +13,7 @@ In our [paper](http://www.nature.com/articles/srep35293) out today we show that 
 
 Burying beetles have interesting orange markings that I thought I’d have a quick look at in animal vision:
 
-![Burying beetles shown in the false colours of various visual systems](/assets/images/posts/bigger-burying-beetles-make-better-nests/BuryingBeetleFigure.jpg)
+![Burying beetles shown in the false colours of various visual systems]({{ "/assets/images/posts/bigger-burying-beetles-make-better-nests/BuryingBeetleFigure.jpg" | relative_url }})
 
 Burying beetles shown in the false colours of various visual systems
 

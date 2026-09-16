@@ -38,7 +38,7 @@ The Quantitative Colour and Pattern Analysis [(QCPA) Framework](http://www.empir
 - [Local Edge Intensity Analysis](http://www.empiricalimaging.com/knowledge-base/local-edge-intensity-analysis-leia/)
 - [Particle Analysis](http://www.empiricalimaging.com/knowledge-base/particle-analysis/)
 
-![](/assets/images/posts/a-new-home-for-the-micatoolbox-empiricalimaging-com/QCPA-logo.jpg)
+![]({{ "/assets/images/posts/a-new-home-for-the-micatoolbox-empiricalimaging-com/QCPA-logo.jpg" | relative_url }})
 
 Other major additions to the micaToolbox are:
 
@@ -49,4 +49,4 @@ Other major additions to the micaToolbox are:
 - Reflectance images are now on a more intuitive 0-100% scale, and cone-catch images are on a 0-1 scale
 - RAW images are now handled by a custom-written DCRAW Import function, which is more stable than the previous version
 
-![](/assets/images/posts/a-new-home-for-the-micatoolbox-empiricalimaging-com/micaToolboxLogoMKIIlarge-1024x463.png)
+![]({{ "/assets/images/posts/a-new-home-for-the-micatoolbox-empiricalimaging-com/micaToolboxLogoMKIIlarge-1024x463.png" | relative_url }})

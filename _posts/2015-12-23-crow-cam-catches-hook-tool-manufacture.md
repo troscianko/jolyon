@@ -15,7 +15,7 @@ The paper details how we captured the first video recordings documenting how the
 
 <iframe allowfullscreen="" frameborder="0" height="375" loading="lazy" src="https://www.youtube.com/embed/2yAF6lV-d2c?feature=oembed" width="500"></iframe>
 
-![On the left is an illustration of the technique the crows use to make hooked stick tools, on the right is a recovered example.](/assets/images/posts/crow-cam-catches-hook-tool-manufacture/Tool-Manufacture.png)
+![On the left is an illustration of the technique the crows use to make hooked stick tools, on the right is a recovered example.]({{ "/assets/images/posts/crow-cam-catches-hook-tool-manufacture/Tool-Manufacture.png" | relative_url }})
 
 On the left is an illustration of the technique the crows use to make hooked stick tools, on the right is a recovered example.
 
@@ -29,15 +29,15 @@ While fieldworkers had previously obtained brief glimpses of hooked stick tool m
 
 New Caledonian crows are notoriously difficult to observe, not just because of the challenging terrain of their tropical habitats, but also because they can be quite sensitive to disturbance. By documenting their fascinating behaviour with this new camera technology, we obtained valuable insights into the importance of tools in their daily search for food.
 
-![Illustration of the mounting method used for crow-cams](/assets/images/posts/crow-cam-catches-hook-tool-manufacture/NCC-crowcam-diagram.jpg)
+![Illustration of the mounting method used for crow-cams]({{ "/assets/images/posts/crow-cam-catches-hook-tool-manufacture/NCC-crowcam-diagram.jpg" | relative_url }})
 
 Illustration of the mounting method used for crow-cams
 
 To obtain a ‘crow’s-eye view’ of this elusive behaviour, we developed video cameras that are attached to the crows’ tail feathers. The cameras are about the weight of a British 2-pound coin, and a tiny integrated radio beacon let us recover the devices once they had safely detached after a few days. Dr Christian Rutz, Reader in the School of Biology in St Andrews, explains: “These cameras store video footage on a micro-SD card, using technology similar to that found in people’s smart phones. This produced video recordings of stunning quality.”
 
-![3Dcrowcam](/assets/images/posts/crow-cam-catches-hook-tool-manufacture/3Dcrowcam.png)
+![3Dcrowcam]({{ "/assets/images/posts/crow-cam-catches-hook-tool-manufacture/3Dcrowcam.png" | relative_url }})
 
-![The crow-cams have homing beacons that let us find them on the forest floor when they fall off.](/assets/images/posts/crow-cam-catches-hook-tool-manufacture/recovered-crowcam.jpg)
+![The crow-cams have homing beacons that let us find them on the forest floor when they fall off.]({{ "/assets/images/posts/crow-cam-catches-hook-tool-manufacture/recovered-crowcam.jpg" | relative_url }})
 
 The crow-cams have homing beacons that let us find them on the forest floor when they fall off.
 
