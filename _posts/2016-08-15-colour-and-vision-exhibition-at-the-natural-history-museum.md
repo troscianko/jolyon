@@ -13,25 +13,25 @@ Here’s a taste of the sort of images we helped prepare for their exhibition:
 
 ### Dragonfly
 
-![Dragonflies have complex colour vision, but they can also see polarised light. This image shows what the world can look like with polarisation vision.]({{ "/assets/images/posts/colour-and-vision-exhibition-at-the-natural-history-museum/DragonflyPolarisation.jpg" | relative_url }})
+![Dragonflies have complex colour vision, but they can also see polarised light. This image shows what the world can look like with polarisation vision.](/assets/images/posts/colour-and-vision-exhibition-at-the-natural-history-museum/DragonflyPolarisation.jpg)
 
 Dragonflies have complex colour vision, but they can also see polarised light. This image shows what the world can look like with polarisation vision.
 
 ### Jumping Spider
 
-![Fly sitting on a dandilion flower, shown in Human (LMS, left), Jumping Spider (middle, LWS, MWS, UV), and Fly vision (right, drosophila Rh6, Rh5, Rh3).]({{ "/assets/images/posts/colour-and-vision-exhibition-at-the-natural-history-museum/flyDandilion-human-jumpingSpider-fly.jpg" | relative_url }})
+![Fly sitting on a dandilion flower, shown in Human (LMS, left), Jumping Spider (middle, LWS, MWS, UV), and Fly vision (right, drosophila Rh6, Rh5, Rh3).](/assets/images/posts/colour-and-vision-exhibition-at-the-natural-history-museum/flyDandilion-human-jumpingSpider-fly.jpg)
 
 Fly sitting on a dandilion flower, shown in Human (LMS, left), Jumping Spider (middle, LWS, MWS, UV), and Fly vision (right, drosophila Rh6, Rh5, Rh3). The jumping spider sees roughly in the human equivalent of red, green and UV, which explains why the UV-reflecting petals of the dandilion look pale/white to them. Flies, on the other hand see in complex colour vision, possibly tetrachromatic, but probably more complicated than that. Here I’ve shown their ‘green’, ‘blue’ and deeper UV channels, which show how extremely UV reflective the dandilion petals would look to them.
 
 ### Box Jellyfish
 
-![Box Jellyfish have eyes that point up and sideways simultaneously. They don't have colour vision, or very good acuity, but this simultaneous up and sideways vision can help them navigate their environment.]({{ "/assets/images/posts/colour-and-vision-exhibition-at-the-natural-history-museum/boxJellyfish.jpg" | relative_url }})
+![Box Jellyfish have eyes that point up and sideways simultaneously. They don't have colour vision, or very good acuity, but this simultaneous up and sideways vision can help them navigate their environment.](/assets/images/posts/colour-and-vision-exhibition-at-the-natural-history-museum/boxJellyfish.jpg)
 
 Box Jellyfish have eyes that point up and sideways simultaneously. They don’t have colour vision, or very good acuity, but this simultaneous up and sideways vision can help them navigate their environment.
 
 ### Snail
 
-![Snails have simple lens eyes with very poor acuity and no colour vision.]({{ "/assets/images/posts/colour-and-vision-exhibition-at-the-natural-history-museum/snailVision.jpg" | relative_url }})
+![Snails have simple lens eyes with very poor acuity and no colour vision.](/assets/images/posts/colour-and-vision-exhibition-at-the-natural-history-museum/snailVision.jpg)
 
 Snails have simple lens eyes with very poor acuity and no colour vision.
 

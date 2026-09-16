@@ -28,4 +28,4 @@ I also enjoy developing new models of animal vision that allow us to glimpse the
 
 Light pollution is increasingly recognised as a major source of pollution that's affecting whole ecosystems. Our lab is actively researching these impacts in a range of systems, from birds and insects to isopods and worms. Where possible we use novel field experiments across a wide range of species so that our findings can be linked to potential biodiversity issues. 
 
-![Jolyon Troscianko]({{ "/assets/images/pages/about-me/jolyon_alaska.jpg" | relative_url }})
+![Jolyon Troscianko](/assets/images/pages/about-me/jolyon_alaska.jpg)

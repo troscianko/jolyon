@@ -12,19 +12,19 @@ reaction:
   attraction: 1.8      # default 0 (free drift) — try 0.5-2, it needs to be much bigger than feed/kill values to matter
 ---
 
-![]({{ "/assets/images/pages/projects-behveai/behaveai-1200-banner.png" | relative_url }})
+![](/assets/images/pages/projects-behveai/behaveai-1200-banner.png)
 
 ## BehaveAI: Detecting animal behaviour from motion
 
 Videos are a crucial tool for behavioural research because they can show what an animal is _doing_ and how this changes and responds over time. Despite decades of advances we lacked automated tools for extracting this information reliably and effectively. This led me to build **BehaveAI**, a free, open-source framework for detecting, classifying, and tracking animals — or any moving object — directly from video.
 
-![]({{ "/assets/images/pages/projects-behveai/fly-behaviour.jpg" | relative_url }})
+![](/assets/images/pages/projects-behveai/fly-behaviour.jpg)
 
 ### Seeing motion the way the brain does
 
 Most computer vision tools trained to spot animals work purely from static appearance, much like a single photograph. But behaviour is normally best described by *how* something moves, not just what it looks like. BehaveAI's key idea is to turn motion itself into something a neural network — and a human annotator — can read at a glance: motion is converted into a kind of false-colour image and combined with the animal's static appearance. This loosely mirrors the way the mammalian visual system separates motion processing from object recognition, and it lets the underlying model, built on the widely used YOLO (You Only Look Once) architecture, pick up on behavioural cues that appearance alone would miss.
 
-![]({{ "/assets/images/pages/projects-behveai/gull-demo.jpg" | relative_url }})
+![](/assets/images/pages/projects-behveai/gull-demo.jpg)
 
 
 **[Download from GitHub](https://github.com/troscianko/BehaveAI)**

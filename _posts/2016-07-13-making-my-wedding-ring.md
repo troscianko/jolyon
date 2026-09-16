@@ -9,7 +9,7 @@ original_url: https://www.jolyon.co.uk/2016/07/making-my-wedding-ring/
 
 Traditional wedding rings are not my thing; to me the shiny heavy metals are somewhat impersonal and boring, not to mention expensive. I therefore decided to have a go at making my own (how hard can it be!?) Making Emma’s engagement ring seemed to be a success, so I started planning.
 
-![Wedding ring materials. This the a branch of yew wood that I found had died from lack of light right in the centre of the canopy. The block of metal is a zinc alloy, and the base ring tarnished to its dusty blue.]({{ "/assets/images/posts/making-my-wedding-ring/ringMaterials.jpg" | relative_url }})
+![Wedding ring materials. This the a branch of yew wood that I found had died from lack of light right in the centre of the canopy. The block of metal is a zinc alloy, and the base ring tarnished to its dusty blue.](/assets/images/posts/making-my-wedding-ring/ringMaterials.jpg)
 
 Wedding ring materials. This the a branch of yew wood that I found had died from lack of light right in the centre of the canopy. The block of metal is a zinc alloy, and the base ring tarnished to its dusty blue.
 
@@ -23,4 +23,4 @@ Watch the video to see the whole process. This doesn’t show the final steps of
 
 <iframe allowfullscreen="" frameborder="0" height="281" loading="lazy" src="https://www.youtube.com/embed/nDEn-7HMwvw?feature=oembed" width="500"></iframe>
 
-![Wedding ring on my finger]({{ "/assets/images/posts/making-my-wedding-ring/ring-on-finger.jpg" | relative_url }})
+![Wedding ring on my finger](/assets/images/posts/making-my-wedding-ring/ring-on-finger.jpg)

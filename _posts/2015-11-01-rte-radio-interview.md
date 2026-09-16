@@ -11,4 +11,4 @@ I took part in a discussion on how animals see the world on Mooney Goes Wild on 
 
 You can listen to the discussion in RTÉ’s website [here](http://www.rte.ie/radio/utils/radioplayer/rteradioweb.html#!rii=9%3A20873946%3A82%3A01-11-2015%3A), or download the podcast [here](http://podcast.rasset.ie/podcasts/audio/2015/1101/20151101_rteradio1-mooney-seeingthro_c20873946_20874096_232_drm_.mp3).
 
-![http://img.rasset.ie/000a6303-642.jpg]({{ "/assets/images/posts/rte-radio-interview/000a6303-642.jpg" | relative_url }})
+![http://img.rasset.ie/000a6303-642.jpg](/assets/images/posts/rte-radio-interview/000a6303-642.jpg)

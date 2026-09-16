@@ -11,7 +11,7 @@ Sand fleas have a remarkable ability to change colour in order to match dramatic
 
 We found that sand fleas from the remote British Overseas Territory of Ascension Island change their colour to match the beaches they wash up on, which vary widely in colour and brightness from black to light yellow.
 
-![Sand fleas on the sand from their respective beaches around Ascension island.]({{ "/assets/images/posts/camouflage-matching-in-sand-fleas/main.jpg" | relative_url }})
+![Sand fleas on the sand from their respective beaches around Ascension island.](/assets/images/posts/camouflage-matching-in-sand-fleas/main.jpg)
 
 Sand fleas on the sand from their respective beaches around Ascension island.
 

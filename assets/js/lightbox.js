@@ -27,6 +27,13 @@ document.addEventListener("DOMContentLoaded", function () {
     return rawSrc.replace("/assets/images/", "/assets/images/derived/display/");
   }
 
+  // photoMeta is keyed by each image's original (non-derived) path — plain
+  // content images default to their derived/display/ copy now, so map back
+  // to the original path before looking up metadata.
+  function originalPathFor(strippedSrc) {
+    return strippedSrc.replace(/^\/assets\/images\/derived\/(thumb|display)\//, "/assets/images/");
+  }
+
   var photos = Array.prototype.slice.call(document.querySelectorAll("[data-photo]"));
 
   var plainImgs = Array.prototype.slice
@@ -37,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   plainImgs.forEach(function (img) {
     var rawSrc = img.getAttribute("src");
-    var key = stripBaseurl(rawSrc);
+    var key = originalPathFor(stripBaseurl(rawSrc));
     var meta = photoMeta[key];
 
     var figure = document.createElement("figure");

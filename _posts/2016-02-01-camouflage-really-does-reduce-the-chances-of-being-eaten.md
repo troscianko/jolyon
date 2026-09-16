@@ -7,7 +7,7 @@ themes: [visual-ecology, visual-modelling]
 original_url: https://www.jolyon.co.uk/2016/02/camouflage-really-does-reduce-the-chances-of-being-eaten/
 ---
 
-![Mozambique Nightjar in Zambia (Copyright Claire Spottiswoode)]({{ "/assets/images/posts/camouflage-really-does-reduce-the-chances-of-being-eaten/MozamNightjar.jpg" | relative_url }})
+![Mozambique Nightjar in Zambia (Copyright Claire Spottiswoode)](/assets/images/posts/camouflage-really-does-reduce-the-chances-of-being-eaten/MozamNightjar.jpg)
 
 Mozambique Nightjar in Zambia (Copyright Claire Spottiswoode)
 
@@ -17,7 +17,7 @@ We found that animals or eggs that matched the pattern or contrast of the surrou
 
 We know that animal camouflage has evolved over millions of years to help prey evade being seen by predators – it is a classic example of natural selection. Yet although it may seem obvious that blending into your background makes you less likely to be seen, it is surprisingly difficult to test this in a natural setting.
 
-![Bronzewing Coursers Clutch (copyright Claire Spottiswoode)]({{ "/assets/images/posts/camouflage-really-does-reduce-the-chances-of-being-eaten/BronzewingClutch.jpg" | relative_url }})
+![Bronzewing Coursers Clutch (copyright Claire Spottiswoode)](/assets/images/posts/camouflage-really-does-reduce-the-chances-of-being-eaten/BronzewingClutch.jpg)
 
 A Bronzewing Courser clutch in Zambia, photograph copyright Claire Spottiswoode
 
@@ -27,7 +27,7 @@ This is partly because very well camouflaged animals are of course difficult to 
 
 Martin Stevens from Exeter University who, along with Claire Spottiswoode from the University of Cambridge, co-led the project adds: “Despite such a long history of research, ours is the first study to directly show how the degree of camouflage an individual has, to the eyes of its predators, directly affects the likelihood of it being seen and eaten in the wild.”
 
-![Three banded plover chick]({{ "/assets/images/posts/camouflage-really-does-reduce-the-chances-of-being-eaten/Three-banded-plover-chick.jpg" | relative_url }})
+![Three banded plover chick](/assets/images/posts/camouflage-really-does-reduce-the-chances-of-being-eaten/Three-banded-plover-chick.jpg)
 
 Three banded plover chick and egg hatching.
 
@@ -35,7 +35,7 @@ We studied a variety of ground-nesting birds, whose eggs would stay in a fixed l
 
 Our study showed that in species that would flee the nest as predators approached, such as plovers and coursers, the eggs were more likely to survive to hatching if they matched the background more closely when exposed to view by their fleeing parent.
 
-![Crowned plover broken wing]({{ "/assets/images/posts/camouflage-really-does-reduce-the-chances-of-being-eaten/Crowned-plover-broken-wing.jpg" | relative_url }})
+![Crowned plover broken wing](/assets/images/posts/camouflage-really-does-reduce-the-chances-of-being-eaten/Crowned-plover-broken-wing.jpg)
 
 Crowned plover performing a broken wing display. Plovers and coursers flee the nest as soon as they see a threat approach, but some also try to lure predators away from their eggs with broken wing displays.
 

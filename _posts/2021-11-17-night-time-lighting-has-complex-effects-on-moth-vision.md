@@ -27,7 +27,7 @@ This could make it more difficult for them to find and pollinate wildflowers, an
 
 Conversely, bird vision is much more robust, meaning artificial light will help them to find camouflaged moth prey, and will allow them to hunt later into the evening and earlier in the morning.
 
-![]({{ "/assets/images/posts/night-time-lighting-has-complex-effects-on-moth-vision/moth-background-selection4-moths-only.jpg" | relative_url }})
+![](/assets/images/posts/night-time-lighting-has-complex-effects-on-moth-vision/moth-background-selection4-moths-only.jpg)
 
 Our study found that phosphor converted amber LED lighting – often suggested to be less harmful to nocturnal insects – has unpredictable consequences for insect vision depending on distance from the light source and the colour of the objects viewed. White lights (with a greater blue component), allow for more natural colour vision in moths, but these light sources are known to be harmful for other species.
 

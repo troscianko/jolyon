@@ -5,7 +5,7 @@ permalink: /projects/micatoolbox/
 eyebrow: "Project"
 ---
 
-![]({{ "/assets/images/pages/projects-micatoolbox/micaToolboxLogoMKIIlarge.png" | relative_url }})
+![](/assets/images/pages/projects-micatoolbox/micaToolboxLogoMKIIlarge.png)
 
 
 # micaToolbox & QCPA: Quantifying Colour and Pattern in Animal Vision
@@ -14,7 +14,7 @@ Digital cameras are powerful tools, but they are built entirely around human vis
 
 That's the problem **micaToolbox** and **QCPA** were built to solve. micaToolbox turns ordinary digital cameras into calibrated measuring instruments and translates images into other species' visual systems; QCPA extends that calibrated output into a full framework for analysing colour *pattern*, not just colour. Both are free, open-source plugins for ImageJ, a widely used scientific image-analysis platform, and both are documented at [empiricalimaging.com (user guides, videos, forum)](http://www.empiricalimaging.com)
 
-![]({{ "/assets/images/posts/phd-position-advertised/lapwing-montage.jpg" | relative_url }})
+![](/assets/images/posts/phd-position-advertised/lapwing-montage.jpg)
 
 
 ## micaToolbox: from photograph to visual measurement

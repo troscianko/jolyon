@@ -13,4 +13,4 @@ This video shows how I trained chicks to peck at camouflaged “moths” on a di
 
 The moving horizontal lines are an artefact of the display and progressive video recording – they’re not visible to me or the chicks.
 
-![Chick Arena]({{ "/assets/images/posts/chick-training/ChickArena.jpg" | relative_url }})
+![Chick Arena](/assets/images/posts/chick-training/ChickArena.jpg)

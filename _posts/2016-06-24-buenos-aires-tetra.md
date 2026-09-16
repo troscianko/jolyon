@@ -9,7 +9,7 @@ original_url: https://www.jolyon.co.uk/2016/06/buenos-aires-tetra/
 
 Photographing fish in full-spectrum colour is incredibly difficult as they rarely stay still long enough for changing of filters, and their colours often change rapidly after death, or even when they are anaesthetised. We found one of our >6 year old pet Buenos Aires tetras (*Hyphessobrycon anisitsi*) on its last legs on the floor of our aquarium, seemingly unable to move but otherwise looking healthy and alert (for its age!) So I took this rare opportunity to quickly photograph the poor thing in UV while it was held in an isolation tank to stop it getting bullied by its friends.
 
-![Buenos Aires Tetra (Hyphessobrycon anisitsi) photographed in human and ultraviolet fish-vision]({{ "/assets/images/posts/buenos-aires-tetra/main.jpg" | relative_url }})
+![Buenos Aires Tetra (Hyphessobrycon anisitsi) photographed in human and ultraviolet fish-vision](/assets/images/posts/buenos-aires-tetra/main.jpg)
 
 Buenos Aires Tetra (Hyphessobrycon anisitsi) photographed in human and ultraviolet fish-vision
 

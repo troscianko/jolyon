@@ -521,6 +521,22 @@ p { margin: 0 0 1em; }
   aspect-ratio: auto;
 }
 
+/* These images have no fixed/known height (unlike the fixed-aspect grid tiles above),
+   so an overlay pinned to the bottom edge can end up partly off the image. Instead,
+   flow the caption as a normal block below the image, not overlapping it. */
+.photo-plain .photo-overlay {
+  position: static;
+  background: none;
+  color: inherit;
+  padding: 0.6rem 0 0;
+}
+.photo-plain .photo-overlay strong {
+  color: var(--grey-900);
+}
+.photo-plain .photo-overlay span {
+  color: var(--text-muted, var(--grey-600));
+}
+
 .lightbox {
   position: fixed;
   inset: 0;
