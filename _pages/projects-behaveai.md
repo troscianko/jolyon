@@ -68,3 +68,15 @@ The whole framework is free and open source under the AGPL license, and the meth
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe>
 </div>
+
+## Measure orientation:
+
+BehaveAI v1.4 can now detect and measure the orientation of tracked objects and animals, not just their location. This update adds YOLO oriented bounding boxes (OBB, rotated boxes that hug the actual angle of the object) and automatically calculates a heading/orientation angle for every detection, frame by frame.
+
+<div class="video-embed">
+  <iframe width="100%" height="400" src="https://www.youtube.com/embed/FgmtHoardWg"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+</div>
+
