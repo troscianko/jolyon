@@ -33,7 +33,7 @@ This project aims to:
 
 There is considerable scope within this project for the doctoral researcher to assist in developing the overall research direction and experimental designs. The project will partner with the Game and Wildlife Conservation Trust’s established nest monitoring study system, which locates and tracks a 150-200 nests each season. A range of experimental designs and cutting-edge techniques for camouflage analysis will be used. Naturalistic data on real nest camouflage will be collected from the wild study system, using calibrated animal-vision imaging and 3D scanning techniques to determine which aspects of camouflage, light environment and three-dimensional habitat structure correlate best with clutch survival, and which visual characteristics of a background the birds use when selecting a nesting location. Controlled predation experiments using artificial prey can then be used to test specific hypotheses on how different types of habitat and lighting interact with specific types of camouflage. These experiments can make use of 3D printing, animal-vision calibrated colour printing, and light-environment data logging.
 
-![](/assets/images/posts/phd-position-advertised/Lapwing-processing-montage-small.jpg)
+![](/assets/images/posts/phd-position-advertised/lapwing-montage.jpg)
 
 This project will involve analysing the camouflage of ground-nesting birds (nests, chicks and adults), using calibrated digital imaging and various types of visual modelling. These examples show (clockwise from top left): a lapwing nest; bandpass filtering techniques; colour quantisation and modelling; and edge disruption analysis.
 

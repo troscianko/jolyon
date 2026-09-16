@@ -13,5 +13,5 @@ reaction:
 ---
 
 
-> I have secured funding from a number of different agencies. My funded research varies from applied conservation in light pollution (e.g. _The impact of light pollution on moths_, and _The impact of vehicle headlights_ ), to more theoretical camouflage-environment interaction (Camouflag e& the light environment), to far more blue-sky research into motion vision and  its role in defence ( _Motion confusion in butterflies_ and _Motion illusion for defence_ ).
+> My funded research varies from applied conservation in light pollution (e.g. _The impact of light pollution on moths_, and _The impact of vehicle headlights_ ), to more theoretical camouflage-environment interaction ( _Camouflage & the light environment_ ), to far more blue-sky research into motion vision and its role in defence ( _Motion confusion in butterflies_ and _Motion illusion for defence_ ). I have secured funding from a wide range of agencies:
 

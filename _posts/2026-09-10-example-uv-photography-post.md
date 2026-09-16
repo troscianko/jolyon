@@ -3,6 +3,7 @@ title: "Example post: tagging for Animal Vision / UV photography"
 image: /assets/images/posts/example-uv-photography-post/main.jpg
 banner: true
 excerpt: "A post tagged animal-vision will show up on the Animal Vision page automatically."
+date: 2010-05-23 10:15:25 +0000
 themes: [animal-vision]
 ---
 

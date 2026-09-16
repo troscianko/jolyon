@@ -10,12 +10,13 @@
     title: BehaveAI enables rapid detection and classification of objects and behavior from motion
     journal: PLOS Biology, 24(2), e3003632
     link: https://doi.org/10.1371/journal.pbio.3003632
-    description: '[GitHub download](https://github.com/troscianko/BehaveAI/), [User guide](https://github.com/troscianko/BehaveAI/wiki)'
+    description: 'This is a video analysis tool that can track individual animals and classify their behaviour from patterns of motion as well as their static appearance. It is super lightweight, meaning it can run in real-time on a RaspberryPI, a real game-changer in machine vision and behavioural ecology [GitHub download](https://github.com/troscianko/BehaveAI/), [User guide](https://github.com/troscianko/BehaveAI/wiki)'
     image: assets/images/pages/publications/BehaveAI_200.png
   - authors: Briolat, E. S., Galloway, J. A. M., Cornelius, E., Wright, C. J., Bennie, J., Gaston, K. J., et al. (2026).
     title: Severe and widespread reductions in night-time activity of nocturnal moths under modern artificial lighting spectra
     journal: 'Proceedings of the Royal Society B: Biological Sciences, 293'
     link: https://doi.org/10.1098/rspb.2025.2704
+    description: "This is the first paper to really show how light pollution might be harming moths by preventing them from being active. We tracked the activity of over 800 moths from 23 species under different intensities and spectra of artificial light. The headline is that there's no safe spectrum or timing, all light suppresses moth activity (even sky-glow levels of amber LEDs)."
 - year: 2025
   papers:
   - authors: Hughes, A. E., Mari, L., Troscianko, J., Jelínek, V., Albrecht, T., & Šulc, M. (2025).
@@ -30,6 +31,7 @@
     title: Flap-necked chameleons change colour to match their background
     journal: Biology Letters, 21(8), 20250134
     link: https://doi.org/10.1098/rsbl.2025.0134
+    image: assets/images/posts/chameleon_colour_change.jpg
   - authors: Wainwright, J. B., Loupasaki, T., Ramírez, F., Penry-Williams, I. L., England, S. J., et al. (2025).
     title: Mutualisms within light microhabitats are associated with sensory convergence in a mimetic butterfly community
     journal: Proceedings of the National Academy of Sciences, 122(29), e2422397122
@@ -169,6 +171,10 @@
     link: https://doi.org/10.1111/2041-210x.13328
 - year: 2019
   papers:
+  - authors: Hawkes, M. F., Duffy, E., Joag, R., Skeats, A., Radwan, J., Wedell, N. Sharma, M. D., Hosken, D. J., Troscianko, J. (2019)
+    title: 'Sexual selection drives the evolution of male wing interference patterns'
+    journal: 'Proceedings of the Royal Society B: Biological Sciences, 286 (1903): 20182850'
+    link: https://doi.org/10.1098/rspb.2018.2850
   - authors: Šulc, M., Troscianko, J., Štětková, G., Hughes, A. E., Jelínek, V., Capek, M., et al. (2019).
     title: Mimicry cannot explain rejection type in a host–brood parasite system
     journal: Animal Behaviour, 155, 111-118

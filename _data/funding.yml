@@ -7,7 +7,7 @@
   period: "2024"
   role: "Co-Investigator"
   link: "#"
-#  image: /assets/images/site/butterflies/butterfly_02.jpg
+  image: /assets/images/pages/funding/quex-logo.png
 #  description: >-
 #    TODO: a sentence or two about the grant. Link to [related work](#) or
 #    [press coverage](#).
@@ -17,54 +17,63 @@
   period: "2024-2028"
   role: "Principal Investigator"
   link: "#"
+  image: /assets/images/pages/funding/bbsrc-logo.png
   
 - funder: "NERC Standard grant"
   title: "Ecological impacts of vehicle headlights"
   period: "2024-2027"
   role: "Principal Investigator"
   link: "#"
+  image: /assets/images/pages/funding/nerc-logo.png
   
 - funder: "PhD studentship: Exeter PGR Windfall & RSPB partnership"
   title: "The influence of nighttime lighting on predator-prey dynamics and the landscape of fear"
   period: "2024-2028"
   role: "Supervisor"
   link: "#"
-  
+  image: /assets/images/pages/funding/exeter-logo.png
+    
 - funder: "NERC Standard grant/New investigator"
   title: "The effects of artificial nighttime lighting on moth visual ecology and survival"
   period: "2022-2026"
   role: "Principal Investigator"
   link: "#"
+  image: /assets/images/pages/funding/nerc-logo.png
 
 - funder: "RCUK Co-A funding"
   title: "Camouflage & the light envrionment COVID-19 extension"
   period: "2021"
   role: "Principal Investigator"
   link: "#"
+  image: /assets/images/pages/funding/nerc-logo.png
 
 - funder: "BBSRC Standard grant"
   title: "Motion illusions for defence"
   period: "2020-2024"
   role: "Co-Investigator"
   link: "#"
+  image: /assets/images/pages/funding/bbsrc-logo.png
 
 - funder: "PhD studentship: NERC GW4+"
   title: "The role of camouflage in the survival and conservation of ground-nesting birds"
   period: "2019-2023"
   role: "Supervisor"
   link: "#"
+  image: /assets/images/pages/funding/gw4-logo.png
 
 - funder: "PhD studentship: NERC GW4+"
   title: "Sensory convergence in mimetic butterflies"
   period: "2019-2023"
   role: "Co-Supervisor"
   link: "#" 
+  image: /assets/images/pages/funding/gw4-logo.png
   
 - funder: "NERC Independent Research Fellowship"
   title: "Camouflage & the light environment"
   period: "2017-2022"
   role: "Principal Investigator"
   link: "#"
+  image: /assets/images/pages/funding/nerc-logo.png
   
 - funder: "Rentokil Initial"
   title: "Imaging techniques"

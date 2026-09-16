@@ -20,10 +20,12 @@ reaction:
   
 ---
 
-## About the lab
+## About my lab
 
 I'm an Associate Professor at the University of Exeter's Penryn campus. I have a background in behavioural ecology and sensory ecology, asking questions such as how an animal’s cognition or appearance to other animals affects how they interact with their environment, and how this in turn affects their survival, behaviour, evolution or conservation.
 
 I also enjoy developing new models of animal vision that allow us to glimpse the world through animal eyes, or create new insights into how human vision works. In addition I've developed a range of open-source tools and resouces, including the micaToolbox for animal vision modelling, BehaveAI for quantifying animal behaviour from video, and a range of light measurement hardware & software solutions. I release these tools open-source in order to help make scientific tools accessible to all.
 
-![Jolyon Troscianko](/assets/images/pages/about-me/Jolyon.jpg)
+Light pollution is increasingly recognised as a major source of pollution that's affecting whole ecosystems. Our lab is actively researching these impacts in a range of systems, from birds and insects to isopods and worms. Where possible we use novel field experiments across a wide range of species so that our findings can be linked to potential biodiversity issues. 
+
+![Jolyon Troscianko](/assets/images/pages/about-me/jolyon_alaska.jpg)
