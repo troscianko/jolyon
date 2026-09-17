@@ -2,7 +2,7 @@
 title: "BehaveAI Published"
 image: /assets/images/pages/projects-behveai/gull-demo.jpg
 excerpt: "BehaveAI: video analysis tool enables rapid detection and classification of objects and behavior from motion"
-themes: [visual-modelling, behaveai]
+themes: [visual-modelling, behaveai, press-release]
 ---
 
 BehaveAI is a biologically inspired video analysis framework that integrates static and motion information through a novel color-from-motion encoding strategy. It converts object movement—direction, speed, and acceleration—into color gradients, meaning both human annotators and pre-trained convolutional neural networks (CNNs) can infer motion patterns while retaining high-resolution spatial details.

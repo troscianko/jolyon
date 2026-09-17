@@ -32,10 +32,11 @@ Visual signals are crucial for attracting mates, advertising defences, attractin
 
 #### Some of the amazing signals I've seen on my travels:
 
-{% include gallery.html dir="/assets/images/pages/research-visual-ecology/signals" thumb_width=200 %}
+![](/assets/images/pages/research-visual-ecology/signalling-examples.jpg)
 
 
 ### Motion dazzle
 
 High contrast markings such as stripes and spots can create all sorts of false motion illusions, and considerable effort has sought to show how these could misdirect predator attacks by interfering with their perception of prey direction and speed. Zebra stripes are the common example, yet experimental evidence has been largely equivocal (stripes are rarely better than plain background-matching for evading capture). However, my recent work has demonstrated how butterfly wing patterns can do just this, opening up a whole new avenue of research. The tools I developed to analyse these effects can also tell us about motion illusions in other species, such as the display cuttlefish use to catch unwitting crabs.
 
+![](/assets/images/pages/research-visual-ecology/motion-dazzle.jpg)

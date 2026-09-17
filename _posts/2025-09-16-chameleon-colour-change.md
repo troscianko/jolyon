@@ -3,7 +3,7 @@ title: "Chameleon colour change"
 image: /assets/images/posts/chameleon_colour_change.jpg
 excerpt: "Chameleons really can change colour to match their backgrounds, but not quite the way you might think"
 date: 2025-09-16 00:00:00 +0000
-themes: [animal-vision, visual-ecology, visual-modelling, outreach-media]
+themes: [animal-vision, visual-ecology, visual-modelling, press-release]
 ---
 
 Despite their image as masters of camouflage, it has long been assumed in science that chameleons change color to communicate with one another or in response to predators.
