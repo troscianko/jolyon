@@ -3,7 +3,7 @@ title: "Online Camouflage Game"
 image: /assets/images/posts/online-camouflage-game/main.jpg
 excerpt: "I’ve just released a new online game: Click here to play The data generated from…"
 date: 2016-11-03 15:54:28 +0000
-themes: [outreach-media, visual-ecology]
+themes: [press-release, visual-ecology]
 original_url: https://www.jolyon.co.uk/2016/11/online-camouflage-game/
 ---
 

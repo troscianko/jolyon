@@ -3,7 +3,7 @@ title: "Night-time lighting has complex effects on moth vision"
 image: /assets/images/posts/night-time-lighting-has-complex-effects-on-moth-vision/main.jpg
 excerpt: "Artificial night-time light has changed dramatically over the past few decades, resulting in complex and…"
 date: 2021-11-17 07:35:54 +0000
-themes: [animal-vision, light-pollution, visual-ecology, visual-modelling, outreach-media]
+themes: [light-pollution, visual-ecology, visual-modelling, press-release]
 original_url: https://www.jolyon.co.uk/2021/11/night-time-lighting-has-complex-effects-on-moth-vision/
 ---
 

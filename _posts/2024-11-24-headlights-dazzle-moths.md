@@ -3,7 +3,7 @@ title: "Cold-white headlights dazzle moths"
 image: /assets/images/posts/headlights-dazzle-moths/moths-headlights.png
 excerpt: "Cool white vehicle headlights cause far more  harmful behavioural responses in moths"
 date: 2024-11-24 00:00:00 +0000
-themes: [animal-vision, light-pollution, visual-ecology, visual-modelling, outreach-media]
+themes: [light-pollution, visual-ecology, visual-modelling, press-release]
 banner: true
 ---
 

@@ -3,7 +3,7 @@ title: "New Publication: Among Birds-of-Paradise, Good Looks Are Not Enough to W
 image: /assets/images/posts/new-publication-among-birds-of-paradise-good-looks-are-not-enough-to-win-a-mate/main.jpg
 excerpt: "See our paper here (open access). Male birds-of-paradise are justly world famous for their wildly…"
 date: 2018-11-22 11:45:53 +0000
-themes: []
+themes: [press-release, visual-ecology]
 original_url: https://www.jolyon.co.uk/2018/11/new-publication-among-birds-of-paradise-good-looks-are-not-enough-to-win-a-mate/
 ---
 

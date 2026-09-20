@@ -6,6 +6,8 @@
     title: 'Shining a light on camouflage evolution: using genetic algorithms to determine the effects of geometry and lighting on optimal camouflage'
     journal: PLoS One, 21(4), e0346231
     link: https://doi.org/10.1371/journal.pone.0346231
+    description: '[Read the press release](/posts/camoevo/)'
+    image: /assets/images/posts/camoevo/grey-spheres.jpg
   - authors: Troscianko, J., O'Shea-Wheller, T. A., Galloway, J. A. M., & Gaston, K. J. (2026).
     title: BehaveAI enables rapid detection and classification of objects and behavior from motion
     journal: PLOS Biology, 24(2), e3003632
@@ -16,7 +18,8 @@
     title: Severe and widespread reductions in night-time activity of nocturnal moths under modern artificial lighting spectra
     journal: 'Proceedings of the Royal Society B: Biological Sciences, 293'
     link: https://doi.org/10.1098/rspb.2025.2704
-    description: "This is the first paper to really show how light pollution might be harming moths by preventing them from being active. We tracked the activity of over 800 moths from 23 species under different intensities and spectra of artificial light. The headline is that there's no safe spectrum or timing, all light suppresses moth activity (even sky-glow levels of amber LEDs)."
+    description: "This is the first paper to really show how light pollution might be harming moths by preventing them from being active. We tracked the activity of over 800 moths from 23 species under different intensities and spectra of artificial light. The headline is that there's no safe spectrum or timing, all light suppresses moth activity (even sky-glow levels of amber LEDs). [Read the press release](/posts/moth-activity)"
+    image: /assets/images/pages/research-light-pollution/silver-y-verbena2.jpg
 - year: 2025
   papers:
   - authors: Hughes, A. E., Mari, L., Troscianko, J., Jelínek, V., Albrecht, T., & Šulc, M. (2025).
@@ -32,10 +35,13 @@
     journal: Biology Letters, 21(8), 20250134
     link: https://doi.org/10.1098/rsbl.2025.0134
     image: assets/images/posts/chameleon_colour_change.jpg
+    description: 'Chameleons really can change colour to match their backgrounds, though only in some situations [Read the press release](/posts/chameleon-colour-change)'
   - authors: Wainwright, J. B., Loupasaki, T., Ramírez, F., Penry-Williams, I. L., England, S. J., et al. (2025).
     title: Mutualisms within light microhabitats are associated with sensory convergence in a mimetic butterfly community
     journal: Proceedings of the National Academy of Sciences, 122(29), e2422397122
     link: https://doi.org/10.1073/pnas.2422397122
+    image: /assets/images/posts/butterfly-vision-evolution/butterflies.jpg
+    description: '[Read press release](/posts/butterfly-vision-evolution/)'
   - authors: Zanghi, C., Troscianko, J., & Ioannou, C. C. (2025).
     title: Enhanced conspicuousness of prey in warmer water mitigates the constraint of turbidity for predators
     journal: Behavioral Ecology, 36(4), araf079
@@ -44,10 +50,13 @@
     title: 'Stealth and deception: adaptive motion camouflage in hunting broadclub cuttlefish'
     journal: Science Advances, 11(13), eadr3686
     link: https://doi.org/10.1126/sciadv.adr3686
+    image: /assets/images/posts/mesmerising-cuttlefish/mesmerising-cuttlefish.jpg
+    description: '[Read the press release](/posts/mesmerising-cuttlefish/)'
   - authors: Troscianko, J. (2025).
     title: A hyperspectral open-source imager (HOSI)
     journal: BMC Biology, 23(1), 5
     link: https://doi.org/10.1186/s12915-024-02110-w
+    description: 'Build your own open-source hyperspectral imager from 3D printed parts and off-the-shelf components [Find out more](/projects/light-measurement-tools/)'
   - authors: Mari, L., Šulc, M., Szala, K., Troscianko, J., Eeva, T., & Ruuskanen, S. (2025).
     title: Heavy metal pollution exposure affects egg coloration but not male provisioning effort in the pied flycatcher Ficedula hypoleuca
     journal: Journal of Avian Biology, 2025(1), e03283
@@ -58,6 +67,7 @@
     title: Pulsed artificial light at night alters moth flight behaviour
     journal: Biology Letters, 20(11), 20240403
     link: https://doi.org/10.1098/rsbl.2024.0403
+    description: 'Harmful responses in moths to pulses of light simulating vehicle headlights are much more frequent with modern cool white LEDs [Read the press release](/posts/headlights-dazzle-moths/)'
   - authors: Briolat, E. S., Hancock, G. R. A., & Troscianko, J. (2024).
     title: Adapting genetic algorithms for artificial evolution of visual patterns under selection from wild predators
     journal: PLoS One, 19(5), e0295106
@@ -72,18 +82,25 @@
     title: Habitat geometry rather than visual acuity limits the visibility of a ground-nesting bird's clutch to terrestrial predators
     journal: Ecology and Evolution, 13(9), e10471
     link: https://doi.org/10.1002/ece3.10471
+    description: 'Subtle variation in 3D habitat geometry make lapwing nests nearly invisible to terrestrial predators from a distance. [Read the press release](/posts/lapwing-hide-in-plain-sight/)'
+    image: assets/images/posts/lapwing-hide-in-plain-sight/lapwing-montage.jpg
   - authors: Troscianko, J. (2023).
     title: 'OSpRad: an open-source, low-cost, high-sensitivity spectroradiometer'
     journal: Journal of Experimental Biology, 226(13), jeb245416
     link: https://doi.org/10.1242/jeb.245416
+    description: 'Build your own high-sensitivity spectroradiometer from 3D printed parts and off-the-shelf components [Find out more](/projects/light-measurement-tools/)'
   - authors: Troscianko, J., & Osorio, D. (2023).
     title: A model of colour appearance based on efficient coding of natural images
     journal: PLOS Computational Biology, 19(6), e1011117
     link: https://doi.org/10.1371/journal.pcbi.1011117
+    image: /assets/images/posts/sbl-model/lightness-illusions.jpg
+    description: 'Our new colour appearance model - built on efficient coding of natural scenes - explains a huge range of lightness and chromatic illusions. [Read the press release](/posts/sbl-model/)'
   - authors: Bullough, K., Gaston, K. J., & Troscianko, J. (2023).
     title: Artificial light at night causes conflicting behavioural and morphological defence responses in a marine isopod
     journal: 'Proceedings of the Royal Society B: Biological Sciences, 290(2000), 20230725'
     link: https://doi.org/10.1098/rspb.2023.0725
+    description: 'This study reveals how diffuse light pollution (e.g. sky-glow) caused a colour-chaning marine isopod to become more pale-coloured, while also causing them to seek out darker substrates. This mis-match could make them more vulnerable to predation [See the press release](/posts/isopod-colour-change).'
+    image: /assets/images/posts/isopod-colour-change/sea-slater.jpg
   - authors: Dixit, T., Choi, G. P. T., Al-Mosleh, S., Lund, J., Troscianko, J., Moya, C., et al. (2023).
     title: Combined measures of mimetic fidelity explain imperfect mimicry in a brood parasite–host system
     journal: Biology Letters, 19(2), 20220538

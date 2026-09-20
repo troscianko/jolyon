@@ -3,7 +3,7 @@ title: "A new home for the micaToolbox- empiricalimaging.com"
 image: /assets/images/posts/a-new-home-for-the-micatoolbox-empiricalimaging-com/main.png
 excerpt: "The micaToolbox is being used by scientists across a huge range of disciplines for analysing…"
 date: 2019-04-05 11:08:51 +0000
-themes: [animal-vision, micatoolbox, visual-ecology, visual-modelling]
+themes: [micatoolbox, visual-ecology, visual-modelling]
 original_url: https://www.jolyon.co.uk/2019/04/a-new-home-for-the-micatoolbox-empiricalimaging-com/
 ---
 

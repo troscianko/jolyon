@@ -3,7 +3,7 @@ title: "Online games help us understand colour vision and camouflage"
 image: /assets/images/posts/online-games-help-us-understand-colour-vision-and-camouflage/main.jpg
 excerpt: "We wanted to know why many animals are dichromats (having two types of colour receptor…"
 date: 2017-04-13 13:42:21 +0000
-themes: [visual-ecology]
+themes: [visual-ecology, press-release]
 original_url: https://www.jolyon.co.uk/2017/04/online-games-help-us-understand-colour-vision-and-camouflage/
 ---
 

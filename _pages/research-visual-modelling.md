@@ -32,6 +32,9 @@ The spatial arrangement of colour patterns give rise to the most wonderful displ
 
 We like to imagine colours can be expressed in ‘colour spaces’, but colour appearance actually depends on spatial (and temporal) information too. For example, place a grey disk on a red-ish background and it will look green-shifted, now move the same grey disk to a green-ish background and it will look red-shifted. This effect is called simultaneous contrast, and we’ve been aware of it for about 1,000 years. But now if you step back or use smaller disks, and make the backgrounds more intense red and green, the disk’s perceived colours will flip the other way; the disk on the green background looking more green and vice-versa, called assimilation (or White’s illusion). Existing visual modelling likes to ignore these dramatic effects, however I have developed a comparatively low-level visual model (the spatio-chromatic bandwidth limited model) that can predict and quantify them. 
 
+{% include gallery.html dir="/assets/images/pages/research-visual-modelling/illusions" thumb_width=200 %}
+
+
 ### Motion vision
 
 Motion is very ‘easy’ for visual systems to detect; think of a camouflaged animal moving and suddenly being easy to spot. However, it’s much more difficult for visual system to convert this detected change in brightness into estimations of the speed and direction of a moving object. High contrast spots and stripes can interfere with the way the basic mechanisms of motion detection work. I have developed methods that simulate how ‘elementary motion detectors’ work, and have used these to show how butterfly wing markings blend with wing dynamics to confuse birds.

@@ -3,7 +3,7 @@ title: "Camouflage really does reduce the chances of being eaten"
 image: /assets/images/posts/camouflage-really-does-reduce-the-chances-of-being-eaten/main.jpg
 excerpt: "We have just published a new ground-breaking study confirming the long held assumption that camouflage…"
 date: 2016-02-01 11:50:07 +0000
-themes: [visual-ecology, visual-modelling]
+themes: [visual-ecology, visual-modelling, press-release]
 original_url: https://www.jolyon.co.uk/2016/02/camouflage-really-does-reduce-the-chances-of-being-eaten/
 ---
 

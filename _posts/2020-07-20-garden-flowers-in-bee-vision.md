@@ -3,7 +3,7 @@ title: "Garden flowers in Bee vision"
 image: /assets/images/posts/garden-flowers-in-bee-vision/main.jpg
 excerpt: "I’ve taken some time in lockdown to photograph the flowers in my garden in human…"
 date: 2020-07-20 06:29:44 +0000
-themes: [animal-vision, micatoolbox, visual-ecology, visual-modelling, photos]
+themes: [micatoolbox, visual-ecology, visual-modelling, photos]
 original_url: https://www.jolyon.co.uk/2020/07/garden-flowers-in-bee-vision/
 ---
 

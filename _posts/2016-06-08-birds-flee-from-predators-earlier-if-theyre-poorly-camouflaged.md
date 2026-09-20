@@ -3,7 +3,7 @@ title: "Birds flee from predators earlier if they’re poorly camouflaged"
 image: /assets/images/posts/birds-flee-from-predators-earlier-if-theyre-poorly-camouflaged/main.jpg
 excerpt: "Our new study shows that nesting birds time their escape from an approaching predator depending…"
 date: 2016-06-08 15:43:29 +0000
-themes: [visual-ecology]
+themes: [visual-ecology, press-release]
 original_url: https://www.jolyon.co.uk/2016/06/birds-flee-from-predators-earlier-if-theyre-poorly-camouflaged/
 ---
 

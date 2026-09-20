@@ -3,7 +3,7 @@ title: "Kittlitz’s Plover Nest Covering"
 image: /assets/images/posts/kittlitzs-plover-nest-covering/main.jpg
 excerpt: "This video shows a Kittlitz’s Plover covering up the eggs on it’s nest when it…"
 date: 2013-08-08 13:07:26 +0000
-themes: [visual-ecology]
+themes: [visual-ecology, press-release]
 original_url: https://www.jolyon.co.uk/2013/08/kittlitzs-plover-nest-covering/
 ---
 

@@ -3,7 +3,7 @@ title: "‘Matador’ guppies trick predators"
 image: /assets/images/posts/matador-guppies-trick-predators/main.jpg
 excerpt: "Our latest research published in Current Biology (here) shows how guppies draw attention by turning…"
 date: 2020-07-20 05:44:59 +0000
-themes: [outreach-media, visual-ecology, visual-modelling]
+themes: [press-release, visual-ecology, visual-modelling]
 original_url: https://www.jolyon.co.uk/2020/07/matador-guppies-trick-predators/
 ---
 

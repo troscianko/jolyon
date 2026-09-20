@@ -3,7 +3,7 @@ title: "Colour and Vision Exhibition at the Natural History Museum"
 image: /assets/images/posts/colour-and-vision-exhibition-at-the-natural-history-museum/main.jpg
 excerpt: "We worked together with the Natural History Museum to create two displays in their excellent…"
 date: 2016-08-15 10:11:58 +0000
-themes: [animal-vision, outreach-media, visual-ecology]
+themes: [animal-vision, press-release, visual-ecology]
 original_url: https://www.jolyon.co.uk/2016/08/colour-and-vision-exhibition-at-the-natural-history-museum/
 ---
 

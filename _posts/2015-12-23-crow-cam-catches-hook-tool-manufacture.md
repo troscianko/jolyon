@@ -3,7 +3,7 @@ title: "Crow-cam catches hook-tool manufacture"
 image: /assets/images/posts/crow-cam-catches-hook-tool-manufacture/main.jpg
 excerpt: "Our new paper is out today in Biology Letters. It shows an extraordinary glimpse into…"
 date: 2015-12-23 11:15:28 +0000
-themes: [outreach-media]
+themes: [press-release]
 original_url: https://www.jolyon.co.uk/2015/12/crow-cam-catches-hook-tool-manufacture/
 ---
 

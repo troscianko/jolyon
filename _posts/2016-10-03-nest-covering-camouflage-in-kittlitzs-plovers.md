@@ -3,7 +3,7 @@ title: "Nest-covering camouflage in Kittlitz’s plovers"
 image: /assets/images/posts/nest-covering-camouflage-in-kittlitzs-plovers/main.jpg
 excerpt: "Kittlitz’s plovers cover their nests with materials to help hide them from predators. In our…"
 date: 2016-10-03 14:49:33 +0000
-themes: [animal-vision, visual-ecology]
+themes: [visual-ecology, press-release]
 original_url: https://www.jolyon.co.uk/2016/10/nest-covering-camouflage-in-kittlitzs-plovers/
 ---
 

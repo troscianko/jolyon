@@ -3,7 +3,7 @@ title: "Green shore crab in bird vision"
 image: /assets/images/posts/green-shore-crab-in-bird-vision/main.jpg
 excerpt: "Here’s a green shore crab I found on Gylly beach in false-colour peafowl-vision. This individual…"
 date: 2015-11-10 15:03:30 +0000
-themes: [animal-vision, photos]
+themes: [visual-modelling, photos]
 original_url: https://www.jolyon.co.uk/2015/11/green-shore-crab-in-bird-vision/
 ---
 
