@@ -12,8 +12,8 @@
     title: BehaveAI enables rapid detection and classification of objects and behavior from motion
     journal: PLOS Biology, 24(2), e3003632
     link: https://doi.org/10.1371/journal.pbio.3003632
-    description: 'This is a video analysis tool that can track individual animals and classify their behaviour from patterns of motion as well as their static appearance. It is super lightweight, meaning it can run in real-time on a RaspberryPI, a real game-changer in machine vision and behavioural ecology [GitHub download](https://github.com/troscianko/BehaveAI/), [User guide](https://github.com/troscianko/BehaveAI/wiki)'
-    image: assets/images/pages/publications/BehaveAI_200.png
+    description: 'This is a video analysis tool that can track individual animals and classify their behaviour from patterns of motion as well as their static appearance. It is super lightweight, meaning it can run in real-time on a RaspberryPI, a real game-changer in machine vision and behavioural ecology [Project overview](/projects/behaveai/), [Read the release post](/posts/behaveai-published/), [GitHub download](https://github.com/troscianko/BehaveAI/), [User guide](https://github.com/troscianko/BehaveAI/wiki)'
+    image: /assets/images/pages/projects-behveai/behave-ai-gull.jpg
   - authors: Briolat, E. S., Galloway, J. A. M., Cornelius, E., Wright, C. J., Bennie, J., Gaston, K. J., et al. (2026).
     title: Severe and widespread reductions in night-time activity of nocturnal moths under modern artificial lighting spectra
     journal: 'Proceedings of the Royal Society B: Biological Sciences, 293'
@@ -68,6 +68,7 @@
     journal: Biology Letters, 20(11), 20240403
     link: https://doi.org/10.1098/rsbl.2024.0403
     description: 'Harmful responses in moths to pulses of light simulating vehicle headlights are much more frequent with modern cool white LEDs [Read the press release](/posts/headlights-dazzle-moths/)'
+    image: /assets/images/posts/headlights-dazzle-moths/moths-headlights.png
   - authors: Briolat, E. S., Hancock, G. R. A., & Troscianko, J. (2024).
     title: Adapting genetic algorithms for artificial evolution of visual patterns under selection from wild predators
     journal: PLoS One, 19(5), e0295106
@@ -211,6 +212,7 @@
     journal: PLoS Biology, 16(11), e2006962
     link: https://doi.org/10.1371/journal.pbio.2006962
     description: '[Read the related post](/posts/new-publication-among-birds-of-paradise-good-looks-are-not-enough-to-win-a-mate/)'
+    image: /assets/images/posts/new-publication-among-birds-of-paradise-good-looks-are-not-enough-to-win-a-mate/main.jpg
   - authors: Dell'Aglio, D. D., Troscianko, J., McMillan, W. O., Stevens, M., & Jiggins, C. D. (2018).
     title: The appearance of mimetic Heliconius butterflies to predators and conspecifics
     journal: Evolution, 72(10), 2156-2166

@@ -45,7 +45,9 @@ document.addEventListener("DOMContentLoaded", function () {
   plainImgs.forEach(function (img) {
     var rawSrc = img.getAttribute("src");
     var key = originalPathFor(stripBaseurl(rawSrc));
-    var meta = photoMeta[key];
+    // Publication thumbnails keep the click-to-enlarge lightbox but never show a
+    // caption — a title/excerpt overlay doesn't make sense for a paper figure.
+    var meta = img.closest(".pub-media") ? null : photoMeta[key];
 
     var figure = document.createElement("figure");
     figure.className = "photo photo-plain";

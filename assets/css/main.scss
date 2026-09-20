@@ -513,7 +513,6 @@ p { margin: 0 0 1em; }
 /* Post hero / inline content images get the same click-to-enlarge treatment via JS,
    but shouldn't look like gallery tiles — undo the cropped-square gallery styling. */
 .photo-plain {
-  border-radius: inherit;
   background: none;
 }
 .post-hero .photo-plain,
@@ -521,21 +520,44 @@ p { margin: 0 0 1em; }
 .blurb .photo-plain {
   aspect-ratio: auto;
 }
+/* The rounding must come from .photo's own overflow:hidden clip (like the grid
+   tiles above), not from the img's own border-radius — otherwise the image's
+   independently-rounded bottom corners leave a cut-out where they meet the
+   caption background below, instead of the caption sitting behind that curve. */
+.page-content .blurb .photo-plain img,
+.post-body .content .photo-plain img {
+  border-radius: 0;
+}
 
 /* These images have no fixed/known height (unlike the fixed-aspect grid tiles above),
    so an overlay pinned to the bottom edge can end up partly off the image. Instead,
-   flow the caption as a normal block below the image, not overlapping it. */
+   flow the caption as a normal block below the image, not overlapping it. The image's
+   own top/bottom margin (set on img elsewhere) is moved onto the figure as a whole, so
+   spacing appears around the image+caption unit but not as a gap between them. */
+.page-content .blurb .photo-plain img,
+.post-body .content .photo-plain img {
+  margin: 0;
+}
+.page-content .blurb .photo-plain {
+  margin: 1.2rem 0;
+}
+.post-body .content .photo-plain {
+  margin: 1.4rem 0;
+}
 .photo-plain .photo-overlay {
   position: static;
-  background: none;
-  color: inherit;
-  padding: 0.6rem 0 0;
+  margin: 0;
+  background: #333333;
+  color: var(--white);
+  padding: 0.7rem 0.9rem;
 }
 .photo-plain .photo-overlay strong {
-  color: var(--grey-900);
+  color: var(--accent-green);
+  font-size: 1.1rem;
 }
 .photo-plain .photo-overlay span {
-  color: var(--text-muted, var(--grey-600));
+  color: var(--white);
+  font-size: 1rem;
 }
 
 .lightbox {

@@ -9,8 +9,8 @@ baseurl: ""
 email: "j dot troscianko at exeter dot ac dot uk"
 author: "Jolyon Troscianko"
 
-# Homepage carousel
-recent_posts_count: 10
+# Homepage recent-posts grid
+recent_posts_count: 24
 
 # Build settings
 markdown: kramdown

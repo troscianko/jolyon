@@ -4,13 +4,13 @@ layout: default
 {% assign home_subtitle = page.subtitle | default: site.tagline %}
 {% include page-title.html subtitle=home_subtitle %}
 
-<section class="section wrap">
-  {% assign recent_posts = site.posts | slice: 0, site.recent_posts_count %}
-  {% include carousel.html posts=recent_posts heading="Recent posts" %}
-</section>
-
-<section class="section wrap page-content" style="padding-top:0;">
+<section class="page-content wrap">
   <div class="blurb">
     {{ content }}
   </div>
+</section>
+
+<section class="section wrap" style="padding-top:0;">
+  {% assign recent_posts = site.posts | slice: 0, site.recent_posts_count %}
+  {% include carousel.html posts=recent_posts heading="Recent posts" style="grid" %}
 </section>
