@@ -6,7 +6,9 @@ themes: [visual-modelling, press-release, light-pollution]
 banner: true
 ---
 
-Moths move significantly less when exposed to artificial nighttime light, new research shows. Moths' attraction to artificial light, such as streetlights, is common knowledge and has been much studied. But, as many people will have observed, moths may also remain still if they land near a light, apparently "trapped."
+## Light pollution suppreses moth activity
+
+Moths move significantly less when exposed to artificial nighttime light, [new research](https://doi.org/10.1098/rspb.2025.2704) shows. Moths' attraction to artificial light, such as streetlights, is common knowledge and has been much studied. But, as many people will have observed, moths may also remain still if they land near a light, apparently "trapped."
 
 To understand this behavior, University of Exeter researchers caught more than 800 moths from 23 species and exposed them to LED lights (of various colors and brightness) or to natural night conditions.
 

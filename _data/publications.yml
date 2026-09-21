@@ -19,7 +19,7 @@
     journal: 'Proceedings of the Royal Society B: Biological Sciences, 293'
     link: https://doi.org/10.1098/rspb.2025.2704
     description: "This is the first paper to really show how light pollution might be harming moths by preventing them from being active. We tracked the activity of over 800 moths from 23 species under different intensities and spectra of artificial light. The headline is that there's no safe spectrum or timing, all light suppresses moth activity (even sky-glow levels of amber LEDs). [Read the press release](/posts/moth-activity)"
-    image: /assets/images/pages/research-light-pollution/silver-y-verbena2.jpg
+    image: /assets/images/pages/research-light-pollution/moths/silver-y-verbena2.jpg
 - year: 2025
   papers:
   - authors: Hughes, A. E., Mari, L., Troscianko, J., Jelínek, V., Albrecht, T., & Šulc, M. (2025).
@@ -132,6 +132,8 @@
     title: 'CamoEvo: an open access toolbox for artificial camouflage evolution experiments'
     journal: Evolution, 76(5), 870-882
     link: https://doi.org/10.1111/evo.14476
+    image: /assets/images/posts/camoevo/camoevo-banner.png
+    description: '[Read the post](/posts/camoevo-toolbox/)'
   - authors: Šulc, M., Hughes, A. E., Troscianko, J., Štětková, G., Procházka, P., Požgayová, M., et al. (2022).
     title: Automatic identification of bird females using egg phenotype
     journal: Zoological Journal of the Linnean Society, 195(1), 33-44

@@ -12,7 +12,24 @@ reaction:
   attraction: 0.8      # default 0 (free drift) — try 0.5-2, it needs to be much bigger than feed/kill values to matter
 ---
 
-I'm always developing a range of tools, hardware and software, to help with my research. Check out my [GitHub](https://github.com/troscianko) page.
+We're always developing a range of tools, hardware and software, to help with my research. Check out my [GitHub](https://github.com/troscianko) page.
+
+## CamoEvo – rapid camouflage evolution
+
+We have developed a Genetic Algorithm (GA) that combines human psychophysics experiments with recent advances in GA technology to rapidly evolve target camouflage. The GA allows explicit testing of a range of camouflage strategies and theories, and can simulate important population-level evolutionary strategies (such as polymorphisms).
+
+<div class="video-embed">
+  <iframe width="100%" height="400" src="https://www.youtube.com/embed/D6bD8HtSFKg"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+</div>
+
+![](/assets/images/posts/camoevo/egg-evo.png)
+
+[Find out more here](/posts/camoevo-toolbox/)
+ 
+----
 
 ## Optomotor drum
 
