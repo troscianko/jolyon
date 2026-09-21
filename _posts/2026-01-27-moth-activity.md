@@ -1,8 +1,8 @@
 ---
 title: "Light pollution suppreses moth activity"
-image: /assets/images/pages/research-light-pollution/silver-y-verbena2.jpg
+image: /assets/images/pages/research-light-pollution/moths/silver-y-verbena2.jpg
 excerpt: "Exposure to low levels of artificial light at night cause severe reductions in moth activity across 23 species, even at sky-glow intensities and across all spectra tested."
-themes: [visual-modelling, behaveai, press-release, light-pollution]
+themes: [visual-modelling, press-release, light-pollution]
 banner: true
 ---
 
@@ -12,7 +12,7 @@ To understand this behavior, University of Exeter researchers caught more than 8
 
 Moths were collected with light traps and butterfly nets on the Penryn Campus grounds, then placed outside in individual pots exposed to one of the light conditions, and filmed to record their movements overnight.
 
-![](/assets/images/posts/moth-activity/moth-activity-setup.jpg )
+![](/assets/images/posts/moth-activity/moth-activity-setup.jpg)
 
 Under 10 lux—a level you might experience near residential streetlighting—moths moved 85% less on average than moths in natural nighttime conditions. This is a big impact on how moths behave, with implications for the time they have for essential activities like finding food or mates.
 

@@ -14,6 +14,7 @@ module ImageLinks
     (!\[[^\]]*\]\()
     (/assets/images/(?!derived/)[^)\s]+?)
     (\?(?:full|original))?
+    \s*
     (\))
   }x.freeze
 

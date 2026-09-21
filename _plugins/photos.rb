@@ -25,6 +25,7 @@ module Photos
 
     site.data["photos"] = {}
     site.data["photo_dirs"] = {}
+    known_originals = {}
 
     Dir.glob(File.join(images_root, "**", "*")).each do |abs_path|
       next unless File.file?(abs_path)
@@ -35,6 +36,7 @@ module Photos
       dir_web_path = File.dirname(web_path)
 
       (site.data["photo_dirs"][dir_web_path] ||= []) << web_path
+      known_originals[web_path] = true
 
       sidecar = abs_path.sub(IMAGE_EXT, ".md")
       if File.exist?(sidecar)
@@ -46,6 +48,8 @@ module Photos
     end
 
     site.data["photo_dirs"].each_value(&:sort!)
+
+    prune_orphaned_derivatives(site, known_originals)
   end
 
   def self.parse_sidecar(site, path)
@@ -88,6 +92,38 @@ module Photos
       rescue StandardError => e
         Jekyll.logger.warn "photos:", "couldn't resize #{abs_path}: #{e.message}"
       end
+    end
+  end
+
+  # Removes derived/thumb and derived/display files whose original source image
+  # no longer exists — e.g. after a source image is deleted or renamed. Without
+  # this, a stale derivative from a previous build keeps serving locally (it's
+  # never regenerated once present) while a fresh CI build — GitHub Pages —
+  # has no such leftover and simply has a missing/broken image.
+  def self.prune_orphaned_derivatives(site, known_originals)
+    derived_root = File.join(site.source, "assets", "images", "derived")
+    return unless Dir.exist?(derived_root)
+
+    SIZES.each_key do |name|
+      size_root = File.join(derived_root, name)
+      next unless Dir.exist?(size_root)
+
+      Dir.glob(File.join(size_root, "**", "*")).each do |abs_path|
+        next unless File.file?(abs_path)
+
+        web_path = "/" + abs_path.sub("#{site.source}/", "")
+        original_web_path = web_path.sub("/assets/images/derived/#{name}/", "/assets/images/")
+        next if known_originals[original_web_path]
+
+        File.delete(abs_path)
+        Jekyll.logger.info "photos:", "removed orphaned derivative #{web_path}"
+      end
+
+      # Clean up any directories left empty by the deletions above.
+      Dir.glob(File.join(size_root, "**", "*"))
+        .select { |d| File.directory?(d) }
+        .sort_by { |d| -d.count("/") }
+        .each { |d| Dir.rmdir(d) if Dir.empty?(d) }
     end
   end
 end
