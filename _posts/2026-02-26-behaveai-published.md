@@ -2,7 +2,7 @@
 title: "BehaveAI Published"
 image: /assets/images/pages/projects-behveai/gull-demo.jpg
 excerpt: "BehaveAI: video analysis tool enables rapid detection and classification of objects and behavior from motion"
-themes: [visual-modelling, behaveai, press-release]
+themes: [visual-modelling, behaveai, press-release, experimental-tools]
 ---
 
 ## BehaveAI: Detecting animal behaviour from motion

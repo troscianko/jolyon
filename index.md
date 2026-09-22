@@ -22,10 +22,14 @@ reaction:
 
 ## About my research
 
-I'm a [visual ecologist](/research/visual-ecology/), asking questions such as how an animal’s vision, cognition or appearance to other animals affects how they interact with their environment, and how this in turn affects their survival, behaviour, evolution or conservation. I'm an Associate Professor at the University of Exeter's Penryn campus.
+| ![](/assets/images/pages/about-me/jolyon_alaska.jpg?width=800) | I'm a [visual ecologist](/research/visual-ecology/), asking questions such as how an animal’s vision, cognition or appearance to other animals affects how they interact with their environment, and how this in turn affects their survival, behaviour, evolution or conservation. I'm an Associate Professor at the University of Exeter's Penryn campus. |
 
 I also enjoy developing new [models of animal vision](/research/visual-modelling/) that allow us to glimpse the world through animal eyes, or create new insights into how human vision works. I've developed a range of open-source tools and resouces, including the [micaToolbox](/projects/micatoolbox/) for animal vision modelling, [BehaveAI](/projects/behaveai/) for quantifying animal behaviour from video, and a range of [light measurement](/projects/light-measurement-tools/) hardware & software solutions. I release these tools open-source in order to help make scientific tools accessible to all.
 
 [Light pollution](/research/light-pollution/) is increasingly recognised as a major source of pollution that's affecting whole ecosystems. Our lab is actively researching these impacts in a range of systems, from birds and insects to isopods and worms. Where possible we use novel field experiments across a wide range of species so that our findings can be linked to potential biodiversity issues. 
 
-![Jolyon Troscianko](/assets/images/pages/about-me/jolyon_alaska.jpg)
+
+
+
+| | [![](/assets/images/pages/about-me/eve-logo.png?width=65%)](https://www.visual-ecology.com/)   | [![](/assets/images/pages/about-me/exeter-logo.png?width=80%)](https://experts.exeter.ac.uk/22827-jolyon-troscianko) |
+| | [Exeter Visual Ecology website](https://www.visual-ecology.com/) | [University of Exeter Profile](https://experts.exeter.ac.uk/22827-jolyon-troscianko) |

@@ -74,6 +74,13 @@ Real thumbnail/display-size image files are generated automatically at build tim
 `_plugins/photos.rb`) — you never need to resize images yourself, and the generated files
 (`assets/images/derived/`) aren't committed to git.
 
+Image as a link instead of lightbox — just use standard markdown link-wrapping-an-image syntax, no new syntax needed:
+[![alt](/assets/images/posts/slug/foo.jpg)](https://example.com/)
+
+Width control — add ?width=N (pixels) or ?width=N% to any image path:
+![alt](/assets/images/posts/slug/foo.jpg?width=400)
+Combines with ?full: ?full&width=400. It sets max-width directly on the <img> via a kramdown attribute, and lightbox.js mirrors that same value onto the caption figure so the dark caption background shrinks to match the image instead of staying full column-width.
+
 ## Editing the fixed pages
 
 The research/project/Animal Vision/Outreach pages live in `_pages/`, one file each, with a

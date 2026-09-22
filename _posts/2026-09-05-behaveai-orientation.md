@@ -2,7 +2,7 @@
 title: "BehaveAI Orientation"
 image: /assets/images/posts/behaveai-orientation/behaveai-orientation.png
 excerpt: "BehaveAI update adds orientation measurement, making it easy to measure the angle of your animal/object"
-themes: [visual-modelling, behaveai]
+themes: [visual-modelling, behaveai, experimental-tools]
 ---
 
 BehaveAI v1.4 can now detect and measure the orientation of tracked objects and animals, not just their location. This update adds YOLO oriented bounding boxes (OBB, rotated boxes that hug the actual angle of the object) and automatically calculates a heading/orientation angle for every detection, frame by frame.

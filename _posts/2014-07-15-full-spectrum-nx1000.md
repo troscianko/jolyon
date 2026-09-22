@@ -3,7 +3,7 @@ title: "Full Spectrum NX1000"
 image: /assets/images/posts/full-spectrum-nx1000/main.jpg
 excerpt: "Samsung NX1000 Full spectrum UV & IR conversion I was after a cheap high resolution…"
 date: 2014-07-15 13:25:10 +0000
-themes: [animal-vision]
+themes: [visual-modelling, experimental-tools]
 original_url: https://www.jolyon.co.uk/2014/07/full-spectrum-nx1000/
 ---
 

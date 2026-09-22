@@ -3,7 +3,7 @@ title: "Image Analysis Toolbox Released"
 image: /assets/images/posts/image-analysis-toolbox-released/main.png
 excerpt: "Our image analysis toolbox is out! We’ve developed these tools to make it easier for…"
 date: 2015-07-13 12:38:29 +0000
-themes: [press-release, visual-ecology, visual-modelling]
+themes: [press-release, visual-ecology, visual-modelling, experimental-tools]
 original_url: https://www.jolyon.co.uk/2015/07/image-analysis-toolbox-released/
 ---
 

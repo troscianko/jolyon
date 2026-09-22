@@ -57,6 +57,7 @@
     journal: BMC Biology, 23(1), 5
     link: https://doi.org/10.1186/s12915-024-02110-w
     description: 'Build your own open-source hyperspectral imager from 3D printed parts and off-the-shelf components [Find out more](/projects/light-measurement-tools/)'
+    image: /assets/images/pages/projects-light-measurement/hosi-butterfly.jpg
   - authors: Mari, L., Šulc, M., Szala, K., Troscianko, J., Eeva, T., & Ruuskanen, S. (2025).
     title: Heavy metal pollution exposure affects egg coloration but not male provisioning effort in the pied flycatcher Ficedula hypoleuca
     journal: Journal of Avian Biology, 2025(1), e03283
@@ -90,6 +91,7 @@
     journal: Journal of Experimental Biology, 226(13), jeb245416
     link: https://doi.org/10.1242/jeb.245416
     description: 'Build your own high-sensitivity spectroradiometer from 3D printed parts and off-the-shelf components [Find out more](/projects/light-measurement-tools/)'
+    image: /assets/images/pages/projects-light-measurement/osprad-photo.jpg
   - authors: Troscianko, J., & Osorio, D. (2023).
     title: A model of colour appearance based on efficient coding of natural images
     journal: PLOS Computational Biology, 19(6), e1011117
@@ -180,7 +182,8 @@
     title: A matador-like predator diversion strategy driven by conspicuous coloration in guppies
     journal: Current Biology, 30(14), 2844-2851.e8
     link: https://www.cell.com/current-biology/fulltext/S0960-9822(20)30656-4#%20
-    description: '[Read the related post](http://www.jolyon.co.uk/wp-content/uploads/2020/07/male-and-female-offset.jpg)'
+    description: '[Read the related post](/posts/matador-guppies-trick-predators/)'
+    image: /assets/images/posts/matador-guppies-trick-predators/main.jpg
   - authors: Young, M. M. I., Winters, S., Young, C., Weiß, B. M., Troscianko, J., Ganswindt, A., et al. (2020).
     title: Male characteristics as predictors of genital color and display variation in vervet monkeys
     journal: Behavioral Ecology and Sociobiology, 74(2), 14
@@ -317,22 +320,23 @@
   - authors: Burriss, R. P., Troscianko, J., Lovell, P. G., Fulford, A. J. C., Stevens, M., Quigley, R., et al. (2015).
     title: Changes in women's facial skin color over the ovulatory cycle are not detectable by the human visual system
     journal: PLoS One, 10(7), e0130093
-    link: http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0130093
+    link: https://doi.org/10.1371/journal.pone.0130093
 - year: 2014
   papers:
   - authors: Troscianko, J. (2014).
     title: A simple tool for calculating egg shape, volume and surface area from digital images
     journal: Ibis, 156(4), 874-878
-    link: http://onlinelibrary.wiley.com/enhanced/doi/10.1111/ibi.12177/
-    description: '[Read the related post](http://jolyon.co.uk/research/eggs/index.html)'
+    link: https://doi.org/10.1111/ibi.12177
+    image: /assets/images/posts/egg-shape/egg-shape-examples.png
+    description: '[Read the related post](/posts/egg-shape/)'
   - authors: Hughes, A. E., Troscianko, J., & Stevens, M. (2014).
     title: Motion dazzle and the effects of target patterning on capture success
     journal: BMC Evolutionary Biology, 14(1), 201
-    link: http://www.biomedcentral.com/1471-2148/14/201/abstract
+    link: https://doi.org/10.1186/s12862-014-0201-4
   - authors: Arenas, L. M., Troscianko, J., & Stevens, M. (2014).
     title: Color contrast and stability as key elements for effective warning signals
     journal: Frontiers in Ecology and Evolution, 2, 25
-    link: http://journal.frontiersin.org/Journal/10.3389/fevo.2014.00025/abstract
+    link: https://doi.org/10.3389/fevo.2014.00025
 - year: 2013
   papers:
   - authors: Stevens, M., Troscianko, J., & Spottiswoode, C. N. (2013).

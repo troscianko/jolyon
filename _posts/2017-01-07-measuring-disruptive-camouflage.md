@@ -3,7 +3,7 @@ title: "Measuring Disruptive Camouflage"
 image: /assets/images/posts/measuring-disruptive-camouflage/main.jpg
 excerpt: "Estimating how visible something is against its background is essential in many studies of animal…"
 date: 2017-01-07 15:07:19 +0000
-themes: [visual-ecology, visual-modelling, press-release]
+themes: [visual-ecology, visual-modelling, press-release, experimental-tools]
 original_url: https://www.jolyon.co.uk/2017/01/measuring-disruptive-camouflage/
 ---
 

@@ -38,3 +38,12 @@ I developed an optomotor drum system that can be used to measure animals' spatia
 Published here: [Caves et al. (2020) A customizable, low-cost optomotor apparatus: a powerful tool for behaviourally measuring visual capability — _Methods in Ecology and Evolution, 11(10)_ ](https://doi.org/10.1111/2041-210X.13449)
 
 {% include gallery.html dir="/assets/images/pages/projects-experimental-tools/optomotor" thumb_width=300 %}
+
+----
+
+## Egg shape measurement
+
+I've developed a useful tool for measuring the volume, surface area and shape of eggs from digital images. These tools are built into the micaToolbox for easy egg measurement. [More info here](/posts/egg-shape/).
+
+![](/assets/images/posts/egg-shape/egg-shape-examples.png)
+

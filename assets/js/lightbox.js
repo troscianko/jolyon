@@ -39,7 +39,9 @@ document.addEventListener("DOMContentLoaded", function () {
   var plainImgs = Array.prototype.slice
     .call(document.querySelectorAll(".post-hero img, .content img, .blurb img, .pub-media img"))
     .filter(function (img) {
-      return !img.closest("[data-photo]");
+      // Already inside a managed gallery figure, or hand-wrapped in a real link
+      // ([![alt](foo.jpg)](url)) to act as a plain clickable link — leave both alone.
+      return !img.closest("[data-photo]") && !img.closest("a");
     });
 
   plainImgs.forEach(function (img) {
@@ -54,6 +56,17 @@ document.addEventListener("DOMContentLoaded", function () {
     figure.setAttribute("data-photo", "");
     figure.setAttribute("data-gallery", "page");
     figure.setAttribute("data-full", displaySrcFor(rawSrc));
+    // A ?width= flag (see _plugins/image_links.rb) sets max-width inline on the
+    // img itself; move it onto the figure instead so the caption background below
+    // matches the image's width rather than staying the full column width. Moving
+    // rather than copying matters for a percentage value: left on both, the img's
+    // own % would resolve against the now-narrower figure and compound (10% of
+    // 10%). The img already fills 100% of the figure via CSS, so clearing it here
+    // is enough — the figure's max-width alone determines the rendered size.
+    if (img.style.maxWidth) {
+      figure.style.maxWidth = img.style.maxWidth;
+      img.style.maxWidth = "";
+    }
 
     img.parentNode.insertBefore(figure, img);
     figure.appendChild(img);

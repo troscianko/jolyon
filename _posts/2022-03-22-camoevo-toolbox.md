@@ -2,7 +2,7 @@
 title: "CamoEvo toolbox"
 image: /assets/images/posts/camoevo/camoevo-banner.png
 excerpt: "Rapid camouflage evolution toolbox"
-themes: [visual-modelling, visual-ecology, press-release]
+themes: [visual-modelling, visual-ecology, press-release, experimental-tools]
 ---
 
 ## CamoEvo – rapid camouflage evolution
